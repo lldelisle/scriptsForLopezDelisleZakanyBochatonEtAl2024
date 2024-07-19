@@ -1,0 +1,397 @@
+---
+title: "baredSC_2d and 1d"
+author: "Lucille"
+format: html
+editor: visual
+---
+
+## Define inputs
+
+There are 4 inputs:
+
+-   `directory` : where the outputs of baredSC_2d are (especially pdf2d_flat.txt).
+
+-   `table.fn` : the table where you defined which gene which input etc.
+
+-   `use.usefulLD.package` : whether you want to use the usefulLD package to solve dependencies.
+
+- `output.dir`: where the figures will be
+
+```{r}
+# The inputs are in the directory
+directory <- "/scratch/ldelisle/HoxBstudy/baredSC/baredSC_2d/"
+directory <- "/home/ldelisle/Documents/sequencing/baredSC_outputs/ZakanyBochaton/baredSC_2d/"
+# The table is:
+# input\tgene\txmax\tgroup
+table.fn <- "/home/ldelisle/softwares/scriptsForLopezDelisleZakanyBochatonEtAl2024/scRNAseq/baredSC/table_baredSC_2d.txt"
+table.fn <-  "/home/ldelisle/Documents/mygit/scriptsForLopezDelisleZakanyBochatonEtAl2024/scRNAseq/baredSC/table_baredSC_2d.txt"
+use.usefulLD.package <- TRUE
+output.dir <- file.path(dirname(table.fn), "..", "plots")
+```
+
+## Dependencies
+
+```{r}
+if (use.usefulLD.package) {
+    if (!"devtools" %in% installed.packages()) {
+        install.packages("devtools", repos = "https://stat.ethz.ch/CRAN/")
+    }
+    devtools::install_github("lldelisle/usefulLDfunctions", upgrade = "never")
+    library(usefulLDfunctions)
+    safelyLoadAPackageInCRANorBioconductor("ggplot2")
+    safelyLoadAPackageInCRANorBioconductor("ggrastr")
+    safelyLoadAPackageInCRANorBioconductor("ggpubr")
+} else {
+    library(ggplot2)
+    library(ggrastr)
+    library(ggpubr)
+}
+# Get good fontfamily
+library("extrafont")
+# Only once
+# font_import()
+# loadfonts(device = "all")
+fontFamily <- "DejaVu Sans"
+```
+
+## Output dir
+
+```{r}
+dir.create(output.dir, recursive = TRUE, showWarnings = FALSE)
+```
+
+## Process table and pdf files
+
+```{r}
+# Get the table used as input of the mcmc
+my.table <- read.delim(table.fn,
+    h = FALSE,
+    col.names = c("full.path.input", "genex", "geney", "xmax", "ymax", "group")
+)
+my.table$i <- rownames(my.table)
+
+my.table$input <- basename(my.table$full.path.input)
+
+my.table$genes <- paste0(my.table$genex, "VS", my.table$geney)
+
+# Find pdf files
+pdf.files <- list.files(path = directory, pattern = "1-.*_nopval_pdf2d_flat.txt")
+suffix <- "_nopval_pdf2d_flat.txt"
+if (length(pdf.files) == 0) {
+    pdf.files <- list.files(path = directory, pattern = "1-.*_pdf2d_flat.txt")
+    suffix <- "_pdf2d_flat.txt"
+}
+
+# Analyze pdf file name to get meta data
+meta.data <- data.frame(t(sapply(gsub(suffix, "", pdf.files), function(v) {
+    data <- strsplit(v, "_")[[1]]
+    return(c(data[1:2], paste(data[-(1:2)], collapse = "_")))
+})))
+colnames(meta.data) <- c("model", "genes", "info")
+
+meta.data$id <- paste0(meta.data$gene, "__", meta.data$info)
+
+meta.data$file <- pdf.files
+
+meta.data$i <- sapply(strsplit(meta.data$info, "_"), tail, 1)
+
+# Check the gene were correctly identified
+temp <- merge(unique(my.table[, c("i", "genes")]), unique(meta.data[, c("i", "genes")]), by = "i")
+if (!all(temp$genes.x == temp$genes.y)) {
+    # The gene had "_" in its name:
+    meta.data$genes <- my.table$genes[match(meta.data$i, my.table$i)]
+    meta.data$info <- apply(meta.data[, c("file", "genes")], 1, function(v) {
+        return(paste(strsplit(gsub(suffix, "", v[1]), paste0(v[2], "_"))[[1]][-1], collapse = "_"))
+    })
+    meta.data$id <- paste0(meta.data$genes, "__", meta.data$info)
+}
+# Process genes
+meta.data <- cbind(meta.data, matrix(unlist(strsplit(meta.data$genes, "VS")), ncol = 2, byrow = T))
+colnames(meta.data)[-1:0 + ncol(meta.data)] <- c("genex", "geney")
+# Find the group name
+meta.data$group <- apply(meta.data[, c("id", "i")], 1, function(v) {
+    group.name <- my.table$group[my.table$i == v[2]]
+    if (!is.na(group.name) & group.name != "") {
+        return(paste0(group.name, gsub(paste0("_", v[2], "$"), "", strsplit(v[1], paste0("_", group.name))[[1]][2])))
+    } else {
+        return("all")
+    }
+})
+meta.data$input <- my.table$input[match(meta.data$i, my.table$i)]
+```
+
+## Add pretty labels
+
+Labels for groups are:
+
+```{r}
+print(table(meta.data$group))
+```
+
+You can relabel and choose order:
+
+```{r}
+# You can define one by one:
+pretty.groups <- c(
+    "all" = "NMP"
+)
+print(pretty.groups)
+```
+
+Same for input:
+
+```{r}
+print(table(meta.data$input))
+```
+
+```{r}
+# # You can use gsub to get the labels
+# pretty.inputs <- gsub("metadata_sc_cluster_", "", gsub(".txt", "", unique(meta.data$input)))
+# # Reorder:
+# pretty.inputs <- pretty.inputs[c(4, 1:3)]
+# # Add names:
+# names(pretty.inputs) <- paste0("metadata_sc_cluster_", pretty.inputs, ".txt")
+pretty.inputs <- c("meta_data_mut_NMPs.txt" = "Mutant")
+print(pretty.inputs)
+```
+
+Check all pretty include everything:
+
+```{r}
+if (!all(unique(meta.data$group) %in% names(pretty.groups))) {
+    stop("Some groups are missing in pretty.groups")
+}
+if (!all(unique(meta.data$input) %in% names(pretty.inputs))) {
+    stop("Some inputs are missing in pretty.groups")
+}
+```
+
+Add a new column to meta.data
+
+```{r}
+meta.data$pretty.group <- factor(pretty.groups[meta.data$group], levels = pretty.groups)
+meta.data$pretty.input <- factor(pretty.inputs[meta.data$input], levels = pretty.inputs)
+```
+
+Get pdfs:
+
+```{r}
+# Read the pdfs
+pdfs <- do.call(rbind, lapply(meta.data$file, function(fn) {
+    df <- read.delim(file.path(directory, fn))
+    df$value <- df$mean
+    df$file <- fn
+    return(df)
+}))
+# Add the meta data
+pdfs <- merge(pdfs, meta.data)
+```
+
+
+## First plots
+
+Choose the order of panels if they are not the same as the table:
+
+```{r}
+my.rows.to.plot <- intersect(1:nrow(my.table), unique(pdfs$i))
+print(my.rows.to.plot)
+```
+
+Evaluate upper limit:
+
+```{r}
+max.value <- max(log(1 + pdfs$value[pdfs$i %in% my.rows.to.plot]))
+upper.lim <- round(max.value, 2)
+if (max.value > upper.lim) {
+    upper.lim <- upper.lim + 0.01
+}
+```
+
+
+Here is the default plot (like in Bolt et al. 2021):
+
+```{r}
+#| fig.height: 15
+#| fig.width: 15
+ggplot.list <- list()
+current <- 1
+for (my.i in my.rows.to.plot) {
+    my.df <- subset(pdfs, i == my.i)
+    ggplot.list[[current]] <- ggplot(my.df, aes(x, y)) +
+        geom_tile_rast(aes(fill = log(1 + value))) +
+        # facet_grid(pretty.input ~  pretty.group) +
+        facet_wrap(pretty.input ~ pretty.group) +
+        theme_minimal() +
+        ylab("") +
+        xlab(unique(my.df$genex)) +
+        scale_fill_gradient(low = "white", high = "black", limits = c(0, upper.lim)) +
+        theme( # strip.text.x = element_blank(),
+            plot.margin = unit(c(0, 0, 0, 0), units = "lines"),
+            legend.position = "none",
+            axis.title.x = element_text(face = "italic")
+        )
+    current <- current + 1
+}
+ggarrange(plotlist = ggplot.list)
+```
+
+Here is the custom plot
+
+```{r}
+ggplot.list <- list()
+current <- 1
+for (my.i in my.rows.to.plot) {
+    my.df <- subset(pdfs, i == my.i)
+    ggplot.list[[current]] <- ggplot(my.df, aes(x, y)) +
+        geom_tile_rast(aes(fill = log(1 + value))) +
+        ylab(ifelse(my.i == 1, "Hoxb13", "")) +
+        xlab(unique(my.df$genex)) +
+        scale_fill_gradient(low = "white", high = "black", limits = c(0, upper.lim)) +
+    theme_pubr() +
+        theme(
+            text = element_text(family = fontFamily, size = 6),
+            plot.margin = unit(c(0, 0, 0, 0), units = "lines"),
+            legend.position = "none",
+            axis.title = element_text(face = "italic")
+        ) +
+    scale_x_continuous(expand = c(0.01, 0.03)) +
+    scale_y_continuous(expand = c(0.005, 0.01))
+    if (my.i != 1) {
+        ggplot.list[[current]] <-  ggplot.list[[current]] +
+            theme(axis.title.y = element_blank())
+    }
+    current <- current + 1
+}
+g.2d <- ggarrange(plotlist = ggplot.list, nrow = 1, widths = c(1.1, rep(1, 3)))
+ggsave(file.path(output.dir, "baredSC_2d.pdf"), g.2d, width = 5, height = 1.3)
+```
+
+## Get 1d
+
+```{r}
+trunc_norm <- function(x, dx, mu, sigma) {
+# From trunc_norm in baredSC
+#   Args:
+#       x (np.ndarray): Regular grid where pdf should be evaluated
+#       dx (float): Space between 2 values in x
+#       mu (float): Mean of Gaussian
+#       sigma (float): Scale of Gaussian
+
+#   Returns:
+#       np.ndarray: pdf values normalized
+  u = (x - mu) / sigma
+  lognorm = -0.5 * u * u
+  lognorm = lognorm - max(lognorm)  # Avoid underflow
+  norm = exp(lognorm)
+  norm = norm / sum(norm * dx)
+  return(norm)
+}
+
+```
+
+```{r}
+# Find the log file of combination
+log.file <- list.files(
+    file.path(directory, "..", "baredSC_1d"),
+    pattern = "1-4gauss.*.log",
+    full.names = TRUE
+)
+# Process it
+get.samples.gauss <- function(log.file) {
+    mat <- matrix(unlist(strsplit(grep("Using", readLines(log.file), value = TRUE), " ")), byrow = TRUE, ncol = 6)
+    mat[, 6] <- gsub(".$", "", mat[, 6])
+    df <- as.data.frame(mat[, c(2, 6)])
+    colnames(df) <- c("samples", "ngauss")
+    df$samples <- as.numeric(df$samples)
+    df$ngauss <- as.numeric(df$ngauss)
+    # In fact it is output starting at 0 so we correct it:
+    df$ngauss <- df$ngauss + 1
+    # Revert to remove duplicates:
+    df <- df[nrow(df):1, ]
+    df$logfile <- log.file
+    return(df[!duplicated(df$ngauss), ])
+}
+
+ngauss.df <- get.samples.gauss(log.file)
+
+```
+
+Plot the pdf
+
+```{r}
+# Get the full pdf:
+pdf <- read.delim(gsub(".log", "_pdf.txt", log.file))
+pdf$model <- "combined"
+ggplot(pdf, aes(x = x)) +
+    geom_line(aes(y = mean)) +
+    geom_ribbon(aes(ymin = low, ymax = high), alpha = 0.3) +
+    theme_pubr() +
+    coord_flip()
+```
+
+Check the 2 gaussians
+
+```{r}
+pdf2 <- read.delim(gsub(".log", "_pdf.txt", gsub("1-4", "2", log.file)))
+pdf2$model <- "2gauss"
+ggplot(rbind(pdf, pdf2), aes(x = x, color = model, fill = model)) +
+    geom_line(aes(y = mean)) +
+    geom_ribbon(aes(ymin = low, ymax = high), alpha = 0.3) +
+    theme_pubr() +
+    coord_flip()
+```
+
+The model with 2 gaussians is really close to the combined model, we will extract parameters from the 2 gaussians.
+
+
+```{r}
+dx <- (max(pdf2$x) - min(pdf2$x)) / (nrow(pdf2) - 1)
+p.df <- read.delim(gsub(".log", "_p.txt", gsub("1-4", "2", log.file)))
+# Process each gaussian
+## Second gaussian:
+v <- p.df[p.df$name == "amp1", ]
+label1 <- paste0(
+    round(100 * v$median), "[-", round(100 * v$median) - round(100 * v$low), "]",
+    "^{+", round(100 * v$high) - round(100 * v$median), "}~'%'"
+)
+x.pos1 <- p.df[p.df$name == "mu1", "median"]
+gauss1 <- data.frame(x = pdf2$x, y = v$median * trunc_norm(pdf2$x, dx, x.pos1, p.df$median[p.df$name == "scale1"]))
+## First gaussian:
+v <- p.df[p.df$name == "amp1", ]
+label2 <- paste0(
+    100 - round(100 * v$median), "[-", round(100 * v$high) - round(100 * v$median), "]",
+    "^{+", round(100 * v$median) - round(100 * v$low), "}~'%'"
+)
+x.pos2 <- p.df[p.df$name == "mu0", "median"]
+gauss2 <- data.frame(x = pdf2$x, y = (1 - v$median) * trunc_norm(pdf2$x, dx, x.pos2, p.df$median[p.df$name == "scale0"]))
+label.df <- data.frame(x = c(x.pos1, x.pos2), label = c(label1, label2))
+label.df$x[label.df$x < 0.2] <- 0.2
+```
+
+
+```{r}
+g.1d <- ggplot(pdf2, aes(x = x)) +
+    geom_line(aes(y = mean)) +
+    geom_line(data = gauss1, aes(y = y), lty = 2, color = "blue") +
+    geom_line(data = gauss2, aes(y = y), lty = 2, color = "blue") +
+    geom_ribbon(aes(ymin = low, ymax = high), alpha = 0.3) +
+    geom_text(
+        data = subset(label.df, x > 1), aes(label = label), y = 1.1,
+        parse = TRUE, color = "blue", family = fontFamily, size = 2.5
+    ) +
+    theme_pubr() +
+    coord_flip() +
+    xlab("Hoxb13") +
+    ylab("Density") +
+    theme(
+        text = element_text(family = fontFamily, size = 6),
+        plot.margin = unit(c(0, 0, 0, 0), units = "lines"),
+        legend.position = "none",
+        axis.title.y = element_text(face = "italic"),
+    ) +
+    scale_x_continuous(expand = c(0.01, 0.01)) +
+    scale_y_continuous(expand = c(0.005, 0.005), limits = c(0, 1.3), breaks = 0)
+
+ggarrange(g.2d, NULL, g.1d, nrow = 1, widths = c(4, 0.1, 1.1))
+ggsave(file.path(output.dir, "baredSC_both.pdf"), width = 6.5, height = 1.4)
+```

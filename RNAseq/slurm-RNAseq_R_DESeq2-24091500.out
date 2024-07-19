@@ -1,0 +1,632 @@
+R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-conda-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under the terms of the
+GNU General Public License versions 2 or 3.
+For more information about these matters see
+https://www.gnu.org/licenses/.
+
+Version of rnaseq_rscripts
+89ba59018bdea8d8085331952c3195216b8b26aa
+Version of toolBoxForMutantAndWTGenomes
+c702f954fbb2736139639b16508edc2fbf987db6
+Loading table file...Done.
+Loading gtf file...Done.
+Writting subsetted table...Done.
+Loading table file...Done.
+Loading gtf file...Done.
+Writting subsetted table...Done.
+Loading table file...Done.
+Loading gtf file...Done.
+Writting subsetted table...Done.
+Loading table file...Done.
+Loading gtf file...Done.
+Writting subsetted table...Done.
+[1] "FACTOR TO STUDY"
+[1] "genoclone"
+[1] "LOOPING VARIABLE"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "time"
+[1] "genoclone_120_delBins5-10del5-10vsdelBins5-10_"
+                                                                 sample
+RNAseq_delBins5-10_120h_rep1               RNAseq_delBins5-10_120h_rep1
+RNAseq_delBins5-10_120h_rep3               RNAseq_delBins5-10_120h_rep3
+RNAseq_delBins5-10_120h_rep2               RNAseq_delBins5-10_120h_rep2
+RNAseq_delBins5-10del5-10_120h_rep1 RNAseq_delBins5-10del5-10_120h_rep1
+RNAseq_delBins5-10del5-10_120h_rep2 RNAseq_delBins5-10del5-10_120h_rep2
+                                              genotype bio_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10        
+RNAseq_delBins5-10_120h_rep3               delBins5-10        
+RNAseq_delBins5-10_120h_rep2               delBins5-10        
+RNAseq_delBins5-10del5-10_120h_rep1 delBins5-10del5-10        
+RNAseq_delBins5-10del5-10_120h_rep2 delBins5-10del5-10        
+                                             genoclone time tech_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10  120        1
+RNAseq_delBins5-10_120h_rep3               delBins5-10  120        3
+RNAseq_delBins5-10_120h_rep2               delBins5-10  120        2
+RNAseq_delBins5-10del5-10_120h_rep1 delBins5-10del5-10  120        1
+RNAseq_delBins5-10del5-10_120h_rep2 delBins5-10del5-10  120        2
+                                        library      description nb_CTCF
+RNAseq_delBins5-10_120h_rep1         GECF_first    full_cassette       6
+RNAseq_delBins5-10_120h_rep3        GECF_second    full_cassette       6
+RNAseq_delBins5-10_120h_rep2         GECF_first    full_cassette       6
+RNAseq_delBins5-10del5-10_120h_rep1  GECF_third cassette_removed       0
+RNAseq_delBins5-10del5-10_120h_rep2  GECF_third cassette_removed       0
+                                    orientation
+RNAseq_delBins5-10_120h_rep1             native
+RNAseq_delBins5-10_120h_rep3             native
+RNAseq_delBins5-10_120h_rep2             native
+RNAseq_delBins5-10del5-10_120h_rep1        <NA>
+RNAseq_delBins5-10del5-10_120h_rep2        <NA>
+                                                                 pretty.geno
+RNAseq_delBins5-10_120h_rep1                     Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep3                     Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep2                     Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10del5-10_120h_rep1 Del/Del(i9-13):Ins(CBS5-10):Del(CBS5-10)
+RNAseq_delBins5-10del5-10_120h_rep2 Del/Del(i9-13):Ins(CBS5-10):Del(CBS5-10)
+                                     del.new.name orientation.new
+RNAseq_delBins5-10_120h_rep1        full cassette          native
+RNAseq_delBins5-10_120h_rep3        full cassette          native
+RNAseq_delBins5-10_120h_rep2        full cassette          native
+RNAseq_delBins5-10del5-10_120h_rep1  Del(CBS5-10)            <NA>
+RNAseq_delBins5-10del5-10_120h_rep2  Del(CBS5-10)            <NA>
+                                              old.name
+RNAseq_delBins5-10_120h_rep1        T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3        T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2        T10-1F_120h_270321
+RNAseq_delBins5-10del5-10_120h_rep1 T13-3D_120h_090321
+RNAseq_delBins5-10del5-10_120h_rep2 T13-3D_120h_240921
+[1] "Design is:"
+~genoclone
+<environment: 0x555758e8d7f8>
+[1] "Genes that are never expressed are removed"
+[1] "genoclone_120_delBins5-10del8-10vsdelBins5-10_"
+                                                                 sample
+RNAseq_delBins5-10_120h_rep1               RNAseq_delBins5-10_120h_rep1
+RNAseq_delBins5-10_120h_rep3               RNAseq_delBins5-10_120h_rep3
+RNAseq_delBins5-10_120h_rep2               RNAseq_delBins5-10_120h_rep2
+RNAseq_delBins5-10del8-10_120h_rep1 RNAseq_delBins5-10del8-10_120h_rep1
+                                              genotype bio_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10        
+RNAseq_delBins5-10_120h_rep3               delBins5-10        
+RNAseq_delBins5-10_120h_rep2               delBins5-10        
+RNAseq_delBins5-10del8-10_120h_rep1 delBins5-10del8-10        
+                                             genoclone time tech_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10  120        1
+RNAseq_delBins5-10_120h_rep3               delBins5-10  120        3
+RNAseq_delBins5-10_120h_rep2               delBins5-10  120        2
+RNAseq_delBins5-10del8-10_120h_rep1 delBins5-10del8-10  120        1
+                                        library   description nb_CTCF
+RNAseq_delBins5-10_120h_rep1         GECF_first full_cassette       6
+RNAseq_delBins5-10_120h_rep3        GECF_second full_cassette       6
+RNAseq_delBins5-10_120h_rep2         GECF_first full_cassette       6
+RNAseq_delBins5-10del8-10_120h_rep1 GECF_second  Del(CBS8-10)       3
+                                    orientation                 pretty.geno
+RNAseq_delBins5-10_120h_rep1             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep3             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep2             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10del8-10_120h_rep1      native                            
+                                     del.new.name orientation.new
+RNAseq_delBins5-10_120h_rep1        full cassette          native
+RNAseq_delBins5-10_120h_rep3        full cassette          native
+RNAseq_delBins5-10_120h_rep2        full cassette          native
+RNAseq_delBins5-10del8-10_120h_rep1  Del(CBS8-10)          native
+                                                 old.name
+RNAseq_delBins5-10_120h_rep1           T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3           T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2           T10-1F_120h_270321
+RNAseq_delBins5-10del8-10_120h_rep1 T16-2F-3D_120h_150622
+[1] "Design is:"
+~genoclone
+<environment: 0x555762f1e060>
+[1] "Genes that are never expressed are removed"
+[1] "genoclone_120_delBins5-10del7-10vsdelBins5-10_"
+                                                                 sample
+RNAseq_delBins5-10_120h_rep1               RNAseq_delBins5-10_120h_rep1
+RNAseq_delBins5-10_120h_rep3               RNAseq_delBins5-10_120h_rep3
+RNAseq_delBins5-10_120h_rep2               RNAseq_delBins5-10_120h_rep2
+RNAseq_delBins5-10del7-10_120h_rep1 RNAseq_delBins5-10del7-10_120h_rep1
+RNAseq_delBins5-10del7-10_120h_rep2 RNAseq_delBins5-10del7-10_120h_rep2
+                                              genotype bio_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10        
+RNAseq_delBins5-10_120h_rep3               delBins5-10        
+RNAseq_delBins5-10_120h_rep2               delBins5-10        
+RNAseq_delBins5-10del7-10_120h_rep1 delBins5-10del7-10        
+RNAseq_delBins5-10del7-10_120h_rep2 delBins5-10del7-10        
+                                             genoclone time tech_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10  120        1
+RNAseq_delBins5-10_120h_rep3               delBins5-10  120        3
+RNAseq_delBins5-10_120h_rep2               delBins5-10  120        2
+RNAseq_delBins5-10del7-10_120h_rep1 delBins5-10del7-10  120        1
+RNAseq_delBins5-10del7-10_120h_rep2 delBins5-10del7-10  120        2
+                                        library   description nb_CTCF
+RNAseq_delBins5-10_120h_rep1         GECF_first full_cassette       6
+RNAseq_delBins5-10_120h_rep3        GECF_second full_cassette       6
+RNAseq_delBins5-10_120h_rep2         GECF_first full_cassette       6
+RNAseq_delBins5-10del7-10_120h_rep1  GECF_third  Del(CBS7-10)       2
+RNAseq_delBins5-10del7-10_120h_rep2  GECF_third  Del(CBS7-10)       2
+                                    orientation                 pretty.geno
+RNAseq_delBins5-10_120h_rep1             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep3             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep2             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10del7-10_120h_rep1      native                            
+RNAseq_delBins5-10del7-10_120h_rep2      native                            
+                                     del.new.name orientation.new
+RNAseq_delBins5-10_120h_rep1        full cassette          native
+RNAseq_delBins5-10_120h_rep3        full cassette          native
+RNAseq_delBins5-10_120h_rep2        full cassette          native
+RNAseq_delBins5-10del7-10_120h_rep1  Del(CBS7-10)          native
+RNAseq_delBins5-10del7-10_120h_rep2  Del(CBS7-10)          native
+                                              old.name
+RNAseq_delBins5-10_120h_rep1        T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3        T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2        T10-1F_120h_270321
+RNAseq_delBins5-10del7-10_120h_rep1 T19-3E_120h_080721
+RNAseq_delBins5-10del7-10_120h_rep2 T19-3E_120h_150721
+[1] "Design is:"
+~genoclone
+<environment: 0x555759090af8>
+[1] "Genes that are never expressed are removed"
+[1] "genoclone_120_delBinv5-10clone2vsdelBins5-10_"
+                                                               sample
+RNAseq_delBins5-10_120h_rep1             RNAseq_delBins5-10_120h_rep1
+RNAseq_delBins5-10_120h_rep3             RNAseq_delBins5-10_120h_rep3
+RNAseq_delBins5-10_120h_rep2             RNAseq_delBins5-10_120h_rep2
+RNAseq_delBinv5-10clone2_120h_rep1 RNAseq_delBinv5-10clone2_120h_rep1
+RNAseq_delBinv5-10clone2_120h_rep2 RNAseq_delBinv5-10clone2_120h_rep2
+                                      genotype bio_rep         genoclone time
+RNAseq_delBins5-10_120h_rep1       delBins5-10               delBins5-10  120
+RNAseq_delBins5-10_120h_rep3       delBins5-10               delBins5-10  120
+RNAseq_delBins5-10_120h_rep2       delBins5-10               delBins5-10  120
+RNAseq_delBinv5-10clone2_120h_rep1 delBinv5-10  clone2 delBinv5-10clone2  120
+RNAseq_delBinv5-10clone2_120h_rep2 delBinv5-10  clone2 delBinv5-10clone2  120
+                                   tech_rep     library       description
+RNAseq_delBins5-10_120h_rep1              1  GECF_first     full_cassette
+RNAseq_delBins5-10_120h_rep3              3 GECF_second     full_cassette
+RNAseq_delBins5-10_120h_rep2              2  GECF_first     full_cassette
+RNAseq_delBinv5-10clone2_120h_rep1        1  GECF_third inverted_cassette
+RNAseq_delBinv5-10clone2_120h_rep2        2  GECF_third inverted_cassette
+                                   nb_CTCF orientation
+RNAseq_delBins5-10_120h_rep1             6      native
+RNAseq_delBins5-10_120h_rep3             6      native
+RNAseq_delBins5-10_120h_rep2             6      native
+RNAseq_delBinv5-10clone2_120h_rep1       6    inverted
+RNAseq_delBinv5-10clone2_120h_rep2       6    inverted
+                                                   pretty.geno  del.new.name
+RNAseq_delBins5-10_120h_rep1       Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep3       Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep2       Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBinv5-10clone2_120h_rep1                             full cassette
+RNAseq_delBinv5-10clone2_120h_rep2                             full cassette
+                                   orientation.new           old.name
+RNAseq_delBins5-10_120h_rep1                native T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3                native T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2                native T10-1F_120h_270321
+RNAseq_delBinv5-10clone2_120h_rep1 inverted_clone2 T22-7C_120h_020921
+RNAseq_delBinv5-10clone2_120h_rep2 inverted_clone2 T22-7C_120h_100921
+[1] "Design is:"
+~genoclone
+<environment: 0x55576918cdb8>
+[1] "Genes that are never expressed are removed"
+[1] "genoclone_120_delBinv5-10clone1vsdelBins5-10_"
+                                                               sample
+RNAseq_delBins5-10_120h_rep1             RNAseq_delBins5-10_120h_rep1
+RNAseq_delBins5-10_120h_rep3             RNAseq_delBins5-10_120h_rep3
+RNAseq_delBins5-10_120h_rep2             RNAseq_delBins5-10_120h_rep2
+RNAseq_delBinv5-10clone1_120h_rep2 RNAseq_delBinv5-10clone1_120h_rep2
+RNAseq_delBinv5-10clone1_120h_rep3 RNAseq_delBinv5-10clone1_120h_rep3
+RNAseq_delBinv5-10clone1_120h_rep4 RNAseq_delBinv5-10clone1_120h_rep4
+RNAseq_delBinv5-10clone1_120h_rep1 RNAseq_delBinv5-10clone1_120h_rep1
+                                      genotype bio_rep         genoclone time
+RNAseq_delBins5-10_120h_rep1       delBins5-10               delBins5-10  120
+RNAseq_delBins5-10_120h_rep3       delBins5-10               delBins5-10  120
+RNAseq_delBins5-10_120h_rep2       delBins5-10               delBins5-10  120
+RNAseq_delBinv5-10clone1_120h_rep2 delBinv5-10  clone1 delBinv5-10clone1  120
+RNAseq_delBinv5-10clone1_120h_rep3 delBinv5-10  clone1 delBinv5-10clone1  120
+RNAseq_delBinv5-10clone1_120h_rep4 delBinv5-10  clone1 delBinv5-10clone1  120
+RNAseq_delBinv5-10clone1_120h_rep1 delBinv5-10  clone1 delBinv5-10clone1  120
+                                   tech_rep     library       description
+RNAseq_delBins5-10_120h_rep1              1  GECF_first     full_cassette
+RNAseq_delBins5-10_120h_rep3              3 GECF_second     full_cassette
+RNAseq_delBins5-10_120h_rep2              2  GECF_first     full_cassette
+RNAseq_delBinv5-10clone1_120h_rep2        2      Rekaik inverted_cassette
+RNAseq_delBinv5-10clone1_120h_rep3        3      Rekaik inverted_cassette
+RNAseq_delBinv5-10clone1_120h_rep4        4 GECF_second inverted_cassette
+RNAseq_delBinv5-10clone1_120h_rep1        1  GECF_third inverted_cassette
+                                   nb_CTCF orientation
+RNAseq_delBins5-10_120h_rep1             6      native
+RNAseq_delBins5-10_120h_rep3             6      native
+RNAseq_delBins5-10_120h_rep2             6      native
+RNAseq_delBinv5-10clone1_120h_rep2       6    inverted
+RNAseq_delBinv5-10clone1_120h_rep3       6    inverted
+RNAseq_delBinv5-10clone1_120h_rep4       6    inverted
+RNAseq_delBinv5-10clone1_120h_rep1       6    inverted
+                                                   pretty.geno  del.new.name
+RNAseq_delBins5-10_120h_rep1       Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep3       Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep2       Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBinv5-10clone1_120h_rep2                             full cassette
+RNAseq_delBinv5-10clone1_120h_rep3                             full cassette
+RNAseq_delBinv5-10clone1_120h_rep4                             full cassette
+RNAseq_delBinv5-10clone1_120h_rep1                             full cassette
+                                   orientation.new           old.name
+RNAseq_delBins5-10_120h_rep1                native T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3                native T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2                native T10-1F_120h_270321
+RNAseq_delBinv5-10clone1_120h_rep2 inverted_clone1 T22-8E_120h_010922
+RNAseq_delBinv5-10clone1_120h_rep3 inverted_clone1 T22-8E_120h_080921
+RNAseq_delBinv5-10clone1_120h_rep4 inverted_clone1 T22-8E_120h_150622
+RNAseq_delBinv5-10clone1_120h_rep1 inverted_clone1     T22-8E_120h_TC
+[1] "Design is:"
+~genoclone
+<environment: 0x5557643080a0>
+[1] "Genes that are never expressed are removed"
+[1] "genoclone_120_delBinv5-10del7-10vsdelBins5-10_"
+                                                                 sample
+RNAseq_delBins5-10_120h_rep1               RNAseq_delBins5-10_120h_rep1
+RNAseq_delBins5-10_120h_rep3               RNAseq_delBins5-10_120h_rep3
+RNAseq_delBins5-10_120h_rep2               RNAseq_delBins5-10_120h_rep2
+RNAseq_delBinv5-10del7-10_120h_rep1 RNAseq_delBinv5-10del7-10_120h_rep1
+                                              genotype bio_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10        
+RNAseq_delBins5-10_120h_rep3               delBins5-10        
+RNAseq_delBins5-10_120h_rep2               delBins5-10        
+RNAseq_delBinv5-10del7-10_120h_rep1 delBinv5-10del7-10        
+                                             genoclone time tech_rep
+RNAseq_delBins5-10_120h_rep1               delBins5-10  120        1
+RNAseq_delBins5-10_120h_rep3               delBins5-10  120        3
+RNAseq_delBins5-10_120h_rep2               delBins5-10  120        2
+RNAseq_delBinv5-10del7-10_120h_rep1 delBinv5-10del7-10  120        1
+                                        library
+RNAseq_delBins5-10_120h_rep1         GECF_first
+RNAseq_delBins5-10_120h_rep3        GECF_second
+RNAseq_delBins5-10_120h_rep2         GECF_first
+RNAseq_delBinv5-10del7-10_120h_rep1 GECF_second
+                                                           description nb_CTCF
+RNAseq_delBins5-10_120h_rep1                             full_cassette       6
+RNAseq_delBins5-10_120h_rep3                             full_cassette       6
+RNAseq_delBins5-10_120h_rep2                             full_cassette       6
+RNAseq_delBinv5-10del7-10_120h_rep1 Del(CBS7-10)  on inverted cassette       2
+                                    orientation                 pretty.geno
+RNAseq_delBins5-10_120h_rep1             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep3             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBins5-10_120h_rep2             native Del/Del(i9-13):Ins(CBS5-10)
+RNAseq_delBinv5-10del7-10_120h_rep1    inverted                            
+                                     del.new.name orientation.new
+RNAseq_delBins5-10_120h_rep1        full cassette          native
+RNAseq_delBins5-10_120h_rep3        full cassette          native
+RNAseq_delBins5-10_120h_rep2        full cassette          native
+RNAseq_delBinv5-10del7-10_120h_rep1  Del(CBS7-10)        inverted
+                                              old.name
+RNAseq_delBins5-10_120h_rep1        T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3        T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2        T10-1F_120h_270321
+RNAseq_delBinv5-10del7-10_120h_rep1 T25-4B_120h_150622
+[1] "Design is:"
+~genoclone
+<environment: 0x555762b83ee8>
+[1] "Genes that are never expressed are removed"
+[1] "genoclone_120_delBdeli9-13vsdelBins5-10_"
+                                                     sample     genotype
+RNAseq_delBins5-10_120h_rep1   RNAseq_delBins5-10_120h_rep1  delBins5-10
+RNAseq_delBins5-10_120h_rep3   RNAseq_delBins5-10_120h_rep3  delBins5-10
+RNAseq_delBins5-10_120h_rep2   RNAseq_delBins5-10_120h_rep2  delBins5-10
+RNAseq_delBdeli9-13_120h_rep1 RNAseq_delBdeli9-13_120h_rep1 delBdeli9-13
+RNAseq_delBdeli9-13_120h_rep3 RNAseq_delBdeli9-13_120h_rep3 delBdeli9-13
+RNAseq_delBdeli9-13_120h_rep2 RNAseq_delBdeli9-13_120h_rep2 delBdeli9-13
+                              bio_rep    genoclone time tech_rep     library
+RNAseq_delBins5-10_120h_rep1           delBins5-10  120        1  GECF_first
+RNAseq_delBins5-10_120h_rep3           delBins5-10  120        3 GECF_second
+RNAseq_delBins5-10_120h_rep2           delBins5-10  120        2  GECF_first
+RNAseq_delBdeli9-13_120h_rep1         delBdeli9-13  120        1  GECF_first
+RNAseq_delBdeli9-13_120h_rep3         delBdeli9-13  120        3 GECF_second
+RNAseq_delBdeli9-13_120h_rep2         delBdeli9-13  120        2  GECF_first
+                                description nb_CTCF orientation
+RNAseq_delBins5-10_120h_rep1  full_cassette       6      native
+RNAseq_delBins5-10_120h_rep3  full_cassette       6      native
+RNAseq_delBins5-10_120h_rep2  full_cassette       6      native
+RNAseq_delBdeli9-13_120h_rep1    del(i9-13)       0        <NA>
+RNAseq_delBdeli9-13_120h_rep3    del(i9-13)       0        <NA>
+RNAseq_delBdeli9-13_120h_rep2    del(i9-13)       0        <NA>
+                                              pretty.geno  del.new.name
+RNAseq_delBins5-10_120h_rep1  Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep3  Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep2  Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBdeli9-13_120h_rep1              Del/Del(i9-13)   no cassette
+RNAseq_delBdeli9-13_120h_rep3              Del/Del(i9-13)   no cassette
+RNAseq_delBdeli9-13_120h_rep2              Del/Del(i9-13)   no cassette
+                              orientation.new           old.name
+RNAseq_delBins5-10_120h_rep1           native T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3           native T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2           native T10-1F_120h_270321
+RNAseq_delBdeli9-13_120h_rep1            <NA>  T5-7C_120h_030321
+RNAseq_delBdeli9-13_120h_rep3            <NA>  T5-7C_120h_150622
+RNAseq_delBdeli9-13_120h_rep2            <NA>  T5-7C_120h_270321
+[1] "Design is:"
+~genoclone
+<environment: 0x555769eebe40>
+[1] "Genes that are never expressed are removed"
+[1] "genoclone_120_wtvsdelBins5-10_"
+                                                   sample    genotype bio_rep
+RNAseq_delBins5-10_120h_rep1 RNAseq_delBins5-10_120h_rep1 delBins5-10        
+RNAseq_delBins5-10_120h_rep3 RNAseq_delBins5-10_120h_rep3 delBins5-10        
+RNAseq_delBins5-10_120h_rep2 RNAseq_delBins5-10_120h_rep2 delBins5-10        
+RNAseq_wt_120h_rep1                   RNAseq_wt_120h_rep1          wt        
+RNAseq_wt_120h_rep2                   RNAseq_wt_120h_rep2          wt        
+                               genoclone time tech_rep     library
+RNAseq_delBins5-10_120h_rep1 delBins5-10  120        1  GECF_first
+RNAseq_delBins5-10_120h_rep3 delBins5-10  120        3 GECF_second
+RNAseq_delBins5-10_120h_rep2 delBins5-10  120        2  GECF_first
+RNAseq_wt_120h_rep1                   wt  120        1  Rekaik_pub
+RNAseq_wt_120h_rep2                   wt  120        2  Rekaik_pub
+                               description nb_CTCF orientation
+RNAseq_delBins5-10_120h_rep1 full_cassette       6      native
+RNAseq_delBins5-10_120h_rep3 full_cassette       6      native
+RNAseq_delBins5-10_120h_rep2 full_cassette       6      native
+RNAseq_wt_120h_rep1                     wt       6      native
+RNAseq_wt_120h_rep2                     wt       6      native
+                                             pretty.geno  del.new.name
+RNAseq_delBins5-10_120h_rep1 Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep3 Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_delBins5-10_120h_rep2 Del/Del(i9-13):Ins(CBS5-10) full cassette
+RNAseq_wt_120h_rep1                                   wt              
+RNAseq_wt_120h_rep2                                   wt              
+                             orientation.new           old.name
+RNAseq_delBins5-10_120h_rep1          native T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3          native T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2          native T10-1F_120h_270321
+RNAseq_wt_120h_rep1                   native       wt_120h_rep1
+RNAseq_wt_120h_rep2                   native       wt_120h_rep2
+[1] "Design is:"
+~genoclone
+<environment: 0x555767153ca0>
+[1] "Genes that are never expressed are removed"
+[1] "LOOPING VARIABLE"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "time"
+[1] "genoclone_delBdeli9-13ordelBins5-10del5-10_120_delBdeli9-13vsdelBins5-10del5-10_"
+                                                                 sample
+RNAseq_delBins5-10del5-10_120h_rep1 RNAseq_delBins5-10del5-10_120h_rep1
+RNAseq_delBins5-10del5-10_120h_rep2 RNAseq_delBins5-10del5-10_120h_rep2
+RNAseq_delBdeli9-13_120h_rep1             RNAseq_delBdeli9-13_120h_rep1
+RNAseq_delBdeli9-13_120h_rep3             RNAseq_delBdeli9-13_120h_rep3
+RNAseq_delBdeli9-13_120h_rep2             RNAseq_delBdeli9-13_120h_rep2
+                                              genotype bio_rep
+RNAseq_delBins5-10del5-10_120h_rep1 delBins5-10del5-10        
+RNAseq_delBins5-10del5-10_120h_rep2 delBins5-10del5-10        
+RNAseq_delBdeli9-13_120h_rep1             delBdeli9-13        
+RNAseq_delBdeli9-13_120h_rep3             delBdeli9-13        
+RNAseq_delBdeli9-13_120h_rep2             delBdeli9-13        
+                                             genoclone time tech_rep
+RNAseq_delBins5-10del5-10_120h_rep1 delBins5-10del5-10  120        1
+RNAseq_delBins5-10del5-10_120h_rep2 delBins5-10del5-10  120        2
+RNAseq_delBdeli9-13_120h_rep1             delBdeli9-13  120        1
+RNAseq_delBdeli9-13_120h_rep3             delBdeli9-13  120        3
+RNAseq_delBdeli9-13_120h_rep2             delBdeli9-13  120        2
+                                        library      description nb_CTCF
+RNAseq_delBins5-10del5-10_120h_rep1  GECF_third cassette_removed       0
+RNAseq_delBins5-10del5-10_120h_rep2  GECF_third cassette_removed       0
+RNAseq_delBdeli9-13_120h_rep1        GECF_first       del(i9-13)       0
+RNAseq_delBdeli9-13_120h_rep3       GECF_second       del(i9-13)       0
+RNAseq_delBdeli9-13_120h_rep2        GECF_first       del(i9-13)       0
+                                    orientation
+RNAseq_delBins5-10del5-10_120h_rep1        <NA>
+RNAseq_delBins5-10del5-10_120h_rep2        <NA>
+RNAseq_delBdeli9-13_120h_rep1              <NA>
+RNAseq_delBdeli9-13_120h_rep3              <NA>
+RNAseq_delBdeli9-13_120h_rep2              <NA>
+                                                                 pretty.geno
+RNAseq_delBins5-10del5-10_120h_rep1 Del/Del(i9-13):Ins(CBS5-10):Del(CBS5-10)
+RNAseq_delBins5-10del5-10_120h_rep2 Del/Del(i9-13):Ins(CBS5-10):Del(CBS5-10)
+RNAseq_delBdeli9-13_120h_rep1                                 Del/Del(i9-13)
+RNAseq_delBdeli9-13_120h_rep3                                 Del/Del(i9-13)
+RNAseq_delBdeli9-13_120h_rep2                                 Del/Del(i9-13)
+                                    del.new.name orientation.new
+RNAseq_delBins5-10del5-10_120h_rep1 Del(CBS5-10)            <NA>
+RNAseq_delBins5-10del5-10_120h_rep2 Del(CBS5-10)            <NA>
+RNAseq_delBdeli9-13_120h_rep1        no cassette            <NA>
+RNAseq_delBdeli9-13_120h_rep3        no cassette            <NA>
+RNAseq_delBdeli9-13_120h_rep2        no cassette            <NA>
+                                              old.name
+RNAseq_delBins5-10del5-10_120h_rep1 T13-3D_120h_090321
+RNAseq_delBins5-10del5-10_120h_rep2 T13-3D_120h_240921
+RNAseq_delBdeli9-13_120h_rep1        T5-7C_120h_030321
+RNAseq_delBdeli9-13_120h_rep3        T5-7C_120h_150622
+RNAseq_delBdeli9-13_120h_rep2        T5-7C_120h_270321
+[1] "Design is:"
+~genoclone
+<environment: 0x555768370f20>
+[1] "Genes that are never expressed are removed"
+[1] "LOOPING VARIABLE"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "time"
+[1] "genoclone_delBdeli9-13orwt_120_wtvsdelBdeli9-13_"
+                                                     sample     genotype
+RNAseq_delBdeli9-13_120h_rep1 RNAseq_delBdeli9-13_120h_rep1 delBdeli9-13
+RNAseq_delBdeli9-13_120h_rep3 RNAseq_delBdeli9-13_120h_rep3 delBdeli9-13
+RNAseq_delBdeli9-13_120h_rep2 RNAseq_delBdeli9-13_120h_rep2 delBdeli9-13
+RNAseq_wt_120h_rep1                     RNAseq_wt_120h_rep1           wt
+RNAseq_wt_120h_rep2                     RNAseq_wt_120h_rep2           wt
+                              bio_rep    genoclone time tech_rep     library
+RNAseq_delBdeli9-13_120h_rep1         delBdeli9-13  120        1  GECF_first
+RNAseq_delBdeli9-13_120h_rep3         delBdeli9-13  120        3 GECF_second
+RNAseq_delBdeli9-13_120h_rep2         delBdeli9-13  120        2  GECF_first
+RNAseq_wt_120h_rep1                             wt  120        1  Rekaik_pub
+RNAseq_wt_120h_rep2                             wt  120        2  Rekaik_pub
+                              description nb_CTCF orientation    pretty.geno
+RNAseq_delBdeli9-13_120h_rep1  del(i9-13)       0        <NA> Del/Del(i9-13)
+RNAseq_delBdeli9-13_120h_rep3  del(i9-13)       0        <NA> Del/Del(i9-13)
+RNAseq_delBdeli9-13_120h_rep2  del(i9-13)       0        <NA> Del/Del(i9-13)
+RNAseq_wt_120h_rep1                    wt       6      native             wt
+RNAseq_wt_120h_rep2                    wt       6      native             wt
+                              del.new.name orientation.new          old.name
+RNAseq_delBdeli9-13_120h_rep1  no cassette            <NA> T5-7C_120h_030321
+RNAseq_delBdeli9-13_120h_rep3  no cassette            <NA> T5-7C_120h_150622
+RNAseq_delBdeli9-13_120h_rep2  no cassette            <NA> T5-7C_120h_270321
+RNAseq_wt_120h_rep1                                 native      wt_120h_rep1
+RNAseq_wt_120h_rep2                                 native      wt_120h_rep2
+[1] "Design is:"
+~genoclone
+<environment: 0x55576585d3e8>
+[1] "Genes that are never expressed are removed"
+Reading gtf file...Done
+[1] "FACTOR TO STUDY"
+[1] "genotype"
+[1] "LOOPING VARIABLE"
+[1] "genotype"
+[1] "SUBSET"
+[1] "stage"
+[1] "genotype_E9.5_deli9-13vswt_"
+                                             sample stage genotype replicate
+RNAseq_wt_E9.5_rep1             RNAseq_wt_E9.5_rep1  E9.5       wt      rep1
+RNAseq_wt_E9.5_rep2             RNAseq_wt_E9.5_rep2  E9.5       wt      rep2
+RNAseq_wt_E9.5_rep3             RNAseq_wt_E9.5_rep3  E9.5       wt      rep3
+RNAseq_deli9-13_E9.5_rep1 RNAseq_deli9-13_E9.5_rep1  E9.5 deli9-13      rep1
+RNAseq_deli9-13_E9.5_rep2 RNAseq_deli9-13_E9.5_rep2  E9.5 deli9-13      rep2
+RNAseq_deli9-13_E9.5_rep3 RNAseq_deli9-13_E9.5_rep3  E9.5 deli9-13      rep3
+                                    old.name
+RNAseq_wt_E9.5_rep1             E9.5_wt_rep1
+RNAseq_wt_E9.5_rep2             E9.5_wt_rep2
+RNAseq_wt_E9.5_rep3             E9.5_wt_rep3
+RNAseq_deli9-13_E9.5_rep1 E9.5_deli9-13_rep1
+RNAseq_deli9-13_E9.5_rep2 E9.5_deli9-13_rep2
+RNAseq_deli9-13_E9.5_rep3 E9.5_deli9-13_rep3
+[1] "Design is:"
+~genotype
+<environment: 0x556981140b20>
+[1] "Genes that are never expressed are removed"
+[1] "LOOPING VARIABLE"
+[1] "genotype"
+[1] "SUBSET"
+[1] "stage"
+[1] "genotype_E10.5_deli9-13vswt_"
+                                               sample stage genotype replicate
+RNAseq_wt_E10.5_rep1             RNAseq_wt_E10.5_rep1 E10.5       wt      rep1
+RNAseq_wt_E10.5_rep2             RNAseq_wt_E10.5_rep2 E10.5       wt      rep2
+RNAseq_wt_E10.5_rep3             RNAseq_wt_E10.5_rep3 E10.5       wt      rep3
+RNAseq_deli9-13_E10.5_rep1 RNAseq_deli9-13_E10.5_rep1 E10.5 deli9-13      rep1
+RNAseq_deli9-13_E10.5_rep2 RNAseq_deli9-13_E10.5_rep2 E10.5 deli9-13      rep2
+RNAseq_deli9-13_E10.5_rep3 RNAseq_deli9-13_E10.5_rep3 E10.5 deli9-13      rep3
+                                      old.name
+RNAseq_wt_E10.5_rep1             E10.5_wt_rep1
+RNAseq_wt_E10.5_rep2             E10.5_wt_rep2
+RNAseq_wt_E10.5_rep3             E10.5_wt_rep3
+RNAseq_deli9-13_E10.5_rep1 E10.5_deli9-13_rep1
+RNAseq_deli9-13_E10.5_rep2 E10.5_deli9-13_rep2
+RNAseq_deli9-13_E10.5_rep3 E10.5_deli9-13_rep3
+[1] "Design is:"
+~genotype
+<environment: 0x556989deec38>
+[1] "Genes that are never expressed are removed"
+[1] "genotype_E10.5_deli9-13hdvswt_"
+                                                   sample stage   genotype
+RNAseq_wt_E10.5_rep1                 RNAseq_wt_E10.5_rep1 E10.5         wt
+RNAseq_wt_E10.5_rep2                 RNAseq_wt_E10.5_rep2 E10.5         wt
+RNAseq_wt_E10.5_rep3                 RNAseq_wt_E10.5_rep3 E10.5         wt
+RNAseq_deli9-13hd_E10.5_rep1 RNAseq_deli9-13hd_E10.5_rep1 E10.5 deli9-13hd
+RNAseq_deli9-13hd_E10.5_rep2 RNAseq_deli9-13hd_E10.5_rep2 E10.5 deli9-13hd
+RNAseq_deli9-13hd_E10.5_rep3 RNAseq_deli9-13hd_E10.5_rep3 E10.5 deli9-13hd
+                             replicate              old.name
+RNAseq_wt_E10.5_rep1              rep1         E10.5_wt_rep1
+RNAseq_wt_E10.5_rep2              rep2         E10.5_wt_rep2
+RNAseq_wt_E10.5_rep3              rep3         E10.5_wt_rep3
+RNAseq_deli9-13hd_E10.5_rep1      rep1 E10.5_deli9-13hd_rep1
+RNAseq_deli9-13hd_E10.5_rep2      rep2 E10.5_deli9-13hd_rep2
+RNAseq_deli9-13hd_E10.5_rep3      rep3 E10.5_deli9-13hd_rep3
+[1] "Design is:"
+~genotype
+<environment: 0x55698feb38b8>
+[1] "Genes that are never expressed are removed"
+[1] "genotype_E10.5_b13hdvswt_"
+                                         sample stage genotype replicate
+RNAseq_wt_E10.5_rep1       RNAseq_wt_E10.5_rep1 E10.5       wt      rep1
+RNAseq_wt_E10.5_rep2       RNAseq_wt_E10.5_rep2 E10.5       wt      rep2
+RNAseq_wt_E10.5_rep3       RNAseq_wt_E10.5_rep3 E10.5       wt      rep3
+RNAseq_b13hd_E10.5_rep1 RNAseq_b13hd_E10.5_rep1 E10.5    b13hd      rep1
+RNAseq_b13hd_E10.5_rep2 RNAseq_b13hd_E10.5_rep2 E10.5    b13hd      rep2
+RNAseq_b13hd_E10.5_rep3 RNAseq_b13hd_E10.5_rep3 E10.5    b13hd      rep3
+                                old.name
+RNAseq_wt_E10.5_rep1       E10.5_wt_rep1
+RNAseq_wt_E10.5_rep2       E10.5_wt_rep2
+RNAseq_wt_E10.5_rep3       E10.5_wt_rep3
+RNAseq_b13hd_E10.5_rep1 E10.5_b13hd_rep1
+RNAseq_b13hd_E10.5_rep2 E10.5_b13hd_rep2
+RNAseq_b13hd_E10.5_rep3 E10.5_b13hd_rep3
+[1] "Design is:"
+~genotype
+<environment: 0x5569894d87a8>
+[1] "Genes that are never expressed are removed"
+[1] "LOOPING VARIABLE"
+[1] "genotype"
+[1] "SUBSET"
+[1] "genotype"
+[1] "SUBSET"
+[1] "stage"
+[1] "genotype_deli9-13ordeli9-13hd_E10.5_deli9-13hdvsdeli9-13_"
+                                                   sample stage   genotype
+RNAseq_deli9-13_E10.5_rep1     RNAseq_deli9-13_E10.5_rep1 E10.5   deli9-13
+RNAseq_deli9-13_E10.5_rep2     RNAseq_deli9-13_E10.5_rep2 E10.5   deli9-13
+RNAseq_deli9-13_E10.5_rep3     RNAseq_deli9-13_E10.5_rep3 E10.5   deli9-13
+RNAseq_deli9-13hd_E10.5_rep1 RNAseq_deli9-13hd_E10.5_rep1 E10.5 deli9-13hd
+RNAseq_deli9-13hd_E10.5_rep2 RNAseq_deli9-13hd_E10.5_rep2 E10.5 deli9-13hd
+RNAseq_deli9-13hd_E10.5_rep3 RNAseq_deli9-13hd_E10.5_rep3 E10.5 deli9-13hd
+                             replicate              old.name
+RNAseq_deli9-13_E10.5_rep1        rep1   E10.5_deli9-13_rep1
+RNAseq_deli9-13_E10.5_rep2        rep2   E10.5_deli9-13_rep2
+RNAseq_deli9-13_E10.5_rep3        rep3   E10.5_deli9-13_rep3
+RNAseq_deli9-13hd_E10.5_rep1      rep1 E10.5_deli9-13hd_rep1
+RNAseq_deli9-13hd_E10.5_rep2      rep2 E10.5_deli9-13hd_rep2
+RNAseq_deli9-13hd_E10.5_rep3      rep3 E10.5_deli9-13hd_rep3
+[1] "Design is:"
+~genotype
+<environment: 0x55698b280368>
+[1] "Genes that are never expressed are removed"
+Reading gtf file...Done
+[1] "FACTOR TO STUDY"
+[1] "genoclone"
+[1] "LOOPING VARIABLE"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "time"
+[1] "genoclone_120_delBins5-10del5-10vsdelBins5-10_"
+[1] "Exists"
+[1] "genoclone_120_delBins5-10del8-10vsdelBins5-10_"
+[1] "Exists"
+[1] "genoclone_120_delBins5-10del7-10vsdelBins5-10_"
+[1] "Exists"
+[1] "genoclone_120_delBinv5-10clone2vsdelBins5-10_"
+[1] "Exists"
+[1] "genoclone_120_delBinv5-10clone1vsdelBins5-10_"
+[1] "Exists"
+[1] "genoclone_120_delBinv5-10del7-10vsdelBins5-10_"
+[1] "Exists"
+[1] "genoclone_120_delBdeli9-13vsdelBins5-10_"
+[1] "Exists"
+[1] "genoclone_120_wtvsdelBins5-10_"
+[1] "Exists"
+[1] "LOOPING VARIABLE"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "time"
+[1] "genoclone_delBdeli9-13ordelBins5-10del5-10_120_delBdeli9-13vsdelBins5-10del5-10_"
+[1] "Exists"
+[1] "LOOPING VARIABLE"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "genoclone"
+[1] "SUBSET"
+[1] "time"
+[1] "genoclone_delBdeli9-13orwt_120_wtvsdelBdeli9-13_"
+[1] "Exists"
+Reading gtf file...Done

@@ -1,0 +1,685 @@
+---
+title: "Single cell RNAseq analysis of WT and mutant gastruloids at 144h"
+format: html
+editor: visual
+authors : 
+  - Alexandre Mayran
+  - Lucille Delisle
+---
+
+```{r, setup, include=FALSE}
+# choose working directory
+wd <- "/data/home/ldelisle/scriptsForLopezDelisleZakanyBochatonEtAl2024"
+knitr::opts_knit$set(root.dir = wd)
+```
+
+# Basic analysis and vizualisation of WT Gastruloids
+
+Here, we load all the required packages and functions
+
+```{r}
+#| label: Loading packages and variable
+if (!"devtools" %in% installed.packages()) {
+  install.packages("devtools", repos = "https://stat.ethz.ch/CRAN/")
+}
+if (!"usefulLDfunctions" %in% installed.packages()) {
+  devtools::install_github("lldelisle/usefulLDfunctions", upgrade = "never")
+}
+library(usefulLDfunctions)
+safelyLoadAPackageInCRANorBioconductor("dplyr")
+safelyLoadAPackageInCRANorBioconductor("Seurat")
+safelyLoadAPackageInCRANorBioconductor("ggplot2")
+safelyLoadAPackageInCRANorBioconductor("reshape2")
+safelyLoadAPackageInCRANorBioconductor("pheatmap")
+safelyLoadAPackageInCRANorBioconductor("patchwork")
+safelyLoadAPackageInCRANorBioconductor("ggrastr")
+if (!"SeuratWrappers" %in% installed.packages()) {
+  remotes::install_github('satijalab/seurat-wrappers', ref = 'b6d519b69e8a6364f7275d116aa8b0c1ee783364', upgrade = "never")
+}
+library("SeuratWrappers")
+if (!"SeuratDisk" %in% installed.packages()) {
+  remotes::install_github("mojaveazure/seurat-disk", upgrade = "never")
+}
+library(SeuratDisk)
+# Get good fontfamily
+safelyLoadAPackageInCRANorBioconductor("extrafont")
+# Only once
+# font_import()
+# loadfonts(device = "all")
+fontFamily <- "DejaVu Sans"
+
+# From scCustomize
+umap_axis_plot <- ggplot(data.frame(x= 100, y = 100), aes(x = .data[["x"]], y = .data[["y"]])) +
+  geom_point() +
+  xlim(c(0, 10)) + ylim(c(0, 10)) +
+  theme_classic() +
+  ylab("UMAP_2") + xlab("UMAP_1") +
+  theme(
+    text = element_text(family = fontFamily),
+    plot.background = element_rect(fill = "transparent", colour = NA),
+        panel.background = element_rect(fill = "transparent"),
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.line = element_line(
+          arrow = arrow(angle = 15, length = unit(.5, "cm"), type = "closed")
+        )
+  )
+
+figure_layout <- c(
+  area(t = 1, l = 2, b = 11, r = 11),
+  area(t = 10, l = 1, b = 12, r = 2))
+```
+
+## We define the parameters for display
+
+```{r}
+# Here you need to define the name of the folder where the RDS is
+RDSfolder <- "../mountDuboule/Lucille/Bochaton/RDS/"
+# Here is where are the loom files
+LoomFolder <- "../mountDuboule/Lucille/Bochaton/loom/"
+# This output.directory will be used for plots
+output.directory <- "scRNAseq/plots/"
+# Here put name of RDS as given in step 2
+nameRDS <- "combined.WT.mutant_d40f07a2.RDS"
+# Check the RDS file exists:
+if (file.exists(file.path(RDSfolder, "merged", paste0(nameRDS)))) {
+  print(paste0(nameRDS, " RDS file found, you can proceed"))
+} else {
+  stop(paste0(nameRDS, " RDS file not found, check the location"))
+}
+
+pretty.geno <- c(
+  '129sv.WT' = "italic('HoxB'^{'+/+'})",
+  '129sv.WT/HoxB_Deli9-13' = "italic('HoxB'^{'Del(i9-13)/+'})"
+)
+
+hoxbgeno <- c(
+  '129sv.WT' = "+/+",
+  '129sv.WT/HoxB_Deli9-13' = "Del(i9-13)/+"
+)
+
+```
+
+## Now we load seurat object and define new genotype
+
+```{r}
+analyzed.RDS <- file.path(RDSfolder, "analyzed", paste0("analyzed.", nameRDS))
+if (file.exists(analyzed.RDS)) {
+  print("Analyzed RDS already exist will just run the visualizations")
+  combined.seurat <- readRDS(analyzed.RDS)
+} else {
+  print("Analyzed RDS does not exist will perform analysis and visualization")
+  combined.seurat <- readRDS(file.path(RDSfolder, "merged", paste0(nameRDS)))
+}
+# The formatting is lost during RDS save
+combined.seurat$pretty.geno <- pretty.geno[combined.seurat$Genotype]
+```
+
+## Here we run UMAP and clustering
+
+```{r}
+#| label: UMAP and clustering
+# First check the Elbow plot to determine how many PC should be used:
+ElbowPlot(combined.seurat, ndims = 50)
+# Then run clustering if not already present:
+if (!file.exists(file.path(RDSfolder, "analyzed", paste0("analyzed.", nameRDS)))) {
+  combined.seurat <- RunUMAP(combined.seurat,
+                             reduction = "pca",
+                             n.components = 2L,
+                             dims = 1:30, seed.use = 2
+  )
+  combined.seurat <- FindNeighbors(combined.seurat,
+                                   reduction = "pca",
+                                   dims = 1:30
+  )
+  combined.seurat <- FindClusters(combined.seurat, resolution = 0.4)
+} else {
+  print("Analyzed RDS already exist will just run the visualizations")
+}
+
+```
+
+## Here, we identify the clusters, change their names and put the correct colors
+
+Assign Fate to seurat clusters
+```{r}
+# choose the name you want for your cluster, order should match the 0 to n number that seurat gives.
+Idents(combined.seurat) <- "seurat_clusters"
+new.cluster.name <- c(
+  "Som. Mes.", "Neural Tube 1", "Neural Tube 2", "NMP",
+  "Endoderm 1", "Dermomyotome", "Neuron Progen.", "PSM",
+  "Sclerotome", "Endoderm 2", "Unknown", "Pluripotent",
+  "Endothelium", "Surface Ecto."
+)
+names(new.cluster.name) <- levels(combined.seurat$seurat_clusters)
+combined.seurat <- RenameIdents(combined.seurat, new.cluster.name)
+# Put the new cluster name in the metadata 'Fate'
+combined.seurat[["Fate"]] <- Idents(combined.seurat)
+```
+
+Choose colors
+```{r}
+# Group new cluster names by categories so they will have colors along a colormap:
+# list.Fate.level is a list with the categories:
+# Order matter! It will be used in all plots!
+list.Fate.level <- list("Pluripotent" = c("Pluripotent" ),
+                        "Neuronal" = c("NMP", "Neural Tube 1", "Neural Tube 2", "Neuron Progen."),
+                        "Mesoderm" = c("PSM", "Som. Mes.", "Dermomyotome", "Sclerotome"),
+                        "Endoderm" = c("Endoderm 1", "Endoderm 2"),
+                        "Other" = c("Endothelium", "Unknown", "Surface Ecto."))
+
+# list.color is a list with the same categories and colors that describe the heatmap. There must be at least 2 colors:
+list.color  <- list("Pluripotent" = c('#000000', '#BFBFBF'),
+                    "Neuronal" = c('#DAE3F3', '#002060'),
+                    "Mesoderm" = c('#FBE5D6','#5F2C09'),
+                    "Endoderm" = c('#5FE756', '#70AD47'),
+                    "Other" = c('#FBBEDE', '#7030A0'))
+
+# Check all fates have a category name
+if ("" %in% names(list.Fate.level)) {
+  stop("Some fates level has no name!\n")
+}
+# Check all category names in list.Fate.level are also in list.color
+if (any(!names(list.Fate.level) %in% names(list.color))) {
+  stop("The following Fates are not in colors: ", paste(names(list.Fate.level)[!names(list.Fate.level) %in% names(list.color)], collapse = ", "), "\n")
+}
+# Create the colormaps
+my.fate.colors <- unlist(lapply(names(list.Fate.level), function(fate) {
+  colorRampPalette(list.color[[fate]])(length(list.Fate.level[[fate]]))
+}))
+# Give them as names the new cluster names
+names(my.fate.colors) <- unlist(list.Fate.level)
+```
+
+Check they matches
+```{r}
+# Check all new cluster_names are in list.Fate.level
+if (any(!unique(as.character(combined.seurat$Fate)) %in% unlist(list.Fate.level))) {
+  stop("The following Fate are not in list.Fate.level: ", paste(unique(as.character(combined.seurat$Fate))[!unique(as.character(combined.seurat$Fate)) %in% unlist(list.Fate.level)], collapse = ", "), "\n")
+} else {
+  cat("all good on nomenclature")
+  # Store for each cell the color in the 'FateColor' metadata
+  combined.seurat[["FateColor"]] <- my.fate.colors[as.character(combined.seurat$Fate)]
+  # Reorder the new cluster so the order match what was given in list.Fate.level
+  combined.seurat$Fate <- factor(combined.seurat$Fate,
+                                 levels =
+                                   names(my.fate.colors)
+  )
+}
+```
+
+We save the seurat object if needed:
+
+```{r}
+if (!file.exists(file.path(RDSfolder, "analyzed", paste0("analyzed.", nameRDS)))) {
+  print("Analyzed RDS does not exist will save it now...")
+  dir.create(file.path(RDSfolder, "analyzed"), showWarnings = FALSE, recursive = TRUE)
+  saveRDS(combined.seurat, file.path(RDSfolder, "analyzed", paste0("analyzed.", nameRDS)))
+  print("Done")
+} else {
+  print("Analyzed RDS already exist")
+}
+```
+
+## Here, we visualize the data colored by fate or genotype and then by fate but splitted by genotype
+
+```{r}
+g <- DimPlot(combined.seurat,
+             label = T,
+             pt.size = 0.5,
+             label.size = 3,
+             group.by = "Fate",
+             cols = alpha(my.fate.colors, 0.5),
+             repel = T,
+             shuffle = T
+) + NoLegend() + NoAxes() +
+  theme(text = element_text(family = fontFamily)) +
+  umap_axis_plot +
+  plot_layout(design = figure_layout)
+ggsave(
+  filename = paste0(output.directory, "UMAP.cluster.pdf"), g,
+  width = 4, height = 4
+)
+umap.values <- FetchData(combined.seurat, vars = c("UMAP_1", "UMAP_2"))
+umap.ranges <- apply(umap.values, 2, range)
+umap.total <- apply(umap.ranges, 2, diff)
+fake.df <- data.frame(x = 100, y = 100, pretty.geno = unique(pretty.geno))
+g <- DimPlot(combined.seurat,
+             label = T,
+             pt.size = 0.7,
+             label.size = 2,
+             split.by = "pretty.geno",
+             group.by = "Fate",
+             cols = alpha(my.fate.colors, 0.5),
+             repel = T,
+             shuffle = T
+) +
+  facet_grid(~ pretty.geno, label = label_parsed) +
+  geom_segment(data = fake.df,
+               aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2],
+                   xend = umap.ranges[1, 1], yend = umap.ranges[1, 2] + umap.total[2] * 0.1),
+                  arrow = arrow(angle = 15, length = unit(.2, "cm"), type = "closed")) +
+  geom_segment(data = fake.df,
+               aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2],
+                   xend = umap.ranges[1, 1] + umap.total[1] * 0.1, yend = umap.ranges[1, 2]),
+                  arrow = arrow(angle = 15, length = unit(.2, "cm"), type = "closed")) +
+  geom_text(data = fake.df,
+            aes(x = umap.ranges[1, 1] + umap.total[1] * 0.05, y = umap.ranges[1, 2], label = "UMAP_1"),
+            family = fontFamily, vjust = 1, hjust = 0.5, size = 2, nudge_y = - 1) +
+  geom_text(data = fake.df,
+            aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2] + umap.total[2] * 0.05, label = "UMAP_2"),
+            family = fontFamily, vjust = 1, hjust = 0.5, size = 2, nudge_x = - 2, angle = 90) +
+  NoAxes()  +
+  guides(color = guide_legend(override.aes = list(alpha = 1, size = 2, stroke = 0), nrow = 2)) +
+  theme(text = element_text(family = fontFamily),
+        plot.title = element_blank(),
+        legend.position = "bottom",
+        legend.text = element_text(size = 6),
+        legend.spacing.y = unit(0, "pt"),
+        legend.spacing.x = unit(0, "pt"),
+        legend.key.size = unit(.4, "cm"),
+        legend.margin = margin(-15, 0, 0, 0),
+        strip.text = element_text(size = 6))
+# q <- ggplot_build(g)
+q <- ggplot_build(rasterize(g, layers = "Point", dpi = 250))
+q$data[[1]]$stroke <- 0
+q$data[[2]]$family <- fontFamily
+ggsave(
+  filename = paste0(output.directory, "UMAP.cluster.split.Genotype.pdf"),
+  ggplot_gtable(q), width = 5.2, height = 2.8
+)
+g <- DimPlot(combined.seurat,
+             label = F,
+             pt.size = 0.5,
+             label.size = 2,
+             group.by = "Genotype",
+             cols = alpha(c("#212E53", "#94B6D1"), 0.5),
+             repel = T, shuffle = T
+)
+ggsave(
+  filename = paste0(output.directory, "UMAP.cluster.Group.Genotype.pdf"),
+  g + NoAxes(), width = 6, height = 4
+)
+
+```
+
+## Now we display the expression of desired genes
+
+```{r}
+g <- FeaturePlot(combined.seurat,
+                 features = c("Hoxb13"),
+                 pt.size = 0.1,
+                 split.by = "pretty.geno",
+                 order = T) +
+  theme(legend.position = "right") &
+  NoAxes()
+
+ggsave(filename = paste0(output.directory, "featurePlot.Hoxb13.pdf"),
+       g, width = 8, height = 3)
+
+my.df <- FetchData(combined.seurat, vars = c("UMAP_1", "UMAP_2", "Hoxb13", "pretty.geno"))
+
+g <- ggplot(my.df[order(my.df$Hoxb13), ], aes(x = UMAP_1, y = UMAP_2)) +
+  geom_point(aes(color = Hoxb13), size = 0.1) +
+  facet_wrap(pretty.geno ~ ., nrow = 1, label = label_parsed) + 
+  geom_segment(data = fake.df,
+               aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2],
+                   xend = umap.ranges[1, 1], yend = umap.ranges[1, 2] + umap.total[2] * 0.1),
+                  arrow = arrow(angle = 15, length = unit(.2, "cm"), type = "closed")) +
+  geom_segment(data = fake.df,
+               aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2],
+                   xend = umap.ranges[1, 1] + umap.total[1] * 0.1, yend = umap.ranges[1, 2]),
+                  arrow = arrow(angle = 15, length = unit(.2, "cm"), type = "closed")) +
+  geom_text(data = fake.df,
+            aes(x = umap.ranges[1, 1] + umap.total[1] * 0.05, y = umap.ranges[1, 2], label = "UMAP_1"),
+            family = fontFamily, vjust = 1, hjust = 0.5, size = 2, nudge_y = - 1) +
+  geom_text(data = fake.df,
+            aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2] + umap.total[2] * 0.05, label = "UMAP_2"),
+            family = fontFamily, vjust = 1, hjust = 0.5, size = 2, nudge_x = - 2, angle = 90) +
+  scale_color_gradient(low = "lightgrey", high = "blue", breaks = c(0, 1, 2)) +
+  cowplot::theme_cowplot() +
+  theme(text = element_text(family = fontFamily),
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.line = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = c(0.9, 0.2),
+        legend.title = element_text(face = "italic", size = 6),
+        legend.key.size = unit(0.3, "cm"),
+        legend.text = element_text(size = 6),
+        strip.background = element_blank(),
+        strip.text = element_text(size = 6))
+
+ggsave(filename = paste0(output.directory, "featurePlot.Hoxb13_custom.pdf"),
+       rasterize(g, layers = "Point", dpi = 250), width = 5.2, height = 2.5)
+
+
+g <- FeaturePlot(combined.seurat,
+                 label = F,
+                 features = c("Hoxb9", "Hoxc9", "Hoxa9", "Hoxd9", "Hoxc10", "Hoxb13", "Hoxa10","Hoxd10"),
+                 pt.size = 0.5, 
+                 label.size = 2,
+                 split.by = "Genotype",
+                 repel = T,
+                 order = T)
+ggsave(filename = paste0(output.directory, "featurePlot.HoxGene.png"),
+       g, width = 12, height = 36)
+```
+
+## Extract counts for baredSC
+
+```{r}
+my.genes <- c("Hoxa9", "Hoxb9", "Hoxc9", "Hoxd9", "Hoxa10", "Hoxc10", "Hoxd10", "Hoxb13", "Chl1")
+df <- cbind(combined.seurat[[]],
+            FetchData(combined.seurat, assay = "RNA", slot = "counts",
+                      vars = c("UMAP_1", "UMAP_2",
+                               my.genes))
+)
+write.table(subset(df, Genotype == "129sv.WT/HoxB_Deli9-13" &
+                     Fate == "NMP"),
+            paste0(output.directory, "meta_data_mut_NMPs.txt"),
+            quote = F, sep = "\t", row.names = FALSE)
+
+
+```
+
+## Cluster average expression
+
+```{r}
+# my.genes <-c("Hoxa9", "Hoxb9", "Hoxc9", "Hoxd9", "Hoxa10", "Hoxc10", "Hoxd10", "Hoxa13", "Hoxb13")
+my.genes <- intersect(paste0("Hox", rep(letters[1:4], 5), rep(9:13, each = 4)), rownames(combined.seurat))
+
+# Using raw counts
+all_counts.per.cluster.geno <- split(
+  FetchData(combined.seurat, vars = c(my.genes, "nCount_RNA"), slot = "count"),
+  paste0(combined.seurat$Fate, "__", combined.seurat$Genotype))
+
+all_counts.per.cluster.geno.sum <- do.call(cbind, lapply(all_counts.per.cluster.geno, colSums))
+
+average.per.cluster.geno <- log(1 + 1e4 * t(t(all_counts.per.cluster.geno.sum[-which(rownames(all_counts.per.cluster.geno.sum) == "nCount_RNA"), ]) / all_counts.per.cluster.geno.sum["nCount_RNA", ]))
+
+# average.gg <- melt(average.per.cluster.geno, value.name = "pseudo_bulk_expression")
+# 
+# average.gg$Fate <- sapply(strsplit(as.character(average.gg$Var2), "__"), "[[", 1)
+# average.gg$Fate <- factor(average.gg$Fate, levels = names(my.fate.colors))
+# average.gg$Genotype <- sapply(strsplit(as.character(average.gg$Var2), "__"), "[[", 2)
+
+# # Using averageExpression gives slightly different results
+# Idents(combined.seurat) <- paste0(combined.seurat$Fate, "__", combined.seurat$Genotype)
+# avg.cluster.geno <- AverageExpression(combined.seurat, features = my.genes)$RNA
+# avg.gg <- melt(avg.cluster.geno, value.name = "pseudo_bulk_expression_seurat")
+# avg <- merge(avg.gg, average.gg)
+# plot(avg$pseudo_bulk_expression, log1p(avg$pseudo_bulk_expression_seurat))
+# Idents(combined.seurat) <- "Fate"
+
+annot.fates <- data.frame(Fate = names(my.fate.colors))
+rownames(annot.fates) <- names(my.fate.colors)
+
+for (geno in levels(combined.seurat$Genotype)) {
+  new.matrix <- average.per.cluster.geno[, paste0(names(my.fate.colors), "__", geno)]
+  colnames(new.matrix) <- names(my.fate.colors)
+  # Reorder clustering
+  eucl.dist <- dist(new.matrix)
+  clu <- hclust(eucl.dist, method = "ward.D2")
+  dd <- as.dendrogram(clu)
+  clu2 <- reorder(dd, 1:nrow(new.matrix), agglo.FUN = min)
+  hclu2 <- as.hclust(clu2)
+  # From https://www.biostars.org/p/400381/
+  hox.genes.formatted <- lapply(
+    hclu2$labels,
+    function(x) bquote(italic(.(x))))
+  if (geno == "129sv.WT") {
+    title <- expression(italic('HoxB'^{'+/+'}))
+  } else if (geno == "129sv.WT/HoxB_Deli9-13") {
+    title <- expression(italic('HoxB'^{'Del(i9-13)/+'}))
+  } else {
+    title <- pretty.geno[geno]
+  }
+  # title <- bquote(italic('HoxB'^{.(unname(hoxbgeno[geno]))}))
+  pheatmap(new.matrix,
+           annotation_col = annot.fates,
+           annotation_colors = list(
+             Fate = my.fate.colors
+           ),
+           breaks = seq(0, max(average.per.cluster.geno), length.out = 101),
+           cluster_cols = FALSE,
+           cluster_rows = hclu2,
+           labels_row = as.expression(hox.genes.formatted),
+           file = file.path(output.directory, paste0("heatmap_expression_selected_", gsub("/", "_", geno), ".pdf")),
+           width = 8/3, height = 3,
+           main = title,
+           fontfamily = fontFamily,
+           annotation_legend = FALSE,
+           fontsize = 6,
+           treeheight_row = 25
+  )
+}
+```
+
+## Extract latent_time on Neuronal mutant cells
+
+### First get spliced/unspliced from loom
+
+```{r}
+# The barcodes in the loom file are like: "72h_WT_rep1:AACCACAAGCAATTCCx" "72h_WT_rep1:AACAACCAGTACTCGTx" "72h_WT_rep1:AACAAGAAGTGGTTAAx"
+# While in Seurat they are like: "72h.WT.rep1_AAACCCAAGCTGGCCT" "72h.WT.rep1_AAACCCACATGACTCA" "72h.WT.rep1_AAACGAAAGCCACAAG"
+# Generate a named vector for conversion:
+combined.seurat.barcodes <- sapply(strsplit(colnames(combined.seurat), "_"), tail, 1)
+combined.seurat.barcodes.conversion <- paste0(combined.seurat$RDS, "_", combined.seurat.barcodes)
+names(combined.seurat.barcodes.conversion) <- paste0(gsub(pattern = "\\.", replacement = "_", x = combined.seurat$orig.ident ), ":", combined.seurat.barcodes, "x")
+# Make vector with loom paths
+loom.files <- file.path(LoomFolder, paste0(unique(combined.seurat$Directory), ".loom"))
+names(loom.files) <- unique(combined.seurat$Directory)
+# Read them
+matrices <- lapply(loom.files, ReadVelocity)
+# Convert to Seurat to more easily rename cells and genes and transfer assays:
+seurats <- lapply(matrices, as.Seurat)
+# Combine Seurat objects keeping the same order:
+combined.seurat.velocity <- merge(seurats[[as.character(unique(combined.seurat$Directory))[1]]],
+                                  y = subsetByNamesOrIndices(seurats,
+                                                             as.character(unique(combined.seurat$Directory))[2:length(as.character(unique(combined.seurat$Directory)))]),
+                                  project = "aggregate.velocity")
+# Restrict to cells which are on the combined.seurat object:
+combined.seurat.velocity <- subset(combined.seurat.velocity, cells = names(combined.seurat.barcodes.conversion))
+# Rename cells
+combined.seurat.velocity <- RenameCells(combined.seurat.velocity, new.names = unname(combined.seurat.barcodes.conversion[colnames(combined.seurat.velocity)]))
+# Transfer assays
+combined.seurat[["spliced"]] <- combined.seurat.velocity[["spliced"]]
+combined.seurat[["unspliced"]] <- combined.seurat.velocity[["unspliced"]]
+```
+
+### To run scVelo use a 'diet' version
+
+```{r}
+# Remove the metadata Multiplexing
+combined.seurat$Multiplexing <- NULL
+
+diet.combined.seurat <- DietSeurat(combined.seurat,
+                                   counts = TRUE,
+                                   data = TRUE,
+                                   scale.data = FALSE,
+                                   features = NULL,
+                                   assays = NULL,
+                                   dimreducs = Reductions(combined.seurat),
+                                   misc = TRUE)
+# Restrict to genes in RNA:
+rna.genes <- rownames(diet.combined.seurat[["RNA"]])
+diet.combined.seurat[["spliced"]] <- subset(diet.combined.seurat[["spliced"]], features = rna.genes)
+diet.combined.seurat[["unspliced"]] <- subset(diet.combined.seurat[["unspliced"]], features = rna.genes)
+```
+
+### Run scVelo only on neuronal
+
+```{r}
+dir.create(file.path(RDSfolder, "..", "scVelo"))
+SaveH5Seurat(
+  subset(
+    diet.combined.seurat,
+    cells = rownames(subset(diet.combined.seurat[[]], Fate %in% c("NMP", "Neural tube", "Neural Tube 1", "Neural Tube 2", "Neuron Progen.")))
+  ),
+  filename = file.path(RDSfolder, "..", "scVelo", "neuronal.h5Seurat"),
+  overwrite = TRUE
+)
+Convert(file.path(RDSfolder, "..", "scVelo", "neuronal.h5Seurat"), dest = "h5ad", overwrite = TRUE)
+```
+```{r}
+if (! file.exists(file.path(output.directory, "neuronal_meta.csv"))) {
+  args <- paste(
+    "--input",
+    file.path(RDSfolder, "..", "scVelo", "neuronal.h5ad"),
+    "--output",
+    file.path(RDSfolder, "..", "scVelo", "neuronal_withVelo.h5ad"),
+    "--outputCSV",
+    file.path(output.directory, "neuronal_meta.csv")
+    )
+  system(paste(
+    "/data/galaxy/galaxy/var/dependencies/_conda/envs/scVelo0.3.1/bin/python",
+    "scRNAseq/scVelo.py",
+    args
+    ))
+}
+```
+
+### Integrate results to Seurat object
+
+```{r}
+scVelo.N.df <- read.csv(file.path(output.directory, "neuronal_meta.csv"), row.names = 1)
+combined.seurat$latent_time <- scVelo.N.df[colnames(combined.seurat), "latent_time"]
+
+DimPlot(combined.seurat) +
+  FeaturePlot(combined.seurat, features = "latent_time")
+```
+
+### Group cells by latent_time
+
+```{r}
+# To get at least 50 cells
+combined.seurat$latent_time_cut <- cut(combined.seurat$latent_time, breaks = seq(0.15, 0.85, 0.05))
+
+DimPlot(
+  combined.seurat, group.by = "latent_time_cut",
+  cols = c(rep(RColorBrewer::brewer.pal(7, "Set3"), 2), "grey")
+)
+```
+Customize the plots
+
+```{r}
+my.df <- FetchData(combined.seurat, vars = c("UMAP_1", "UMAP_2", "Hoxb13", "latent_time", "latent_time_cut", "pretty.geno"))
+
+g.lt <- ggplot(my.df[order(my.df$latent_time, na.last = FALSE), ], aes(x = UMAP_1, y = UMAP_2)) +
+  geom_point(aes(color = latent_time), size = 0.1) +
+  geom_segment(data = fake.df,
+               aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2],
+                   xend = umap.ranges[1, 1], yend = umap.ranges[1, 2] + umap.total[2] * 0.1),
+                  arrow = arrow(angle = 15, length = unit(.3, "cm"), type = "closed")) +
+  geom_segment(data = fake.df,
+               aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2],
+                   xend = umap.ranges[1, 1] + umap.total[1] * 0.1, yend = umap.ranges[1, 2]),
+                  arrow = arrow(angle = 15, length = unit(.3, "cm"), type = "closed")) +
+  geom_text(data = fake.df,
+            aes(x = umap.ranges[1, 1] + umap.total[1] * 0.05, y = umap.ranges[1, 2], label = "UMAP_1"),
+            family = fontFamily, vjust = 1, hjust = 0.5, size = 3, nudge_y = - 1) +
+  geom_text(data = fake.df,
+            aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2] + umap.total[2] * 0.05, label = "UMAP_2"),
+            family = fontFamily, vjust = 1, hjust = 0.5, size = 3, nudge_x = - 2, angle = 90) +
+  cowplot::theme_cowplot() +
+  theme(text = element_text(family = fontFamily),
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.line = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = c(0.7, 0.1),
+        legend.title = element_text(size = 10),
+        legend.key.size = unit(0.3, "cm"),
+        legend.text = element_text(size = 10)) +
+  scale_color_gradientn(colors = c("#FDE725", "#7AD151", "#22A884", "#2A788E", "#414487", "#440154"))
+
+ggsave(filename = paste0(output.directory, "latent_time_custom.pdf"),
+       rasterize(g.lt, layers = "Point", dpi = 250), width = 4.8, height = 4.3)
+
+g.lt.c <- ggplot(my.df[order(my.df$latent_time, na.last = FALSE), ], aes(x = UMAP_1, y = UMAP_2)) +
+  geom_point(aes(color = latent_time_cut), size = 0.1) +
+  facet_wrap(pretty.geno ~ ., ncol = 2, label = label_parsed) +
+  coord_cartesian(ylim = c(-4, 6), xlim = c(-9, 0)) +
+  cowplot::theme_cowplot() +
+  guides(color = guide_legend(override.aes = list(alpha = 1, size = 3), nrow = 3)) +
+  theme(text = element_text(family = fontFamily),
+        axis.title = element_blank(),
+        axis.text = element_blank(),
+        axis.line = element_blank(),
+        axis.ticks = element_blank(),
+        legend.position = "bottom",
+        legend.title = element_blank(),
+        legend.spacing.y = unit(1, "pt"),
+        legend.spacing.x = unit(1, "pt"),
+        legend.text = element_text(size = 10),
+        strip.background = element_blank(),
+        strip.text = element_text(face = 'bold', size = 12)) +
+  scale_color_manual(values = c(rep(RColorBrewer::brewer.pal(7, "Set3"), 2), "grey"))
+
+ggsave(filename = paste0(output.directory, "latent_time_cut_custom.pdf"),
+       rasterize(g.lt.c, layers = "Point", dpi = 250), width = 4.5, height = 4.3)
+```
+
+
+
+### Cluster genes by latent_time
+
+```{r}
+my.genes <- intersect(paste0("Hox", rep(letters[1:4], 5), rep(9:13, each = 4)), rownames(combined.seurat))
+
+# Using raw counts
+all_counts.per.lt.geno <- split(
+  FetchData(combined.seurat, vars = c(my.genes, "nCount_RNA"), slot = "count"),
+  paste0(combined.seurat$latent_time_cut, "__", combined.seurat$Genotype))
+
+all_counts.per.lt.geno.sum <- do.call(cbind, lapply(all_counts.per.lt.geno, colSums))
+
+average.per.lt.geno <- log(1 + 1e4 * t(t(all_counts.per.lt.geno.sum[-which(rownames(all_counts.per.lt.geno.sum) == "nCount_RNA"), ]) / all_counts.per.lt.geno.sum["nCount_RNA", ]))
+
+for (geno in levels(combined.seurat$Genotype)) {
+  new.matrix <- average.per.lt.geno[, paste0(levels(combined.seurat$latent_time_cut), "__", geno)]
+  colnames(new.matrix) <- levels(combined.seurat$latent_time_cut)
+  # Reorder clustering
+  eucl.dist <- dist(new.matrix)
+  clu <- hclust(eucl.dist, method = "ward.D2")
+  dd <- as.dendrogram(clu)
+  clu2 <- reorder(dd, 1:nrow(new.matrix), agglo.FUN = min)
+  hclu2 <- as.hclust(clu2)
+  # From https://www.biostars.org/p/400381/
+  hox.genes.formatted <- lapply(
+    hclu2$labels,
+    function(x) bquote(italic(.(x))))
+  if (geno == "129sv.WT") {
+    title <- expression(italic('HoxB'^{'+/+'}))
+  } else if (geno == "129sv.WT/HoxB_Deli9-13") {
+    title <- expression(italic('HoxB'^{'Del(i9-13)/+'}))
+  } else {
+    title <- pretty.geno[geno]
+  }
+
+  pheatmap(new.matrix,
+           breaks = seq(0, max(average.per.cluster.geno), length.out = 101),
+           cluster_cols = FALSE,
+           cluster_rows = hclu2,
+           labels_row = as.expression(hox.genes.formatted),
+           clustering_method = "ward.D2",
+           file = file.path(output.directory, paste0("heatmap_lt_expression_selected_", gsub("/", "_", geno), ".pdf")),
+           width = 4, height = 4,
+           main = title,
+           fontfamily = fontFamily,
+           annotation_legend = FALSE
+  )
+}
+
+```
+
+
+## SessionInfo
+
+Write sessionInfo to file:
+
+```{r}
+writeLines(capture.output(sessionInfo()), "scRNAseq/sessionInfo.txt")
+```

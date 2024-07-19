@@ -1,0 +1,5 @@
+ChIPM_CTCF_delBins5-10_96h	ChIPM_CTCF_delBins5-10_96h_R1.fastq.gz	ChIPM_CTCF_delBins5-10_96h_R2.fastq.gz
+ChIPM_CTCF_delBins5-10del7-10_96h	ChIPM_CTCF_delBins5-10del7-10_96h_R1.fastq.gz	ChIPM_CTCF_delBins5-10del7-10_96h_R2.fastq.gz
+ChIPM_RAD21_delBins5-10_96h	ChIPM_RAD21_delBins5-10_96h_R1.fastq.gz	ChIPM_RAD21_delBins5-10_96h_R2.fastq.gz
+ChIPM_CTCF_wt_96h	ChIPM_CTCF_wt_96h_R1.fastq.gz	ChIPM_CTCF_wt_96h_R2.fastq.gz
+ChIPM_RAD21_wt_96h	SRR19601466

@@ -1,0 +1,601 @@
+Ignoring genes in  8  for  acalliptera_gene_ensembl 
+   chromosome_name external_gene_name
+14               4             hoxb1a
+16               8             hoxb1b
+18               4             hoxb9a
+Ignoring genes in  LS419833.1  for  acalliptera_gene_ensembl 
+   chromosome_name external_gene_name
+9                4            hoxb13a
+12      LS419833.1            hoxb13a
+18               4             hoxb9a
+Multiple  exon_chrom_start  in  acarolinensis_gene_ensembl  will be averaged.
+   external_gene_name exon_chrom_start
+20              HOXB1         75465582
+22              HOXB9         75644932
+24              HOXB9         75691461
+Ignoring genes in  CCOE01000143.1  for  acitrinellus_gene_ensembl 
+   chromosome_name external_gene_name
+40  CCOE01001224.1             hoxb1a
+44  CCOE01000143.1             hoxb1b
+46  CCOE01001224.1             hoxb9a
+Ignoring genes in  4  for  amexicanus_gene_ensembl 
+   chromosome_name external_gene_name
+57  APWO02000145.1             hoxb1a
+59               4             hoxb1b
+61  APWO02000145.1             hoxb9a
+Ignoring genes in  NXFZ01005965.1  for  aocellaris_gene_ensembl 
+   chromosome_name external_gene_name
+71  NXFZ01002159.1             hoxb1a
+79  NXFZ01005965.1             hoxb1b
+81  NXFZ01002159.1             hoxb9a
+Multiple  exon_chrom_end  in  aocellaris_gene_ensembl  will be averaged.
+   external_gene_name exon_chrom_end
+71             hoxb1a         247826
+75             hoxb1a         247710
+81             hoxb9a          74343
+Ignoring genes in  19  for  apercula_gene_ensembl 
+   chromosome_name external_gene_name
+85              14             hoxb1a
+93              19             hoxb1b
+95              14             hoxb9a
+Multiple  exon_chrom_start  in  apercula_gene_ensembl  will be averaged.
+   external_gene_name exon_chrom_start
+85             hoxb1a         36316040
+89             hoxb1a         36316159
+95             hoxb9a         36491666
+Ignoring genes in  MVNR01000196.1  for  apolyacanthus_gene_ensembl 
+    chromosome_name external_gene_name
+100  MVNR01000242.1             hoxb1a
+103  MVNR01000196.1             hoxb1b
+105  MVNR01000242.1             hoxb9a
+Ignoring genes in  19  for  atestudineus_gene_ensembl 
+    chromosome_name external_gene_name
+117               8             hoxb1a
+131              19             hoxb1b
+133               8             hoxb9a
+Ignoring genes in  12 3 37  for  cauratus_gene_ensembl 
+    chromosome_name external_gene_name
+197               3             hoxb1a
+199              28             hoxb1a
+201              12             hoxb1b
+203              37             hoxb1b
+205               3             hoxb9a
+210              28             hoxb9a
+Ignoring genes in  3  for  cauratus_gene_ensembl 
+    chromosome_name external_gene_name
+193               3            hoxb13a
+195              28            hoxb13a
+205               3             hoxb9a
+210              28             hoxb9a
+Ignoring genes in  CAJNDQ010000004.1 CAJNDQ010000026.1 CAJNDQ010000045.1  for  cccarpio_gene_ensembl 
+      chromosome_name external_gene_name
+216 CAJNDQ010000002.1             hoxb1a
+218 CAJNDQ010000004.1             hoxb1a
+220 CAJNDQ010000026.1             hoxb1b
+225 CAJNDQ010000045.1             hoxb1b
+230 CAJNDQ010000004.1             hoxb9a
+233 CAJNDQ010000002.1             hoxb9a
+Ignoring genes in  CAJNDQ010000004.1  for  cccarpio_gene_ensembl 
+      chromosome_name external_gene_name
+212 CAJNDQ010000002.1            hoxb13a
+214 CAJNDQ010000004.1            hoxb13a
+230 CAJNDQ010000004.1             hoxb9a
+233 CAJNDQ010000002.1             hoxb9a
+Ignoring genes in  19  for  cgobio_gene_ensembl 
+    chromosome_name external_gene_name
+251               8             hoxb1a
+255              19             hoxb1b
+257               8             hoxb9a
+Ignoring genes in  23  for  charengus_gene_ensembl 
+    chromosome_name external_gene_name
+261               1             hoxb1a
+263              23             hoxb1b
+266               1             hoxb9a
+Ignoring genes in  19  for  clumpus_gene_ensembl 
+    chromosome_name external_gene_name
+328               8             hoxb1a
+346              19             hoxb1b
+348               8             hoxb9a
+Multiple  exon_chrom_start  in  clumpus_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_start
+328             hoxb1a         10835762
+332             hoxb1a         10836517
+337             hoxb1a         10836555
+348             hoxb9a         10940050
+Ignoring genes in  8  for  csemilaevis_gene_ensembl 
+    chromosome_name external_gene_name
+390              17             hoxb1a
+398               8             hoxb1b
+400              17             hoxb9a
+Multiple  exon_chrom_start  in  csemilaevis_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_start
+390             hoxb1a         14220097
+395             hoxb1a         14219520
+400             hoxb9a         14435115
+Multiple strand in  csemilaevis_gene_ensembl 
+                     dataset ensembl_transcript_id chromosome_name
+386 csemilaevis_gene_ensembl    ENSCSET00000020225              17
+400 csemilaevis_gene_ensembl    ENSCSET00000020193              17
+    exon_chrom_start exon_chrom_end external_gene_name strand rank
+386         14479777       14480044            hoxb13a      1    1
+400         14435115       14435220             hoxb9a     -1    1
+    mmusculus_homolog_associated_gene_name                  description
+386                                 Hoxb13 Tongue sole genes (Cse_v1.0)
+400                                  Hoxb9 Tongue sole genes (Cse_v1.0)
+     version
+386 Cse_v1.0
+400 Cse_v1.0
+Ignoring genes in  JPKM01106883.1 KL652947.1  for  cvariegatus_gene_ensembl 
+    chromosome_name external_gene_name
+412      KL652915.1             hoxb1a
+420      KL652947.1             hoxb1b
+422      KL652915.1              HOXB9
+424  JPKM01106883.1             hoxb9a
+Multiple  exon_chrom_end  in  cvariegatus_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+412             hoxb1a         489334
+416             hoxb1a         489367
+422              HOXB9         319379
+Ignoring genes in  JPKM01106883.1  for  cvariegatus_gene_ensembl 
+    chromosome_name external_gene_name
+410      KL652915.1            hoxb13a
+422      KL652915.1              HOXB9
+424  JPKM01106883.1             hoxb9a
+Ignoring genes in  9  for  dclupeoides_gene_ensembl 
+    chromosome_name external_gene_name
+444               7             hoxb1a
+446               9             hoxb1b
+452               7             hoxb9a
+Multiple  exon_chrom_start  in  dclupeoides_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_start
+433            hoxb13a          9396481
+435            hoxb13a          9420077
+442            hoxb13a          9525131
+452             hoxb9a          9390372
+Ignoring genes in  12  for  drerio_gene_ensembl 
+    chromosome_name external_gene_name
+485               3             hoxb1a
+487              12             hoxb1b
+489               3             hoxb9a
+Ignoring genes in  RBHW02000095.1  for  eelectricus_gene_ensembl 
+    chromosome_name external_gene_name
+517  RBHW02000027.1             hoxb1a
+519  RBHW02000095.1             hoxb1b
+522  RBHW02000027.1             hoxb9a
+Ignoring genes in  LG16  for  elucius_gene_ensembl 
+    chromosome_name external_gene_name
+528            LG16                   
+532            LG11             hoxb1a
+534            LG11             hoxb9a
+Ignoring genes in  KN811478.1  for  fheteroclitus_gene_ensembl 
+    chromosome_name external_gene_name
+556      KN805998.1             hoxb1a
+560      KN811478.1             hoxb1b
+562      KN805998.1             hoxb9a
+Ignoring genes in  18  for  gmorhua_gene_ensembl 
+    chromosome_name external_gene_name
+605               2             hoxb1a
+607              18             hoxb1b
+609               2             hoxb9a
+Ignoring genes in  JH425326.1  for  hburtoni_gene_ensembl 
+    chromosome_name external_gene_name
+613      JH425845.1             hoxb1a
+615      JH425326.1             hoxb1b
+617      JH425845.1             hoxb9a
+Ignoring genes in  KV880261.1  for  hcomes_gene_ensembl 
+    chromosome_name external_gene_name
+626      KV880523.1             hoxb1a
+632      KV880261.1             hoxb1b
+634      KV880523.1             hoxb9a
+Multiple  exon_chrom_end  in  hcomes_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+626             hoxb1a         702817
+628             hoxb1a         702116
+634             hoxb9a         561768
+Ignoring genes in  QNTS01000008.1 QNTS01000016.1 QNTS01000161.1 QNTS01000899.1  for  hhucho_gene_ensembl 
+    chromosome_name external_gene_name
+643  QNTS01000008.1                   
+649  QNTS01000298.1             hoxb1a
+651  QNTS01000899.1             hoxb1a
+653  QNTS01000161.1             hoxb1b
+660  QNTS01000016.1             hoxb1b
+662  QNTS01000298.1             hoxb9a
+664  QNTS01000899.1             hoxb9a
+Ignoring genes in  QNTS01000899.1  for  hhucho_gene_ensembl 
+    chromosome_name external_gene_name
+645  QNTS01000298.1            hoxb13a
+647  QNTS01000899.1            hoxb13a
+662  QNTS01000298.1             hoxb9a
+664  QNTS01000899.1             hoxb9a
+Multiple  exon_chrom_start  in  hsapiens_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_start
+666              HOXB1         48530328
+668              HOXB1         48529497
+671              HOXB9         48625753
+Ignoring genes in  13  for  ipunctatus_gene_ensembl 
+    chromosome_name external_gene_name
+675               2             hoxb1a
+677              13             hoxb1b
+679               2              hoxb9
+Ignoring genes in  LWHD01000313.1  for  kmarmoratus_gene_ensembl 
+    chromosome_name external_gene_name
+695  LWHD01000233.1             hoxb1a
+704  LWHD01000313.1             hoxb1b
+706  LWHD01000233.1             hoxb9a
+Multiple  exon_chrom_end  in  kmarmoratus_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+695             hoxb1a         321421
+700             hoxb1a         321412
+706             hoxb9a         148539
+Ignoring genes in  FKLU01000406.1 FKLU01000461.1 FKLU01001922.1  for  lbergylta_gene_ensembl 
+    chromosome_name external_gene_name
+718  FKLU01001922.1             hoxb1a
+722  FKLU01000406.1             hoxb1a
+727  FKLU01000345.1             hoxb1b
+729  FKLU01000461.1             hoxb9a
+Multiple  exon_chrom_end  in  lbergylta_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+727             hoxb1b         248197
+Ignoring genes in  CYIF01000144.1  for  lcalcarifer_gene_ensembl 
+    chromosome_name external_gene_name
+733  CYIF01000248.1             hoxb1a
+737  CYIF01000144.1             hoxb1b
+739  CYIF01000248.1             hoxb9a
+Multiple  exon_chrom_start  in  lcrocea_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_start
+749             hoxb1a          4356627
+751             hoxb9a          4529174
+753             hoxb9a          4529678
+Multiple  exon_chrom_start  in  lcrocea_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_start
+747            hoxb13a          4583642
+751             hoxb9a          4529174
+753             hoxb9a          4529678
+Ignoring genes in  19  for  marmatus_gene_ensembl 
+    chromosome_name external_gene_name
+785               8             hoxb1a
+787              19             hoxb1b
+789               8             hoxb9a
+Multiple  exon_chrom_end  in  mcaroli_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+797              Hoxb1       92137816
+799              Hoxb1       92138052
+804              Hoxb9       92043339
+806              Hoxb9       92043100
+Multiple  exon_chrom_end  in  mcaroli_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+801             Hoxb13       91965287
+804              Hoxb9       92043339
+806              Hoxb9       92043100
+Ignoring genes in  19  for  mmurdjan_gene_ensembl 
+    chromosome_name external_gene_name
+867               8             hoxb1a
+876              19             hoxb1b
+878               8             hoxb9a
+Multiple  exon_chrom_end  in  mmusculus_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+887              Hoxb1       96257217
+889              Hoxb1       96257453
+893              Hoxb9       96162884
+895              Hoxb9       96162645
+Multiple  exon_chrom_end  in  mmusculus_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+891             Hoxb13       96085872
+893              Hoxb9       96162884
+895              Hoxb9       96162645
+Multiple  exon_chrom_end  in  mpahari_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+912              Hoxb1       63782442
+914              Hoxb1       63782678
+918              Hoxb9       63686914
+920              Hoxb9       63686675
+Multiple  exon_chrom_end  in  mpahari_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+916             Hoxb13       63610981
+918              Hoxb9       63686914
+920              Hoxb9       63686675
+Multiple  exon_chrom_end  in  mspretus_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+934              Hoxb1       97613255
+936              Hoxb1       97613491
+940              Hoxb9       97516230
+943              Hoxb9       97515991
+Multiple  exon_chrom_end  in  mspretus_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+938             Hoxb13       97423926
+940              Hoxb9       97516230
+943              Hoxb9       97515991
+Ignoring genes in  LG8  for  mzebra_gene_ensembl 
+    chromosome_name external_gene_name
+948             LG4             hoxb1a
+956             LG8             hoxb1b
+958             LG4             hoxb9a
+Multiple  exon_chrom_end  in  mzebra_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_end
+948             hoxb1a        3789571
+952             hoxb1a        3789492
+958             hoxb9a        3639244
+Ignoring genes in  JH422300.1  for  nbrichardi_gene_ensembl 
+    chromosome_name external_gene_name
+962      JH422428.1             hoxb1a
+970      JH422300.1             hoxb1b
+972      JH422428.1             hoxb9a
+Multiple  exon_chrom_start  in  nbrichardi_gene_ensembl  will be averaged.
+    external_gene_name exon_chrom_start
+962             hoxb1a           936619
+966             hoxb1a           936760
+972             hoxb9a          1083641
+Ignoring genes in  sgr12  for  nfurzeri_gene_ensembl 
+    chromosome_name external_gene_name
+983           sgr16             hoxb1a
+985           sgr12             hoxb1b
+987           sgr16             hoxb9a
+Multiple  exon_chrom_start  in  nnaja_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+999               HOXB1        108167052
+1003              HOXB1        108166652
+1011              HOXB9        108302098
+Multiple  exon_chrom_start  in  oanatinus_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1029              HOXB1         58224583
+1033              HOXB9         58331169
+1035              HOXB9         58338656
+Multiple  exon_chrom_start  in  oanatinus_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1031             HOXB13         58385355
+1033              HOXB9         58331169
+1035              HOXB9         58338656
+Ignoring genes in  19  for  ojavanicus_gene_ensembl 
+     chromosome_name external_gene_name
+1070               8             hoxb1a
+1083              19             hoxb1b
+1085               8             hoxb9a
+Multiple  exon_chrom_start  in  ojavanicus_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1070             hoxb1a          1411250
+1074             hoxb1a          1411674
+1079             hoxb1a          1411766
+1085             hoxb9a          1559212
+Ignoring genes in  LG2 LG20 LG6  for  okisutch_gene_ensembl 
+     chromosome_name external_gene_name
+1087             LG2                   
+1093             LG6             hoxb1a
+1095            LG10             hoxb1a
+1097            LG20             hoxb1b
+1103             LG6             hoxb9a
+1105            LG10             hoxb9a
+Ignoring genes in  LG6  for  okisutch_gene_ensembl 
+     chromosome_name external_gene_name
+1089             LG6            hoxb13a
+1091            LG10            hoxb13a
+1103             LG6             hoxb9a
+1105            LG10             hoxb9a
+Ignoring genes in  19  for  olatipes_gene_ensembl 
+     chromosome_name external_gene_name
+1109               8             hoxb1a
+1111              19             hoxb1b
+1113               8             hoxb9a
+Ignoring genes in  NVQA01000018.1  for  omelastigma_gene_ensembl 
+     chromosome_name external_gene_name
+1117  NVQA01000010.1             hoxb1a
+1136  NVQA01000018.1             hoxb1b
+1138  NVQA01000010.1             hoxb9a
+Multiple  exon_chrom_start  in  omelastigma_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1117             hoxb1a           995443
+1121             hoxb1a           996278
+1127             hoxb1a           995049
+1131             hoxb1a          1000741
+1138             hoxb9a          1142026
+Ignoring genes in  13 16 3  for  omykiss_gene_ensembl 
+     chromosome_name external_gene_name
+1140               3                   
+1146              13             hoxb1a
+1148              12             hoxb1a
+1150              16             hoxb1b
+1156              13             hoxb9a
+1158              12             hoxb9a
+Ignoring genes in  13  for  omykiss_gene_ensembl 
+     chromosome_name external_gene_name
+1142              13            hoxb13a
+1144              12            hoxb13a
+1156              13             hoxb9a
+1158              12             hoxb9a
+Ignoring genes in  LG8  for  oniloticus_gene_ensembl 
+     chromosome_name external_gene_name
+1162             LG4             hoxb1a
+1164             LG8             hoxb1b
+1166             LG4             hoxb9a
+Ignoring genes in  VHIC01000743.1  for  osinensis_gene_ensembl 
+     chromosome_name external_gene_name
+1174  VHIC01001032.1             hoxb1a
+1176  VHIC01000743.1             hoxb1b
+1184  VHIC01001032.1             hoxb9a
+Ignoring genes in  24 3 9  for  otshawytscha_gene_ensembl 
+     chromosome_name external_gene_name
+1186               3                   
+1192               9             hoxb1a
+1194              27             hoxb1a
+1196              24             hoxb1b
+1198               9             hoxb9a
+1200              27             hoxb9a
+Ignoring genes in  9  for  otshawytscha_gene_ensembl 
+     chromosome_name external_gene_name
+1188               9            hoxb13a
+1190              27            hoxb13a
+1198               9             hoxb9a
+1200              27             hoxb9a
+Multiple  exon_chrom_start  in  pcinereus_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1225              HOXB1          4579280
+1230              HOXB9          4673236
+1233              HOXB9          4775954
+1239              HOXB9          4708204
+1248              HOXB9          4682660
+Multiple  exon_chrom_start  in  pcinereus_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1228             HOXB13          4781962
+1230              HOXB9          4673236
+1233              HOXB9          4775954
+1239              HOXB9          4708204
+1248              HOXB9          4682660
+Ignoring genes in  KI520062.1 KI520313.1  for  pformosa_gene_ensembl 
+     chromosome_name external_gene_name
+1258      KI520062.1             hoxb1a
+1263      KI519617.1             hoxb1b
+1267      KI520313.1             hoxb9a
+Multiple  exon_chrom_start  in  pformosa_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1263             hoxb1b          4783327
+Ignoring genes in  KQ546117.1 KQ548467.1  for  platipinna_gene_ensembl 
+     chromosome_name external_gene_name
+1277      KQ546117.1             hoxb1a
+1285      KQ545459.1             hoxb1b
+1287      KQ548467.1             hoxb9a
+Multiple  exon_chrom_start  in  platipinna_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1285             hoxb1b           331598
+Ignoring genes in  KV575308.1 KV576475.1  for  pnattereri_gene_ensembl 
+     chromosome_name external_gene_name
+1320      KV575308.1                   
+1325      KV575298.1             hoxb1a
+1327      KV576475.1             hoxb1b
+1329      KV575298.1             hoxb9a
+Ignoring genes in  JH419222.1  for  pnyererei_gene_ensembl 
+     chromosome_name external_gene_name
+1333      JH419398.1             hoxb1a
+1341      JH419222.1             hoxb1b
+1343      JH419398.1             hoxb9a
+Multiple  exon_chrom_start  in  pnyererei_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1333             hoxb1a           945301
+1337             hoxb1a           945380
+1343             hoxb9a          1097051
+Ignoring genes in  KK217566.1  for  preticulata_gene_ensembl 
+     chromosome_name external_gene_name
+1357      KK217566.1                   
+1363             LG8             hoxb1a
+1367             LG8             hoxb9a
+Ignoring genes in  20  for  saurata_gene_ensembl 
+     chromosome_name external_gene_name
+1452              23             hoxb1a
+1462              20             hoxb1b
+1464              23             hoxb9a
+Multiple  exon_chrom_end  in  saurata_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_end
+1452             hoxb1a        2793106
+1456             hoxb1a        2793257
+1458             hoxb1a        2792499
+1464             hoxb9a        2626084
+Multiple  exon_chrom_start  in  sbboliviensis_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1466              HOXB1          2228101
+1469              HOXB1          2227509
+1473              HOXB9          2322511
+Ignoring genes in  BDQW01000068.1  for  sdumerili_gene_ensembl 
+     chromosome_name external_gene_name
+1484  BDQW01000192.1             hoxb1a
+1486  BDQW01000068.1             hoxb1b
+1488  BDQW01000192.1             hoxb9a
+Ignoring genes in  22 8  for  sformosus_gene_ensembl 
+     chromosome_name external_gene_name
+1490              22                   
+1497              21             hoxb1a
+1499              21             hoxb9a
+1502               8             hoxb9a
+Ignoring genes in  8  for  sformosus_gene_ensembl 
+     chromosome_name external_gene_name
+1493              21             HOXB13
+1495               8            hoxb13a
+1499              21             hoxb9a
+1502               8             hoxb9a
+Ignoring genes in  PEQF01098796.1  for  sldorsalis_gene_ensembl 
+     chromosome_name external_gene_name
+1518  PEQF01099295.1             hoxb1a
+1522  PEQF01098796.1             hoxb1b
+1524  PEQF01099295.1             hoxb9a
+Ignoring genes in  VTTG01000003.1  for  slucioperca_gene_ensembl 
+     chromosome_name external_gene_name
+1528  VTTG01000107.1             hoxb1a
+1539  VTTG01000003.1             hoxb1b
+1541  VTTG01000107.1             hoxb9a
+Multiple  exon_chrom_end  in  slucioperca_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_end
+1528             hoxb1a         875643
+1533             hoxb1a         876430
+1535             hoxb1a         875788
+1541             hoxb9a         697217
+Ignoring genes in  18  for  smaximus_gene_ensembl 
+     chromosome_name external_gene_name
+1545              19             hoxb1a
+1547              18             hoxb1b
+1549              19             hoxb9a
+Multiple  exon_chrom_end  in  smerianae_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_end
+1551              HOXB1        7328038
+1557              HOXB9        7145787
+1562              HOXB9        7181635
+Multiple  exon_chrom_end  in  smerianae_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_end
+1553             HOXB13        7063015
+1557              HOXB9        7145787
+1562              HOXB9        7181635
+Ignoring genes in  KK580178.1  for  spartitus_gene_ensembl 
+     chromosome_name external_gene_name
+1569      KK580918.1             hoxb1a
+1577      KK580178.1             hoxb1b
+1579      KK580918.1             hoxb9a
+Multiple  exon_chrom_end  in  spartitus_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_end
+1569             hoxb1a         301346
+1573             hoxb1a         301423
+1579             hoxb9a         138615
+Ignoring genes in  25 3 6  for  ssalar_gene_ensembl 
+     chromosome_name external_gene_name
+1587              19            HoxB1ba
+1589               3            HoxB9aa
+1591               6            hoxb9ab
+1593              25            hoxd1aa
+Multiple  exon_chrom_start  in  ssalar_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1587            HoxB1ba         54684521
+Ignoring genes in  6  for  ssalar_gene_ensembl 
+     chromosome_name external_gene_name
+1583               3           hoxb13aa
+1585               6           hoxb13ab
+1589               3            HoxB9aa
+1591               6            hoxb9ab
+Ignoring genes in  2 24 32  for  strutta_gene_ensembl 
+     chromosome_name external_gene_name
+1659              24                   
+1665               1             hoxb1a
+1667              32             hoxb1a
+1669               2             hoxb1b
+1671               1             hoxb9a
+1673              32             hoxb9a
+Ignoring genes in  32  for  strutta_gene_ensembl 
+     chromosome_name external_gene_name
+1661               1            hoxb13a
+1663              32            hoxb13a
+1671               1             hoxb9a
+1673              32             hoxb9a
+Ignoring genes in  2  for  tnigroviridis_gene_ensembl 
+     chromosome_name external_gene_name
+1712       Un_random             hoxb1a
+1714               2             hoxb1b
+1716       Un_random             hoxb9a
+Multiple  exon_chrom_start  in  tnigroviridis_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1712             hoxb1a          5451124
+1716             hoxb9a          5566308
+1719             hoxb9a          5566172
+Multiple  exon_chrom_start  in  tnigroviridis_gene_ensembl  will be averaged.
+     external_gene_name exon_chrom_start
+1710            hoxb13a          5597715
+1716             hoxb9a          5566308
+1719             hoxb9a          5566172
+Ignoring genes in  10  for  xmaculatus_gene_ensembl 
+     chromosome_name external_gene_name
+1778              16             hoxb1a
+1782              10             hoxb1b
+1784              16             hoxb9a

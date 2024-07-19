@@ -1,0 +1,3 @@
+Sample.ID,Sample.name,Condition,RDS,Time,Day,Replicate,Batch,Dissection,Genotype,Multiplexing,Directory,Chip.10x.type
+1,144h.WT.rep1,Whole_144h_Gastruloid_CTL,144h.WT.rep1,144h,6 days,1,2,Whole,129sv.WT,NA,144h.WT.rep1,V3
+2,144h.Deli9-13_het.rep1,Whole_144h_Gastruloid_Deli9-13_het,144h.Deli9-13_het.rep1,144h,6 days,1,2,Whole,129sv.WT/HoxB_Deli9-13,NA,144h.Deli9-13_het.rep1,V3

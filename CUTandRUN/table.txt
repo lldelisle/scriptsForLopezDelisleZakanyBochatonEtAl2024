@@ -1,0 +1,4 @@
+CUTnRUN_CTCF_delBins5-10_mESC	CUTnRUN_CTCF_delBins5-10_mESC_R1.fastq.gz	CUTnRUN_CTCF_delBins5-10_mESC_R2.fastq.gz
+CUTnRUN_CTCF_delBins5-10del8-10_mESC	CUTnRUN_CTCF_delBins5-10del8-10_mESC_R1.fastq.gz	CUTnRUN_CTCF_delBins5-10del8-10_mESC_R2.fastq.gz
+CUTnRUN_CTCF_delBinv5-10_mESC	CUTnRUN_CTCF_delBinv5-10_mESC_R1.fastq.gz	CUTnRUN_CTCF_delBinv5-10_mESC_R2.fastq.gz
+CUTnRUN_CTCF_delBinv5-10del7-10_mESC	CUTnRUN_CTCF_delBinv5-10del7-10_mESC_R1.fastq.gz	CUTnRUN_CTCF_delBinv5-10del7-10_mESC_R2.fastq.gz

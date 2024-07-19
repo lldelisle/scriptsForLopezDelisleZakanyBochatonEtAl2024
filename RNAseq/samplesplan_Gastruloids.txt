@@ -1,0 +1,31 @@
+sample	genotype	bio_rep	genoclone	time	tech_rep	library	description	nb_CTCF	orientation	pretty.geno	del.new.name	orientation.new	old.name
+RNAseq_delBins5-10_120h_rep1	delBins5-10		delBins5-10	120	1	ISML_first	full_cassette	6	native	Del/Del(i9-13):Ins(CBS5-10)	full cassette	native	T10-1F_120h_030321
+RNAseq_delBins5-10_120h_rep3	delBins5-10		delBins5-10	120	3	ISML_second	full_cassette	6	native	Del/Del(i9-13):Ins(CBS5-10)	full cassette	native	T10-1F_120h_150622
+RNAseq_delBins5-10_120h_rep2	delBins5-10		delBins5-10	120	2	ISML_first	full_cassette	6	native	Del/Del(i9-13):Ins(CBS5-10)	full cassette	native	T10-1F_120h_270321
+RNAseq_delBins5-10_144h_rep1	delBins5-10		delBins5-10	144	1	ISML_second	full_cassette	6	native	Del/Del(i9-13):Ins(CBS5-10)	full cassette	native	T10-1F_144h_160622
+RNAseq_delBins5-10del5-10_120h_rep1	delBins5-10del5-10		delBins5-10del5-10	120	1	ISML_third	cassette_removed	0	NA	Del/Del(i9-13):Ins(CBS5-10):Del(CBS5-10)	Del(CBS5-10)	NA	T13-3D_120h_090321
+RNAseq_delBins5-10del5-10_120h_rep2	delBins5-10del5-10		delBins5-10del5-10	120	2	ISML_third	cassette_removed	0	NA	Del/Del(i9-13):Ins(CBS5-10):Del(CBS5-10)	Del(CBS5-10)	NA	T13-3D_120h_240921
+RNAseq_delBins5-10del8-10_120h_rep1	delBins5-10del8-10		delBins5-10del8-10	120	1	ISML_second	Del(CBS8-10)	3	native		Del(CBS8-10)	native	T16-2F-3D_120h_150622
+RNAseq_delBins5-10del8-10_144h_rep1	delBins5-10del8-10		delBins5-10del8-10	144	1	ISML_second	Del(CBS8-10)	3	native		Del(CBS8-10)	native	T16-2F-3D_144h_160622
+RNAseq_delBins5-10del7-10_120h_rep1	delBins5-10del7-10		delBins5-10del7-10	120	1	ISML_third	Del(CBS7-10)	2	native		Del(CBS7-10)	native	T19-3E_120h_080721
+RNAseq_delBins5-10del7-10_120h_rep2	delBins5-10del7-10		delBins5-10del7-10	120	2	ISML_third	Del(CBS7-10)	2	native		Del(CBS7-10)	native	T19-3E_120h_150721
+RNAseq_delBinv5-10clone2_120h_rep1	delBinv5-10	clone2	delBinv5-10clone2	120	1	ISML_third	inverted_cassette	6	inverted		full cassette	inverted_clone2	T22-7C_120h_020921
+RNAseq_delBinv5-10clone2_120h_rep2	delBinv5-10	clone2	delBinv5-10clone2	120	2	ISML_third	inverted_cassette	6	inverted		full cassette	inverted_clone2	T22-7C_120h_100921
+RNAseq_delBinv5-10clone1_120h_rep2	delBinv5-10	clone1	delBinv5-10clone1	120	2	TruSeq_second	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_120h_010922
+RNAseq_delBinv5-10clone1_120h_rep3	delBinv5-10	clone1	delBinv5-10clone1	120	3	TruSeq_second	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_120h_080921
+RNAseq_delBinv5-10clone1_120h_rep4	delBinv5-10	clone1	delBinv5-10clone1	120	4	ISML_second	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_120h_150622
+RNAseq_delBinv5-10clone1_120h_rep1	delBinv5-10	clone1	delBinv5-10clone1	120	1	ISML_third	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_120h_TC
+RNAseq_delBinv5-10clone1_144h_rep2	delBinv5-10	clone1	delBinv5-10clone1	144	2	ISML_second	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_144h_160622
+RNAseq_delBinv5-10clone1_144h_rep1	delBinv5-10	clone1	delBinv5-10clone1	144	1	ISML_third	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_144h_TC
+RNAseq_delBinv5-10clone1_168h_rep1	delBinv5-10	clone1	delBinv5-10clone1	168	1	ISML_third	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_168h_TC
+RNAseq_delBinv5-10clone1_96h_rep1	delBinv5-10	clone1	delBinv5-10clone1	96	1	ISML_third	inverted_cassette	6	inverted		full cassette	inverted_clone1	T22-8E_96h_TC
+RNAseq_delBinv5-10del7-10_120h_rep1	delBinv5-10del7-10		delBinv5-10del7-10	120	1	ISML_second	Del(CBS7-10)  on inverted cassette	2	inverted		Del(CBS7-10)	inverted	T25-4B_120h_150622
+RNAseq_delBinv5-10del7-10_144h_rep1	delBinv5-10del7-10		delBinv5-10del7-10	144	1	ISML_second	Del(CBS7-10)  on inverted cassette	2	inverted		Del(CBS7-10)	inverted	T25-4B_144h_160622
+RNAseq_delBdeli9-13_120h_rep1	delBdeli9-13		delBdeli9-13	120	1	ISML_first	del(i9-13)	0	NA	Del/Del(i9-13)	no cassette	NA	T5-7C_120h_030321
+RNAseq_delBdeli9-13_120h_rep3	delBdeli9-13		delBdeli9-13	120	3	ISML_second	del(i9-13)	0	NA	Del/Del(i9-13)	no cassette	NA	T5-7C_120h_150622
+RNAseq_delBdeli9-13_120h_rep2	delBdeli9-13		delBdeli9-13	120	2	ISML_first	del(i9-13)	0	NA	Del/Del(i9-13)	no cassette	NA	T5-7C_120h_270321
+RNAseq_delBdeli9-13_144h_rep1	delBdeli9-13		delBdeli9-13	144	1	ISML_second	del(i9-13)	0	NA	Del/Del(i9-13)	no cassette	NA	T5-7C_144h_160622
+RNAseq_wt_120h_rep1	wt		wt	120	1	TruSeq_first	wt	6	native	wt		native	wt_120h_rep1
+RNAseq_wt_120h_rep2	wt		wt	120	2	TruSeq_first	wt	6	native	wt		native	wt_120h_rep2
+RNAseq_wt_144h_rep1	wt		wt	144	1	TruSeq_first	wt	6	native	wt		native	wt_144h_rep1
+RNAseq_wt_144h_rep2	wt		wt	144	2	TruSeq_first	wt	6	native	wt		native	wt_144h_rep2

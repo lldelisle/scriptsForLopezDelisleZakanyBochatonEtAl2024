@@ -1,0 +1,1555 @@
+caudal.id	length	id	geno	pooled.geno
+1	2.35	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+2	2.34	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+3	2.78	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+4	3.55	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+5	3.88	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+6	4.31	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+7	4.12	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+8	4.26	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+9	4.22	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+10	4.11	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+11	4.13	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+12	4.1	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+13	4.04	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+14	3.86	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+15	3.91	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+16	3.88	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+17	3.61	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+18	3.65	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+19	3.33	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+20	3.09	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+21	2.9	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+22	2.63	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+23	2.33	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+24	2.14	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+25	1.69	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+26	1.62	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+27	1.37	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+28	0.87	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+29	0.59	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+30	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+31	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+32	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+33	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+34	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+35	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+36	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+37	0	BEN_5	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+1	2.44	DD41	b13hd b13hd	b13hd b13hd
+2	2.51	DD41	b13hd b13hd	b13hd b13hd
+3	2.7	DD41	b13hd b13hd	b13hd b13hd
+4	3.28	DD41	b13hd b13hd	b13hd b13hd
+5	3.62	DD41	b13hd b13hd	b13hd b13hd
+6	3.85	DD41	b13hd b13hd	b13hd b13hd
+7	3.94	DD41	b13hd b13hd	b13hd b13hd
+8	4.07	DD41	b13hd b13hd	b13hd b13hd
+9	4.02	DD41	b13hd b13hd	b13hd b13hd
+10	3.98	DD41	b13hd b13hd	b13hd b13hd
+11	4.04	DD41	b13hd b13hd	b13hd b13hd
+12	3.94	DD41	b13hd b13hd	b13hd b13hd
+13	3.83	DD41	b13hd b13hd	b13hd b13hd
+14	3.76	DD41	b13hd b13hd	b13hd b13hd
+15	3.85	DD41	b13hd b13hd	b13hd b13hd
+16	3.71	DD41	b13hd b13hd	b13hd b13hd
+17	3.59	DD41	b13hd b13hd	b13hd b13hd
+18	3.5	DD41	b13hd b13hd	b13hd b13hd
+19	3.36	DD41	b13hd b13hd	b13hd b13hd
+20	3.4	DD41	b13hd b13hd	b13hd b13hd
+21	3.31	DD41	b13hd b13hd	b13hd b13hd
+22	3.22	DD41	b13hd b13hd	b13hd b13hd
+23	3.05	DD41	b13hd b13hd	b13hd b13hd
+24	2.84	DD41	b13hd b13hd	b13hd b13hd
+25	2.86	DD41	b13hd b13hd	b13hd b13hd
+26	2.63	DD41	b13hd b13hd	b13hd b13hd
+27	2.43	DD41	b13hd b13hd	b13hd b13hd
+28	2.18	DD41	b13hd b13hd	b13hd b13hd
+29	1.93	DD41	b13hd b13hd	b13hd b13hd
+30	1.77	DD41	b13hd b13hd	b13hd b13hd
+31	1.23	DD41	b13hd b13hd	b13hd b13hd
+32	0.76	DD41	b13hd b13hd	b13hd b13hd
+33	0	DD41	b13hd b13hd	b13hd b13hd
+34	0	DD41	b13hd b13hd	b13hd b13hd
+35	0	DD41	b13hd b13hd	b13hd b13hd
+36	0	DD41	b13hd b13hd	b13hd b13hd
+37	0	DD41	b13hd b13hd	b13hd b13hd
+1	2.57	DD40	b13hd b13hd	b13hd b13hd
+2	2.29	DD40	b13hd b13hd	b13hd b13hd
+3	2.33	DD40	b13hd b13hd	b13hd b13hd
+4	2.84	DD40	b13hd b13hd	b13hd b13hd
+5	3.22	DD40	b13hd b13hd	b13hd b13hd
+6	3.6	DD40	b13hd b13hd	b13hd b13hd
+7	3.88	DD40	b13hd b13hd	b13hd b13hd
+8	4.01	DD40	b13hd b13hd	b13hd b13hd
+9	4.1	DD40	b13hd b13hd	b13hd b13hd
+10	3.98	DD40	b13hd b13hd	b13hd b13hd
+11	3.9	DD40	b13hd b13hd	b13hd b13hd
+12	3.84	DD40	b13hd b13hd	b13hd b13hd
+13	3.8	DD40	b13hd b13hd	b13hd b13hd
+14	3.73	DD40	b13hd b13hd	b13hd b13hd
+15	3.85	DD40	b13hd b13hd	b13hd b13hd
+16	3.72	DD40	b13hd b13hd	b13hd b13hd
+17	3.59	DD40	b13hd b13hd	b13hd b13hd
+18	3.5	DD40	b13hd b13hd	b13hd b13hd
+19	3.42	DD40	b13hd b13hd	b13hd b13hd
+20	3.32	DD40	b13hd b13hd	b13hd b13hd
+21	3.31	DD40	b13hd b13hd	b13hd b13hd
+22	3.22	DD40	b13hd b13hd	b13hd b13hd
+23	3.05	DD40	b13hd b13hd	b13hd b13hd
+24	2.84	DD40	b13hd b13hd	b13hd b13hd
+25	2.86	DD40	b13hd b13hd	b13hd b13hd
+26	2.63	DD40	b13hd b13hd	b13hd b13hd
+27	2.43	DD40	b13hd b13hd	b13hd b13hd
+28	2.19	DD40	b13hd b13hd	b13hd b13hd
+29	1.93	DD40	b13hd b13hd	b13hd b13hd
+30	1.9	DD40	b13hd b13hd	b13hd b13hd
+31	1.34	DD40	b13hd b13hd	b13hd b13hd
+32	0.81	DD40	b13hd b13hd	b13hd b13hd
+33	0	DD40	b13hd b13hd	b13hd b13hd
+34	0	DD40	b13hd b13hd	b13hd b13hd
+35	0	DD40	b13hd b13hd	b13hd b13hd
+36	0	DD40	b13hd b13hd	b13hd b13hd
+37	0	DD40	b13hd b13hd	b13hd b13hd
+1	3.04	DD39	wt wt	wt wt
+2	2.72	DD39	wt wt	wt wt
+3	2.63	DD39	wt wt	wt wt
+4	3.05	DD39	wt wt	wt wt
+5	3.71	DD39	wt wt	wt wt
+6	4.12	DD39	wt wt	wt wt
+7	4.25	DD39	wt wt	wt wt
+8	4.36	DD39	wt wt	wt wt
+9	4.28	DD39	wt wt	wt wt
+10	4.38	DD39	wt wt	wt wt
+11	4.35	DD39	wt wt	wt wt
+12	4.29	DD39	wt wt	wt wt
+13	4.27	DD39	wt wt	wt wt
+14	4.19	DD39	wt wt	wt wt
+15	4.12	DD39	wt wt	wt wt
+16	3.87	DD39	wt wt	wt wt
+17	3.63	DD39	wt wt	wt wt
+18	3.63	DD39	wt wt	wt wt
+19	3.34	DD39	wt wt	wt wt
+20	2.97	DD39	wt wt	wt wt
+21	2.93	DD39	wt wt	wt wt
+22	2.64	DD39	wt wt	wt wt
+23	2.53	DD39	wt wt	wt wt
+24	2.31	DD39	wt wt	wt wt
+25	1.92	DD39	wt wt	wt wt
+26	1.45	DD39	wt wt	wt wt
+27	0.83	DD39	wt wt	wt wt
+28	0.56	DD39	wt wt	wt wt
+29	0.47	DD39	wt wt	wt wt
+30	0	DD39	wt wt	wt wt
+31	0	DD39	wt wt	wt wt
+32	0	DD39	wt wt	wt wt
+33	0	DD39	wt wt	wt wt
+34	0	DD39	wt wt	wt wt
+35	0	DD39	wt wt	wt wt
+36	0	DD39	wt wt	wt wt
+37	0	DD39	wt wt	wt wt
+1	2.85	DD36	wt wt	wt wt
+2	2.61	DD36	wt wt	wt wt
+3	2.72	DD36	wt wt	wt wt
+4	3.25	DD36	wt wt	wt wt
+5	4.01	DD36	wt wt	wt wt
+6	4.44	DD36	wt wt	wt wt
+7	4.45	DD36	wt wt	wt wt
+8	4.39	DD36	wt wt	wt wt
+9	4.31	DD36	wt wt	wt wt
+10	4.39	DD36	wt wt	wt wt
+11	4.37	DD36	wt wt	wt wt
+12	4.34	DD36	wt wt	wt wt
+13	4.28	DD36	wt wt	wt wt
+14	4.08	DD36	wt wt	wt wt
+15	4.01	DD36	wt wt	wt wt
+16	3.84	DD36	wt wt	wt wt
+17	3.71	DD36	wt wt	wt wt
+18	3.5	DD36	wt wt	wt wt
+19	3.23	DD36	wt wt	wt wt
+20	3.15	DD36	wt wt	wt wt
+21	2.92	DD36	wt wt	wt wt
+22	2.57	DD36	wt wt	wt wt
+23	2.33	DD36	wt wt	wt wt
+24	2.13	DD36	wt wt	wt wt
+25	1.87	DD36	wt wt	wt wt
+26	1.48	DD36	wt wt	wt wt
+27	1.26	DD36	wt wt	wt wt
+28	0.91	DD36	wt wt	wt wt
+29	0.5	DD36	wt wt	wt wt
+30	0.31	DD36	wt wt	wt wt
+31	0	DD36	wt wt	wt wt
+32	0	DD36	wt wt	wt wt
+33	0	DD36	wt wt	wt wt
+34	0	DD36	wt wt	wt wt
+35	0	DD36	wt wt	wt wt
+36	0	DD36	wt wt	wt wt
+37	0	DD36	wt wt	wt wt
+1	2.73	DD37	b13hd b13hd	b13hd b13hd
+2	2.6	DD37	b13hd b13hd	b13hd b13hd
+3	2.56	DD37	b13hd b13hd	b13hd b13hd
+4	2.97	DD37	b13hd b13hd	b13hd b13hd
+5	3.48	DD37	b13hd b13hd	b13hd b13hd
+6	3.99	DD37	b13hd b13hd	b13hd b13hd
+7	4.25	DD37	b13hd b13hd	b13hd b13hd
+8	4.25	DD37	b13hd b13hd	b13hd b13hd
+9	4.23	DD37	b13hd b13hd	b13hd b13hd
+10	4.17	DD37	b13hd b13hd	b13hd b13hd
+11	4.2	DD37	b13hd b13hd	b13hd b13hd
+12	4.22	DD37	b13hd b13hd	b13hd b13hd
+13	4	DD37	b13hd b13hd	b13hd b13hd
+14	4.05	DD37	b13hd b13hd	b13hd b13hd
+15	3.97	DD37	b13hd b13hd	b13hd b13hd
+16	3.91	DD37	b13hd b13hd	b13hd b13hd
+17	3.77	DD37	b13hd b13hd	b13hd b13hd
+18	3.67	DD37	b13hd b13hd	b13hd b13hd
+19	3.48	DD37	b13hd b13hd	b13hd b13hd
+20	3.48	DD37	b13hd b13hd	b13hd b13hd
+21	3.46	DD37	b13hd b13hd	b13hd b13hd
+22	3.26	DD37	b13hd b13hd	b13hd b13hd
+23	3.22	DD37	b13hd b13hd	b13hd b13hd
+24	3.1	DD37	b13hd b13hd	b13hd b13hd
+25	2.9	DD37	b13hd b13hd	b13hd b13hd
+26	2.74	DD37	b13hd b13hd	b13hd b13hd
+27	2.44	DD37	b13hd b13hd	b13hd b13hd
+28	2.21	DD37	b13hd b13hd	b13hd b13hd
+29	1.69	DD37	b13hd b13hd	b13hd b13hd
+30	1.07	DD37	b13hd b13hd	b13hd b13hd
+31	1	DD37	b13hd b13hd	b13hd b13hd
+32	0.7	DD37	b13hd b13hd	b13hd b13hd
+33	0	DD37	b13hd b13hd	b13hd b13hd
+34	0	DD37	b13hd b13hd	b13hd b13hd
+35	0	DD37	b13hd b13hd	b13hd b13hd
+36	0	DD37	b13hd b13hd	b13hd b13hd
+37	0	DD37	b13hd b13hd	b13hd b13hd
+1	2.66	DD38	b13hd b13hd	b13hd b13hd
+2	2.57	DD38	b13hd b13hd	b13hd b13hd
+3	2.62	DD38	b13hd b13hd	b13hd b13hd
+4	3.24	DD38	b13hd b13hd	b13hd b13hd
+5	3.85	DD38	b13hd b13hd	b13hd b13hd
+6	4.12	DD38	b13hd b13hd	b13hd b13hd
+7	4.55	DD38	b13hd b13hd	b13hd b13hd
+8	4.5	DD38	b13hd b13hd	b13hd b13hd
+9	4.47	DD38	b13hd b13hd	b13hd b13hd
+10	4.45	DD38	b13hd b13hd	b13hd b13hd
+11	4.17	DD38	b13hd b13hd	b13hd b13hd
+12	4.22	DD38	b13hd b13hd	b13hd b13hd
+13	4.12	DD38	b13hd b13hd	b13hd b13hd
+14	4.19	DD38	b13hd b13hd	b13hd b13hd
+15	4.01	DD38	b13hd b13hd	b13hd b13hd
+16	3.87	DD38	b13hd b13hd	b13hd b13hd
+17	3.75	DD38	b13hd b13hd	b13hd b13hd
+18	3.62	DD38	b13hd b13hd	b13hd b13hd
+19	3.51	DD38	b13hd b13hd	b13hd b13hd
+20	3.43	DD38	b13hd b13hd	b13hd b13hd
+21	3.33	DD38	b13hd b13hd	b13hd b13hd
+22	3.3	DD38	b13hd b13hd	b13hd b13hd
+23	3.1	DD38	b13hd b13hd	b13hd b13hd
+24	2.92	DD38	b13hd b13hd	b13hd b13hd
+25	2.78	DD38	b13hd b13hd	b13hd b13hd
+26	2.65	DD38	b13hd b13hd	b13hd b13hd
+27	2.48	DD38	b13hd b13hd	b13hd b13hd
+28	2.12	DD38	b13hd b13hd	b13hd b13hd
+29	1.8	DD38	b13hd b13hd	b13hd b13hd
+30	1.42	DD38	b13hd b13hd	b13hd b13hd
+31	1.16	DD38	b13hd b13hd	b13hd b13hd
+32	0.79	DD38	b13hd b13hd	b13hd b13hd
+33	0.37	DD38	b13hd b13hd	b13hd b13hd
+34	0	DD38	b13hd b13hd	b13hd b13hd
+35	0	DD38	b13hd b13hd	b13hd b13hd
+36	0	DD38	b13hd b13hd	b13hd b13hd
+37	0	DD38	b13hd b13hd	b13hd b13hd
+1	2.74	DD35	b13hd b13hd	b13hd b13hd
+2	2.72	DD35	b13hd b13hd	b13hd b13hd
+3	2.66	DD35	b13hd b13hd	b13hd b13hd
+4	2.94	DD35	b13hd b13hd	b13hd b13hd
+5	3.71	DD35	b13hd b13hd	b13hd b13hd
+6	4.13	DD35	b13hd b13hd	b13hd b13hd
+7	4.16	DD35	b13hd b13hd	b13hd b13hd
+8	4.3	DD35	b13hd b13hd	b13hd b13hd
+9	4.16	DD35	b13hd b13hd	b13hd b13hd
+10	4.15	DD35	b13hd b13hd	b13hd b13hd
+11	4.05	DD35	b13hd b13hd	b13hd b13hd
+12	4	DD35	b13hd b13hd	b13hd b13hd
+13	4.15	DD35	b13hd b13hd	b13hd b13hd
+14	4.01	DD35	b13hd b13hd	b13hd b13hd
+15	3.94	DD35	b13hd b13hd	b13hd b13hd
+16	3.84	DD35	b13hd b13hd	b13hd b13hd
+17	3.73	DD35	b13hd b13hd	b13hd b13hd
+18	3.63	DD35	b13hd b13hd	b13hd b13hd
+19	3.43	DD35	b13hd b13hd	b13hd b13hd
+20	3.44	DD35	b13hd b13hd	b13hd b13hd
+21	3.43	DD35	b13hd b13hd	b13hd b13hd
+22	3.37	DD35	b13hd b13hd	b13hd b13hd
+23	3.26	DD35	b13hd b13hd	b13hd b13hd
+24	3.18	DD35	b13hd b13hd	b13hd b13hd
+25	3.13	DD35	b13hd b13hd	b13hd b13hd
+26	2.91	DD35	b13hd b13hd	b13hd b13hd
+27	2.81	DD35	b13hd b13hd	b13hd b13hd
+28	2.74	DD35	b13hd b13hd	b13hd b13hd
+29	2.44	DD35	b13hd b13hd	b13hd b13hd
+30	2.15	DD35	b13hd b13hd	b13hd b13hd
+31	1.68	DD35	b13hd b13hd	b13hd b13hd
+32	1.31	DD35	b13hd b13hd	b13hd b13hd
+33	0.76	DD35	b13hd b13hd	b13hd b13hd
+34	0.61	DD35	b13hd b13hd	b13hd b13hd
+35	0.34	DD35	b13hd b13hd	b13hd b13hd
+36	0	DD35	b13hd b13hd	b13hd b13hd
+37	0	DD35	b13hd b13hd	b13hd b13hd
+1	2.53	DD34	b13hd b13hd	b13hd b13hd
+2	2.3	DD34	b13hd b13hd	b13hd b13hd
+3	2.45	DD34	b13hd b13hd	b13hd b13hd
+4	2.98	DD34	b13hd b13hd	b13hd b13hd
+5	3.42	DD34	b13hd b13hd	b13hd b13hd
+6	4.15	DD34	b13hd b13hd	b13hd b13hd
+7	4.3	DD34	b13hd b13hd	b13hd b13hd
+8	4.32	DD34	b13hd b13hd	b13hd b13hd
+9	4.22	DD34	b13hd b13hd	b13hd b13hd
+10	4.13	DD34	b13hd b13hd	b13hd b13hd
+11	4.6	DD34	b13hd b13hd	b13hd b13hd
+12	4.6	DD34	b13hd b13hd	b13hd b13hd
+13	4.11	DD34	b13hd b13hd	b13hd b13hd
+14	4.03	DD34	b13hd b13hd	b13hd b13hd
+15	3.99	DD34	b13hd b13hd	b13hd b13hd
+16	3.84	DD34	b13hd b13hd	b13hd b13hd
+17	3.72	DD34	b13hd b13hd	b13hd b13hd
+18	3.67	DD34	b13hd b13hd	b13hd b13hd
+19	3.57	DD34	b13hd b13hd	b13hd b13hd
+20	3.56	DD34	b13hd b13hd	b13hd b13hd
+21	3.65	DD34	b13hd b13hd	b13hd b13hd
+22	3.56	DD34	b13hd b13hd	b13hd b13hd
+23	3.38	DD34	b13hd b13hd	b13hd b13hd
+24	3.21	DD34	b13hd b13hd	b13hd b13hd
+25	2.95	DD34	b13hd b13hd	b13hd b13hd
+26	2.86	DD34	b13hd b13hd	b13hd b13hd
+27	2.55	DD34	b13hd b13hd	b13hd b13hd
+28	2.36	DD34	b13hd b13hd	b13hd b13hd
+29	2.1	DD34	b13hd b13hd	b13hd b13hd
+30	1.89	DD34	b13hd b13hd	b13hd b13hd
+31	1.35	DD34	b13hd b13hd	b13hd b13hd
+32	0.84	DD34	b13hd b13hd	b13hd b13hd
+33	0.55	DD34	b13hd b13hd	b13hd b13hd
+34	0	DD34	b13hd b13hd	b13hd b13hd
+35	0	DD34	b13hd b13hd	b13hd b13hd
+36	0	DD34	b13hd b13hd	b13hd b13hd
+37	0	DD34	b13hd b13hd	b13hd b13hd
+1	2.63	DD33	wt wt	wt wt
+2	2.55	DD33	wt wt	wt wt
+3	2.64	DD33	wt wt	wt wt
+4	3.38	DD33	wt wt	wt wt
+5	4.01	DD33	wt wt	wt wt
+6	4.43	DD33	wt wt	wt wt
+7	4.42	DD33	wt wt	wt wt
+8	4.28	DD33	wt wt	wt wt
+9	4.37	DD33	wt wt	wt wt
+10	4.42	DD33	wt wt	wt wt
+11	4.38	DD33	wt wt	wt wt
+12	4.42	DD33	wt wt	wt wt
+13	4.4	DD33	wt wt	wt wt
+14	4.36	DD33	wt wt	wt wt
+15	4.27	DD33	wt wt	wt wt
+16	4.04	DD33	wt wt	wt wt
+17	3.74	DD33	wt wt	wt wt
+18	3.56	DD33	wt wt	wt wt
+19	3.33	DD33	wt wt	wt wt
+20	3.32	DD33	wt wt	wt wt
+21	2.99	DD33	wt wt	wt wt
+22	2.89	DD33	wt wt	wt wt
+23	2.79	DD33	wt wt	wt wt
+24	2.36	DD33	wt wt	wt wt
+25	2.08	DD33	wt wt	wt wt
+26	1.25	DD33	wt wt	wt wt
+27	1.09	DD33	wt wt	wt wt
+28	0.54	DD33	wt wt	wt wt
+29	0.32	DD33	wt wt	wt wt
+30	0	DD33	wt wt	wt wt
+31	0	DD33	wt wt	wt wt
+32	0	DD33	wt wt	wt wt
+33	0	DD33	wt wt	wt wt
+34	0	DD33	wt wt	wt wt
+35	0	DD33	wt wt	wt wt
+36	0	DD33	wt wt	wt wt
+37	0	DD33	wt wt	wt wt
+1	2.65	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+2	2.58	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+3	3.05	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+4	3.97	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+5	4.21	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+6	4.44	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+7	4.48	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+8	4.53	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+9	4.6	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+10	4.56	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+11	4.58	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+12	4.56	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+13	4.5	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+14	4.38	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+15	4.19	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+16	4.04	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+17	3.87	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+18	3.66	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+19	3.52	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+20	3.26	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+21	2.97	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+22	2.35	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+23	1.62	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+24	0.97	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+25	0.76	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+26	0.7	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+27	0.75	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+28	1	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+29	0.57	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+30	0.56	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+31	0	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+32	0	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+33	0	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+34	0	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+35	0	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+36	0	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+37	0	3605	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+1	2.53	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+2	2.45	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+3	2.74	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+4	3.61	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+5	3.88	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+6	4.07	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+7	4.03	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+8	4.11	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+9	4.1	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+10	4.16	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+11	4.15	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+12	4.23	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+13	4.24	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+14	4.17	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+15	4.09	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+16	3.91	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+17	3.79	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+18	3.72	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+19	3.44	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+20	3.29	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+21	3.02	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+22	2.79	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+23	2.65	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+24	2.27	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+25	2	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+26	1.72	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+27	1.44	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+28	1.18	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+29	0.72	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+30	0.68	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+31	0	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+32	0	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+33	0	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+34	0	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+35	0	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+36	0	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+37	0	DD31	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+1	2.37	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+2	2.21	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+3	2.64	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+4	3.27	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+5	3.64	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+6	3.9	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+7	3.91	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+8	4.17	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+9	4.06	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+10	4.14	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+11	4.12	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+12	4	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+13	3.91	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+14	3.91	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+15	3.85	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+16	3.61	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+17	3.47	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+18	3.4	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+19	3.1	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+20	2.92	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+21	2.61	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+22	2.25	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+23	2.04	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+24	1.87	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+25	1.62	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+26	1.42	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+27	0.97	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+28	0.69	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+29	0.66	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+30	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+31	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+32	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+33	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+34	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+35	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+36	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+37	0	3600	w453 w453 d13hd d13hd	w453 w453 d13hd d13hd
+1	2.41	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+2	2.34	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+3	2.47	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+4	3.14	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+5	3.63	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+6	3.92	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+7	4.02	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+8	3.99	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+9	4.09	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+10	3.94	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+11	3.85	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+12	3.76	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+13	3.74	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+14	3.88	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+15	3.96	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+16	3.85	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+17	3.93	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+18	3.85	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+19	3.77	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+20	3.65	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+21	3.55	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+22	3.55	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+23	3.48	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+24	3.25	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+25	3.31	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+26	3.06	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+27	2.92	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+28	2.79	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+29	2.78	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+30	2.05	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+31	1.57	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+32	1.1	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+33	0.61	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+34	0	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+35	0	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+36	0	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+37	0	3598	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+1	2.64	3509	r434 r434 d13 d13	res res
+2	2.63	3509	r434 r434 d13 d13	res res
+3	2.89	3509	r434 r434 d13 d13	res res
+4	3.58	3509	r434 r434 d13 d13	res res
+5	4.06	3509	r434 r434 d13 d13	res res
+6	4.17	3509	r434 r434 d13 d13	res res
+7	4.13	3509	r434 r434 d13 d13	res res
+8	4.18	3509	r434 r434 d13 d13	res res
+9	4.25	3509	r434 r434 d13 d13	res res
+10	4.23	3509	r434 r434 d13 d13	res res
+11	4.11	3509	r434 r434 d13 d13	res res
+12	4.14	3509	r434 r434 d13 d13	res res
+13	3.97	3509	r434 r434 d13 d13	res res
+14	3.85	3509	r434 r434 d13 d13	res res
+15	3.89	3509	r434 r434 d13 d13	res res
+16	3.84	3509	r434 r434 d13 d13	res res
+17	3.76	3509	r434 r434 d13 d13	res res
+18	3.67	3509	r434 r434 d13 d13	res res
+19	3.71	3509	r434 r434 d13 d13	res res
+20	3.61	3509	r434 r434 d13 d13	res res
+21	3.43	3509	r434 r434 d13 d13	res res
+22	3.26	3509	r434 r434 d13 d13	res res
+23	3.21	3509	r434 r434 d13 d13	res res
+24	3.03	3509	r434 r434 d13 d13	res res
+25	2.87	3509	r434 r434 d13 d13	res res
+26	2.76	3509	r434 r434 d13 d13	res res
+27	2.38	3509	r434 r434 d13 d13	res res
+28	2.34	3509	r434 r434 d13 d13	res res
+29	1.38	3509	r434 r434 d13 d13	res res
+30	1.02	3509	r434 r434 d13 d13	res res
+31	0.72	3509	r434 r434 d13 d13	res res
+32	0	3509	r434 r434 d13 d13	res res
+33	0	3509	r434 r434 d13 d13	res res
+34	0	3509	r434 r434 d13 d13	res res
+35	0	3509	r434 r434 d13 d13	res res
+36	0	3509	r434 r434 d13 d13	res res
+37	0	3509	r434 r434 d13 d13	res res
+1	2.51	DD27	wt wt	wt wt
+2	2.43	DD27	wt wt	wt wt
+3	2.88	DD27	wt wt	wt wt
+4	3.62	DD27	wt wt	wt wt
+5	4.02	DD27	wt wt	wt wt
+6	4.4	DD27	wt wt	wt wt
+7	4.35	DD27	wt wt	wt wt
+8	4.36	DD27	wt wt	wt wt
+9	4.4	DD27	wt wt	wt wt
+10	4.26	DD27	wt wt	wt wt
+11	4.29	DD27	wt wt	wt wt
+12	4.13	DD27	wt wt	wt wt
+13	4.17	DD27	wt wt	wt wt
+14	4.13	DD27	wt wt	wt wt
+15	4.01	DD27	wt wt	wt wt
+16	3.75	DD27	wt wt	wt wt
+17	3.72	DD27	wt wt	wt wt
+18	3.48	DD27	wt wt	wt wt
+19	3.13	DD27	wt wt	wt wt
+20	3.08	DD27	wt wt	wt wt
+21	2.81	DD27	wt wt	wt wt
+22	2.51	DD27	wt wt	wt wt
+23	1.72	DD27	wt wt	wt wt
+24	1.51	DD27	wt wt	wt wt
+25	1.48	DD27	wt wt	wt wt
+26	1.42	DD27	wt wt	wt wt
+27	1.21	DD27	wt wt	wt wt
+28	0.77	DD27	wt wt	wt wt
+29	0	DD27	wt wt	wt wt
+30	0	DD27	wt wt	wt wt
+31	0	DD27	wt wt	wt wt
+32	0	DD27	wt wt	wt wt
+33	0	DD27	wt wt	wt wt
+34	0	DD27	wt wt	wt wt
+35	0	DD27	wt wt	wt wt
+36	0	DD27	wt wt	wt wt
+37	0	DD27	wt wt	wt wt
+1	2.44	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+2	2.31	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+3	2.49	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+4	3.17	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+5	3.73	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+6	3.81	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+7	4.03	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+8	4.18	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+9	3.93	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+10	3.98	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+11	3.99	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+12	3.98	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+13	3.86	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+14	3.85	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+15	3.91	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+16	3.75	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+17	3.79	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+18	3.76	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+19	3.75	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+20	3.62	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+21	3.43	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+22	3.36	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+23	3.24	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+24	3.15	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+25	3.07	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+26	2.93	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+27	2.87	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+28	2.67	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+29	2.45	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+30	2.3	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+31	2.18	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+32	1.79	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+33	1.45	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+34	0.71	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+35	0.63	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+36	0	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+37	0	3597	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+1	2.68	DD25	res res	res res
+2	2.54	DD25	res res	res res
+3	2.69	DD25	res res	res res
+4	3.25	DD25	res res	res res
+5	3.69	DD25	res res	res res
+6	4.16	DD25	res res	res res
+7	3.94	DD25	res res	res res
+8	3.98	DD25	res res	res res
+9	3.94	DD25	res res	res res
+10	3.85	DD25	res res	res res
+11	3.82	DD25	res res	res res
+12	3.7	DD25	res res	res res
+13	3.62	DD25	res res	res res
+14	3.73	DD25	res res	res res
+15	3.64	DD25	res res	res res
+16	3.55	DD25	res res	res res
+17	3.4	DD25	res res	res res
+18	3.41	DD25	res res	res res
+19	3.22	DD25	res res	res res
+20	3.16	DD25	res res	res res
+21	3.12	DD25	res res	res res
+22	2.93	DD25	res res	res res
+23	2.85	DD25	res res	res res
+24	2.66	DD25	res res	res res
+25	2.59	DD25	res res	res res
+26	2.32	DD25	res res	res res
+27	2.13	DD25	res res	res res
+28	1.86	DD25	res res	res res
+29	1.61	DD25	res res	res res
+30	0.95	DD25	res res	res res
+31	0.73	DD25	res res	res res
+32	0	DD25	res res	res res
+33	0	DD25	res res	res res
+34	0	DD25	res res	res res
+35	0	DD25	res res	res res
+36	0	DD25	res res	res res
+37	0	DD25	res res	res res
+1	2.85	DD24	wt wt	wt wt
+2	2.55	DD24	wt wt	wt wt
+3	2.48	DD24	wt wt	wt wt
+4	2.95	DD24	wt wt	wt wt
+5	3.62	DD24	wt wt	wt wt
+6	4.06	DD24	wt wt	wt wt
+7	4.26	DD24	wt wt	wt wt
+8	4.43	DD24	wt wt	wt wt
+9	4.36	DD24	wt wt	wt wt
+10	4.29	DD24	wt wt	wt wt
+11	4.23	DD24	wt wt	wt wt
+12	4.24	DD24	wt wt	wt wt
+13	4.12	DD24	wt wt	wt wt
+14	4.02	DD24	wt wt	wt wt
+15	3.89	DD24	wt wt	wt wt
+16	3.87	DD24	wt wt	wt wt
+17	3.68	DD24	wt wt	wt wt
+18	3.45	DD24	wt wt	wt wt
+19	3.27	DD24	wt wt	wt wt
+20	3.09	DD24	wt wt	wt wt
+21	2.75	DD24	wt wt	wt wt
+22	2.43	DD24	wt wt	wt wt
+23	2.16	DD24	wt wt	wt wt
+24	2	DD24	wt wt	wt wt
+25	1.82	DD24	wt wt	wt wt
+26	1.47	DD24	wt wt	wt wt
+27	1.11	DD24	wt wt	wt wt
+28	0.71	DD24	wt wt	wt wt
+29	0.61	DD24	wt wt	wt wt
+30	0	DD24	wt wt	wt wt
+31	0	DD24	wt wt	wt wt
+32	0	DD24	wt wt	wt wt
+33	0	DD24	wt wt	wt wt
+34	0	DD24	wt wt	wt wt
+35	0	DD24	wt wt	wt wt
+36	0	DD24	wt wt	wt wt
+37	0	DD24	wt wt	wt wt
+1	2.42	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+2	2.64	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+3	3.29	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+4	3.76	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+5	3.75	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+6	3.93	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+7	3.93	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+8	3.9	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+9	3.91	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+10	3.98	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+11	3.99	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+12	3.94	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+13	3.88	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+14	4	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+15	3.95	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+16	3.87	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+17	3.71	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+18	3.65	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+19	3.71	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+20	3.57	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+21	3.53	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+22	3.48	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+23	3.49	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+24	3.34	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+25	3.11	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+26	3.09	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+27	2.84	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+28	2.58	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+29	2.29	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+30	1.98	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+31	1.54	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+32	1.32	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+33	1.19	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+34	1.1	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+35	0	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+36	0	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+37	0	3593	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+1	2.63	3604	r434 r434 d13 d13	res res
+2	2.58	3604	r434 r434 d13 d13	res res
+3	2.7	3604	r434 r434 d13 d13	res res
+4	3.18	3604	r434 r434 d13 d13	res res
+5	3.74	3604	r434 r434 d13 d13	res res
+6	3.86	3604	r434 r434 d13 d13	res res
+7	3.88	3604	r434 r434 d13 d13	res res
+8	3.88	3604	r434 r434 d13 d13	res res
+9	3.92	3604	r434 r434 d13 d13	res res
+10	3.88	3604	r434 r434 d13 d13	res res
+11	3.95	3604	r434 r434 d13 d13	res res
+12	3.73	3604	r434 r434 d13 d13	res res
+13	3.69	3604	r434 r434 d13 d13	res res
+14	3.83	3604	r434 r434 d13 d13	res res
+15	3.72	3604	r434 r434 d13 d13	res res
+16	3.72	3604	r434 r434 d13 d13	res res
+17	3.63	3604	r434 r434 d13 d13	res res
+18	3.48	3604	r434 r434 d13 d13	res res
+19	3.44	3604	r434 r434 d13 d13	res res
+20	3.22	3604	r434 r434 d13 d13	res res
+21	3.45	3604	r434 r434 d13 d13	res res
+22	3.27	3604	r434 r434 d13 d13	res res
+23	3.1	3604	r434 r434 d13 d13	res res
+24	3.3	3604	r434 r434 d13 d13	res res
+25	2.9	3604	r434 r434 d13 d13	res res
+26	2.74	3604	r434 r434 d13 d13	res res
+27	2.58	3604	r434 r434 d13 d13	res res
+28	2.23	3604	r434 r434 d13 d13	res res
+29	1.91	3604	r434 r434 d13 d13	res res
+30	1.2	3604	r434 r434 d13 d13	res res
+31	1.06	3604	r434 r434 d13 d13	res res
+32	0.45	3604	r434 r434 d13 d13	res res
+33	0	3604	r434 r434 d13 d13	res res
+34	0	3604	r434 r434 d13 d13	res res
+35	0	3604	r434 r434 d13 d13	res res
+36	0	3604	r434 r434 d13 d13	res res
+37	0	3604	r434 r434 d13 d13	res res
+1	2.64	3599	w453 w453 d13 d13	wt wt
+2	2.67	3599	w453 w453 d13 d13	wt wt
+3	2.88	3599	w453 w453 d13 d13	wt wt
+4	3.5	3599	w453 w453 d13 d13	wt wt
+5	3.91	3599	w453 w453 d13 d13	wt wt
+6	4.35	3599	w453 w453 d13 d13	wt wt
+7	4.49	3599	w453 w453 d13 d13	wt wt
+8	4.59	3599	w453 w453 d13 d13	wt wt
+9	4.61	3599	w453 w453 d13 d13	wt wt
+10	4.56	3599	w453 w453 d13 d13	wt wt
+11	4.45	3599	w453 w453 d13 d13	wt wt
+12	4.29	3599	w453 w453 d13 d13	wt wt
+13	4.26	3599	w453 w453 d13 d13	wt wt
+14	4.23	3599	w453 w453 d13 d13	wt wt
+15	4.04	3599	w453 w453 d13 d13	wt wt
+16	3.97	3599	w453 w453 d13 d13	wt wt
+17	3.81	3599	w453 w453 d13 d13	wt wt
+18	3.5	3599	w453 w453 d13 d13	wt wt
+19	3.2	3599	w453 w453 d13 d13	wt wt
+20	2.9	3599	w453 w453 d13 d13	wt wt
+21	2.84	3599	w453 w453 d13 d13	wt wt
+22	2.51	3599	w453 w453 d13 d13	wt wt
+23	2.07	3599	w453 w453 d13 d13	wt wt
+24	1.7	3599	w453 w453 d13 d13	wt wt
+25	1.53	3599	w453 w453 d13 d13	wt wt
+26	1.04	3599	w453 w453 d13 d13	wt wt
+27	0.89	3599	w453 w453 d13 d13	wt wt
+28	0.6	3599	w453 w453 d13 d13	wt wt
+29	0.41	3599	w453 w453 d13 d13	wt wt
+30	0	3599	w453 w453 d13 d13	wt wt
+31	0	3599	w453 w453 d13 d13	wt wt
+32	0	3599	w453 w453 d13 d13	wt wt
+33	0	3599	w453 w453 d13 d13	wt wt
+34	0	3599	w453 w453 d13 d13	wt wt
+35	0	3599	w453 w453 d13 d13	wt wt
+36	0	3599	w453 w453 d13 d13	wt wt
+37	0	3599	w453 w453 d13 d13	wt wt
+1	2.38	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+2	2.32	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+3	2.58	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+4	3.27	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+5	3.58	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+6	3.87	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+7	3.89	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+8	3.89	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+9	3.92	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+10	3.99	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+11	3.83	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+12	3.8	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+13	3.85	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+14	3.8	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+15	3.71	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+16	3.69	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+17	3.61	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+18	3.52	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+19	3.45	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+20	3.46	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+21	3.36	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+22	3.35	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+23	3.19	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+24	3.08	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+25	2.9	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+26	2.66	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+27	2.43	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+28	2.16	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+29	1.21	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+30	0.94	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+31	0.84	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+32	0	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+33	0	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+34	0	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+35	0	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+36	0	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+37	0	DD20	r434 r434 d13hd d13hd	r434 r434 d13hd d13hd
+1	2.37	3522	r434 r434 d13 d13	res res
+2	2.3	3522	r434 r434 d13 d13	res res
+3	2.54	3522	r434 r434 d13 d13	res res
+4	3.15	3522	r434 r434 d13 d13	res res
+5	3.7	3522	r434 r434 d13 d13	res res
+6	3.76	3522	r434 r434 d13 d13	res res
+7	4	3522	r434 r434 d13 d13	res res
+8	3.94	3522	r434 r434 d13 d13	res res
+9	3.93	3522	r434 r434 d13 d13	res res
+10	3.92	3522	r434 r434 d13 d13	res res
+11	3.92	3522	r434 r434 d13 d13	res res
+12	3.86	3522	r434 r434 d13 d13	res res
+13	3.78	3522	r434 r434 d13 d13	res res
+14	3.78	3522	r434 r434 d13 d13	res res
+15	3.83	3522	r434 r434 d13 d13	res res
+16	3.66	3522	r434 r434 d13 d13	res res
+17	3.63	3522	r434 r434 d13 d13	res res
+18	3.52	3522	r434 r434 d13 d13	res res
+19	3.41	3522	r434 r434 d13 d13	res res
+20	3.24	3522	r434 r434 d13 d13	res res
+21	3.32	3522	r434 r434 d13 d13	res res
+22	3.17	3522	r434 r434 d13 d13	res res
+23	3.17	3522	r434 r434 d13 d13	res res
+24	3.07	3522	r434 r434 d13 d13	res res
+25	2.97	3522	r434 r434 d13 d13	res res
+26	2.81	3522	r434 r434 d13 d13	res res
+27	2.71	3522	r434 r434 d13 d13	res res
+28	2.33	3522	r434 r434 d13 d13	res res
+29	2.03	3522	r434 r434 d13 d13	res res
+30	1.95	3522	r434 r434 d13 d13	res res
+31	1.72	3522	r434 r434 d13 d13	res res
+32	1.63	3522	r434 r434 d13 d13	res res
+33	0.98	3522	r434 r434 d13 d13	res res
+34	0.67	3522	r434 r434 d13 d13	res res
+35	0	3522	r434 r434 d13 d13	res res
+36	0	3522	r434 r434 d13 d13	res res
+37	0	3522	r434 r434 d13 d13	res res
+1	2.73	3508	w453 w453 d13 d13	wt wt
+2	2.67	3508	w453 w453 d13 d13	wt wt
+3	2.68	3508	w453 w453 d13 d13	wt wt
+4	3.19	3508	w453 w453 d13 d13	wt wt
+5	3.92	3508	w453 w453 d13 d13	wt wt
+6	4.32	3508	w453 w453 d13 d13	wt wt
+7	4.41	3508	w453 w453 d13 d13	wt wt
+8	4.44	3508	w453 w453 d13 d13	wt wt
+9	4.42	3508	w453 w453 d13 d13	wt wt
+10	4.53	3508	w453 w453 d13 d13	wt wt
+11	4.59	3508	w453 w453 d13 d13	wt wt
+12	4.5	3508	w453 w453 d13 d13	wt wt
+13	4.49	3508	w453 w453 d13 d13	wt wt
+14	4.34	3508	w453 w453 d13 d13	wt wt
+15	4.35	3508	w453 w453 d13 d13	wt wt
+16	4.16	3508	w453 w453 d13 d13	wt wt
+17	3.99	3508	w453 w453 d13 d13	wt wt
+18	3.9	3508	w453 w453 d13 d13	wt wt
+19	3.76	3508	w453 w453 d13 d13	wt wt
+20	3.31	3508	w453 w453 d13 d13	wt wt
+21	2.96	3508	w453 w453 d13 d13	wt wt
+22	2.75	3508	w453 w453 d13 d13	wt wt
+23	2.37	3508	w453 w453 d13 d13	wt wt
+24	2.21	3508	w453 w453 d13 d13	wt wt
+25	1.89	3508	w453 w453 d13 d13	wt wt
+26	1.53	3508	w453 w453 d13 d13	wt wt
+27	1.32	3508	w453 w453 d13 d13	wt wt
+28	0.76	3508	w453 w453 d13 d13	wt wt
+29	0.54	3508	w453 w453 d13 d13	wt wt
+30	0	3508	w453 w453 d13 d13	wt wt
+31	0	3508	w453 w453 d13 d13	wt wt
+32	0	3508	w453 w453 d13 d13	wt wt
+33	0	3508	w453 w453 d13 d13	wt wt
+34	0	3508	w453 w453 d13 d13	wt wt
+35	0	3508	w453 w453 d13 d13	wt wt
+36	0	3508	w453 w453 d13 d13	wt wt
+37	0	3508	w453 w453 d13 d13	wt wt
+1	2.17	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+2	2.15	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+3	2.17	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+4	2.59	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+5	3.19	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+6	3.49	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+7	3.61	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+8	3.73	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+9	3.79	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+10	3.7	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+11	3.76	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+12	3.71	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+13	3.62	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+14	3.33	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+15	3.2	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+16	3.04	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+17	3	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+18	2.84	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+19	2.62	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+20	2.31	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+21	1.9	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+22	1.9	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+23	1.52	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+24	0.77	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+25	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+26	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+27	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+28	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+29	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+30	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+31	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+32	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+33	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+34	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+35	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+36	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+37	0	3551	gof gof D(I) D(I)	gof gof D(I) D(I)
+1	2.56	3489	gof gof D D	gof gof
+2	2.45	3489	gof gof D D	gof gof
+3	2.43	3489	gof gof D D	gof gof
+4	2.76	3489	gof gof D D	gof gof
+5	3.27	3489	gof gof D D	gof gof
+6	3.69	3489	gof gof D D	gof gof
+7	3.82	3489	gof gof D D	gof gof
+8	3.85	3489	gof gof D D	gof gof
+9	3.86	3489	gof gof D D	gof gof
+10	3.77	3489	gof gof D D	gof gof
+11	3.71	3489	gof gof D D	gof gof
+12	3.72	3489	gof gof D D	gof gof
+13	3.67	3489	gof gof D D	gof gof
+14	3.52	3489	gof gof D D	gof gof
+15	3.35	3489	gof gof D D	gof gof
+16	3.24	3489	gof gof D D	gof gof
+17	3.05	3489	gof gof D D	gof gof
+18	2.89	3489	gof gof D D	gof gof
+19	2.63	3489	gof gof D D	gof gof
+20	2.43	3489	gof gof D D	gof gof
+21	2.1	3489	gof gof D D	gof gof
+22	1.89	3489	gof gof D D	gof gof
+23	1.48	3489	gof gof D D	gof gof
+24	0.98	3489	gof gof D D	gof gof
+25	0.48	3489	gof gof D D	gof gof
+26	0.33	3489	gof gof D D	gof gof
+27	0	3489	gof gof D D	gof gof
+28	0	3489	gof gof D D	gof gof
+29	0	3489	gof gof D D	gof gof
+30	0	3489	gof gof D D	gof gof
+31	0	3489	gof gof D D	gof gof
+32	0	3489	gof gof D D	gof gof
+33	0	3489	gof gof D D	gof gof
+34	0	3489	gof gof D D	gof gof
+35	0	3489	gof gof D D	gof gof
+36	0	3489	gof gof D D	gof gof
+37	0	3489	gof gof D D	gof gof
+1	2.36	DD15	wt wt	wt wt
+2	2.3	DD15	wt wt	wt wt
+3	2.59	DD15	wt wt	wt wt
+4	3.34	DD15	wt wt	wt wt
+5	3.69	DD15	wt wt	wt wt
+6	4	DD15	wt wt	wt wt
+7	3.94	DD15	wt wt	wt wt
+8	4.03	DD15	wt wt	wt wt
+9	4.01	DD15	wt wt	wt wt
+10	4.05	DD15	wt wt	wt wt
+11	4.02	DD15	wt wt	wt wt
+12	3.89	DD15	wt wt	wt wt
+13	3.88	DD15	wt wt	wt wt
+14	3.78	DD15	wt wt	wt wt
+15	3.79	DD15	wt wt	wt wt
+16	3.61	DD15	wt wt	wt wt
+17	3.54	DD15	wt wt	wt wt
+18	3.25	DD15	wt wt	wt wt
+19	2.96	DD15	wt wt	wt wt
+20	2.71	DD15	wt wt	wt wt
+21	2.43	DD15	wt wt	wt wt
+22	2.28	DD15	wt wt	wt wt
+23	1.88	DD15	wt wt	wt wt
+24	1.87	DD15	wt wt	wt wt
+25	1.58	DD15	wt wt	wt wt
+26	1.21	DD15	wt wt	wt wt
+27	0.72	DD15	wt wt	wt wt
+28	0.5	DD15	wt wt	wt wt
+29	0.4	DD15	wt wt	wt wt
+30	0	DD15	wt wt	wt wt
+31	0	DD15	wt wt	wt wt
+32	0	DD15	wt wt	wt wt
+33	0	DD15	wt wt	wt wt
+34	0	DD15	wt wt	wt wt
+35	0	DD15	wt wt	wt wt
+36	0	DD15	wt wt	wt wt
+37	0	DD15	wt wt	wt wt
+1	2.38	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+2	2.25	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+3	2.32	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+4	2.63	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+5	3.25	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+6	3.55	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+7	3.68	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+8	3.67	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+9	3.68	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+10	3.85	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+11	3.71	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+12	3.64	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+13	3.52	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+14	3.52	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+15	3.38	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+16	3.38	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+17	3.27	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+18	3.18	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+19	2.94	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+20	2.74	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+21	2.61	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+22	2.31	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+23	1.92	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+24	1.52	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+25	0.49	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+26	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+27	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+28	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+29	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+30	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+31	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+32	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+33	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+34	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+35	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+36	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+37	0	3608	gof gof D(I) D(I)	gof gof D(I) D(I)
+1	2.44	DD13	gof gof	gof gof
+2	2.36	DD13	gof gof	gof gof
+3	2.43	DD13	gof gof	gof gof
+4	2.9	DD13	gof gof	gof gof
+5	3.49	DD13	gof gof	gof gof
+6	3.9	DD13	gof gof	gof gof
+7	3.94	DD13	gof gof	gof gof
+8	4.09	DD13	gof gof	gof gof
+9	4.14	DD13	gof gof	gof gof
+10	4.11	DD13	gof gof	gof gof
+11	4.05	DD13	gof gof	gof gof
+12	3.85	DD13	gof gof	gof gof
+13	3.78	DD13	gof gof	gof gof
+14	3.67	DD13	gof gof	gof gof
+15	3.49	DD13	gof gof	gof gof
+16	3.36	DD13	gof gof	gof gof
+17	3.27	DD13	gof gof	gof gof
+18	2.98	DD13	gof gof	gof gof
+19	2.74	DD13	gof gof	gof gof
+20	2.75	DD13	gof gof	gof gof
+21	2.26	DD13	gof gof	gof gof
+22	1.85	DD13	gof gof	gof gof
+23	1.31	DD13	gof gof	gof gof
+24	1.23	DD13	gof gof	gof gof
+25	1.14	DD13	gof gof	gof gof
+26	0	DD13	gof gof	gof gof
+27	0	DD13	gof gof	gof gof
+28	0	DD13	gof gof	gof gof
+29	0	DD13	gof gof	gof gof
+30	0	DD13	gof gof	gof gof
+31	0	DD13	gof gof	gof gof
+32	0	DD13	gof gof	gof gof
+33	0	DD13	gof gof	gof gof
+34	0	DD13	gof gof	gof gof
+35	0	DD13	gof gof	gof gof
+36	0	DD13	gof gof	gof gof
+37	0	DD13	gof gof	gof gof
+1	2.63	3492	w453 w453 d13 d13	wt wt
+2	2.51	3492	w453 w453 d13 d13	wt wt
+3	2.51	3492	w453 w453 d13 d13	wt wt
+4	3	3492	w453 w453 d13 d13	wt wt
+5	3.68	3492	w453 w453 d13 d13	wt wt
+6	3.96	3492	w453 w453 d13 d13	wt wt
+7	4.17	3492	w453 w453 d13 d13	wt wt
+8	4.39	3492	w453 w453 d13 d13	wt wt
+9	4.39	3492	w453 w453 d13 d13	wt wt
+10	4.33	3492	w453 w453 d13 d13	wt wt
+11	4.27	3492	w453 w453 d13 d13	wt wt
+12	4.21	3492	w453 w453 d13 d13	wt wt
+13	4.19	3492	w453 w453 d13 d13	wt wt
+14	4.13	3492	w453 w453 d13 d13	wt wt
+15	3.99	3492	w453 w453 d13 d13	wt wt
+16	3.93	3492	w453 w453 d13 d13	wt wt
+17	3.82	3492	w453 w453 d13 d13	wt wt
+18	3.54	3492	w453 w453 d13 d13	wt wt
+19	3.35	3492	w453 w453 d13 d13	wt wt
+20	3.16	3492	w453 w453 d13 d13	wt wt
+21	2.86	3492	w453 w453 d13 d13	wt wt
+22	2.64	3492	w453 w453 d13 d13	wt wt
+23	2.34	3492	w453 w453 d13 d13	wt wt
+24	1.95	3492	w453 w453 d13 d13	wt wt
+25	1.81	3492	w453 w453 d13 d13	wt wt
+26	1.47	3492	w453 w453 d13 d13	wt wt
+27	1.1	3492	w453 w453 d13 d13	wt wt
+28	0.88	3492	w453 w453 d13 d13	wt wt
+29	0.87	3492	w453 w453 d13 d13	wt wt
+30	0	3492	w453 w453 d13 d13	wt wt
+31	0	3492	w453 w453 d13 d13	wt wt
+32	0	3492	w453 w453 d13 d13	wt wt
+33	0	3492	w453 w453 d13 d13	wt wt
+34	0	3492	w453 w453 d13 d13	wt wt
+35	0	3492	w453 w453 d13 d13	wt wt
+36	0	3492	w453 w453 d13 d13	wt wt
+37	0	3492	w453 w453 d13 d13	wt wt
+1	2.31	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+2	2.22	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+3	2.46	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+4	2.92	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+5	3.48	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+6	3.72	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+7	3.88	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+8	3.94	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+9	3.96	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+10	3.78	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+11	3.73	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+12	3.65	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+13	3.48	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+14	3.43	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+15	3.26	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+16	3.18	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+17	3.02	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+18	2.68	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+19	2.33	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+20	2.36	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+21	1.62	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+22	1.32	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+23	0.91	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+24	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+25	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+26	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+27	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+28	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+29	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+30	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+31	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+32	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+33	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+34	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+35	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+36	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+37	0	3550	gof gof D(I) D(I)	gof gof D(I) D(I)
+1	2.33	3498	gof gof D D	gof gof
+2	2.23	3498	gof gof D D	gof gof
+3	2.41	3498	gof gof D D	gof gof
+4	2.72	3498	gof gof D D	gof gof
+5	3.27	3498	gof gof D D	gof gof
+6	3.47	3498	gof gof D D	gof gof
+7	3.58	3498	gof gof D D	gof gof
+8	3.6	3498	gof gof D D	gof gof
+9	3.5	3498	gof gof D D	gof gof
+10	3.47	3498	gof gof D D	gof gof
+11	3.52	3498	gof gof D D	gof gof
+12	3.5	3498	gof gof D D	gof gof
+13	3.46	3498	gof gof D D	gof gof
+14	3.41	3498	gof gof D D	gof gof
+15	3.23	3498	gof gof D D	gof gof
+16	3.24	3498	gof gof D D	gof gof
+17	3.1	3498	gof gof D D	gof gof
+18	2.9	3498	gof gof D D	gof gof
+19	2.8	3498	gof gof D D	gof gof
+20	2.74	3498	gof gof D D	gof gof
+21	2.5	3498	gof gof D D	gof gof
+22	2.31	3498	gof gof D D	gof gof
+23	2.23	3498	gof gof D D	gof gof
+24	1.88	3498	gof gof D D	gof gof
+25	1.6	3498	gof gof D D	gof gof
+26	0.99	3498	gof gof D D	gof gof
+27	0.87	3498	gof gof D D	gof gof
+28	0	3498	gof gof D D	gof gof
+29	0	3498	gof gof D D	gof gof
+30	0	3498	gof gof D D	gof gof
+31	0	3498	gof gof D D	gof gof
+32	0	3498	gof gof D D	gof gof
+33	0	3498	gof gof D D	gof gof
+34	0	3498	gof gof D D	gof gof
+35	0	3498	gof gof D D	gof gof
+36	0	3498	gof gof D D	gof gof
+37	0	3498	gof gof D D	gof gof
+1	2.62	3491	w453 w453 d13 d13	wt wt
+2	2.44	3491	w453 w453 d13 d13	wt wt
+3	2.42	3491	w453 w453 d13 d13	wt wt
+4	2.93	3491	w453 w453 d13 d13	wt wt
+5	3.62	3491	w453 w453 d13 d13	wt wt
+6	3.84	3491	w453 w453 d13 d13	wt wt
+7	4.1	3491	w453 w453 d13 d13	wt wt
+8	4.18	3491	w453 w453 d13 d13	wt wt
+9	4.13	3491	w453 w453 d13 d13	wt wt
+10	4.11	3491	w453 w453 d13 d13	wt wt
+11	4.08	3491	w453 w453 d13 d13	wt wt
+12	3.95	3491	w453 w453 d13 d13	wt wt
+13	4.1	3491	w453 w453 d13 d13	wt wt
+14	3.91	3491	w453 w453 d13 d13	wt wt
+15	3.93	3491	w453 w453 d13 d13	wt wt
+16	3.68	3491	w453 w453 d13 d13	wt wt
+17	3.48	3491	w453 w453 d13 d13	wt wt
+18	3.37	3491	w453 w453 d13 d13	wt wt
+19	3.06	3491	w453 w453 d13 d13	wt wt
+20	2.7	3491	w453 w453 d13 d13	wt wt
+21	2.58	3491	w453 w453 d13 d13	wt wt
+22	2.25	3491	w453 w453 d13 d13	wt wt
+23	1.75	3491	w453 w453 d13 d13	wt wt
+24	1.36	3491	w453 w453 d13 d13	wt wt
+25	1.43	3491	w453 w453 d13 d13	wt wt
+26	1.18	3491	w453 w453 d13 d13	wt wt
+27	1.05	3491	w453 w453 d13 d13	wt wt
+28	0.76	3491	w453 w453 d13 d13	wt wt
+29	0.59	3491	w453 w453 d13 d13	wt wt
+30	0	3491	w453 w453 d13 d13	wt wt
+31	0	3491	w453 w453 d13 d13	wt wt
+32	0	3491	w453 w453 d13 d13	wt wt
+33	0	3491	w453 w453 d13 d13	wt wt
+34	0	3491	w453 w453 d13 d13	wt wt
+35	0	3491	w453 w453 d13 d13	wt wt
+36	0	3491	w453 w453 d13 d13	wt wt
+37	0	3491	w453 w453 d13 d13	wt wt
+1	2.58	3354	gof gof	gof gof
+2	2.42	3354	gof gof	gof gof
+3	2.4	3354	gof gof	gof gof
+4	2.84	3354	gof gof	gof gof
+5	3.32	3354	gof gof	gof gof
+6	3.69	3354	gof gof	gof gof
+7	3.74	3354	gof gof	gof gof
+8	3.73	3354	gof gof	gof gof
+9	3.71	3354	gof gof	gof gof
+10	3.67	3354	gof gof	gof gof
+11	3.54	3354	gof gof	gof gof
+12	3.44	3354	gof gof	gof gof
+13	3.43	3354	gof gof	gof gof
+14	3.31	3354	gof gof	gof gof
+15	3.3	3354	gof gof	gof gof
+16	3.16	3354	gof gof	gof gof
+17	3.09	3354	gof gof	gof gof
+18	2.96	3354	gof gof	gof gof
+19	2.54	3354	gof gof	gof gof
+20	2.48	3354	gof gof	gof gof
+21	2.14	3354	gof gof	gof gof
+22	1.64	3354	gof gof	gof gof
+23	1.49	3354	gof gof	gof gof
+24	1.04	3354	gof gof	gof gof
+25	0.69	3354	gof gof	gof gof
+26	0	3354	gof gof	gof gof
+27	0	3354	gof gof	gof gof
+28	0	3354	gof gof	gof gof
+29	0	3354	gof gof	gof gof
+30	0	3354	gof gof	gof gof
+31	0	3354	gof gof	gof gof
+32	0	3354	gof gof	gof gof
+33	0	3354	gof gof	gof gof
+34	0	3354	gof gof	gof gof
+35	0	3354	gof gof	gof gof
+36	0	3354	gof gof	gof gof
+37	0	3354	gof gof	gof gof
+1	2.62	3037	res res	res res
+2	2.53	3037	res res	res res
+3	2.59	3037	res res	res res
+4	3.21	3037	res res	res res
+5	3.85	3037	res res	res res
+6	4.07	3037	res res	res res
+7	4.16	3037	res res	res res
+8	4.19	3037	res res	res res
+9	4.27	3037	res res	res res
+10	4.29	3037	res res	res res
+11	4.24	3037	res res	res res
+12	4.19	3037	res res	res res
+13	4.14	3037	res res	res res
+14	4.14	3037	res res	res res
+15	4.12	3037	res res	res res
+16	4	3037	res res	res res
+17	3.97	3037	res res	res res
+18	3.89	3037	res res	res res
+19	3.74	3037	res res	res res
+20	3.71	3037	res res	res res
+21	3.63	3037	res res	res res
+22	3.52	3037	res res	res res
+23	3.32	3037	res res	res res
+24	3.13	3037	res res	res res
+25	2.98	3037	res res	res res
+26	2.82	3037	res res	res res
+27	2.77	3037	res res	res res
+28	2.66	3037	res res	res res
+29	2.02	3037	res res	res res
+30	1.95	3037	res res	res res
+31	1.49	3037	res res	res res
+32	0.84	3037	res res	res res
+33	0.84	3037	res res	res res
+34	0	3037	res res	res res
+35	0	3037	res res	res res
+36	0	3037	res res	res res
+37	0	3037	res res	res res
+1	2.7	3051	b13hd b13hd	b13hd b13hd
+2	2.52	3051	b13hd b13hd	b13hd b13hd
+3	2.56	3051	b13hd b13hd	b13hd b13hd
+4	3.04	3051	b13hd b13hd	b13hd b13hd
+5	3.78	3051	b13hd b13hd	b13hd b13hd
+6	3.97	3051	b13hd b13hd	b13hd b13hd
+7	4.06	3051	b13hd b13hd	b13hd b13hd
+8	4.27	3051	b13hd b13hd	b13hd b13hd
+9	4.14	3051	b13hd b13hd	b13hd b13hd
+10	4.12	3051	b13hd b13hd	b13hd b13hd
+11	4.08	3051	b13hd b13hd	b13hd b13hd
+12	4.05	3051	b13hd b13hd	b13hd b13hd
+13	4.01	3051	b13hd b13hd	b13hd b13hd
+14	3.92	3051	b13hd b13hd	b13hd b13hd
+15	3.94	3051	b13hd b13hd	b13hd b13hd
+16	3.82	3051	b13hd b13hd	b13hd b13hd
+17	3.83	3051	b13hd b13hd	b13hd b13hd
+18	3.76	3051	b13hd b13hd	b13hd b13hd
+19	3.84	3051	b13hd b13hd	b13hd b13hd
+20	3.75	3051	b13hd b13hd	b13hd b13hd
+21	3.73	3051	b13hd b13hd	b13hd b13hd
+22	3.73	3051	b13hd b13hd	b13hd b13hd
+23	3.39	3051	b13hd b13hd	b13hd b13hd
+24	3.3	3051	b13hd b13hd	b13hd b13hd
+25	3.26	3051	b13hd b13hd	b13hd b13hd
+26	3.25	3051	b13hd b13hd	b13hd b13hd
+27	3.13	3051	b13hd b13hd	b13hd b13hd
+28	3.03	3051	b13hd b13hd	b13hd b13hd
+29	2.77	3051	b13hd b13hd	b13hd b13hd
+30	2.34	3051	b13hd b13hd	b13hd b13hd
+31	2.05	3051	b13hd b13hd	b13hd b13hd
+32	1.81	3051	b13hd b13hd	b13hd b13hd
+33	1.46	3051	b13hd b13hd	b13hd b13hd
+34	1.03	3051	b13hd b13hd	b13hd b13hd
+35	0.56	3051	b13hd b13hd	b13hd b13hd
+36	0	3051	b13hd b13hd	b13hd b13hd
+37	0	3051	b13hd b13hd	b13hd b13hd
+1	2.51	3178	wt wt	wt wt
+2	2.65	3178	wt wt	wt wt
+3	3.05	3178	wt wt	wt wt
+4	3.76	3178	wt wt	wt wt
+5	3.92	3178	wt wt	wt wt
+6	4.02	3178	wt wt	wt wt
+7	4.05	3178	wt wt	wt wt
+8	4.16	3178	wt wt	wt wt
+9	4.21	3178	wt wt	wt wt
+10	4.17	3178	wt wt	wt wt
+11	4.15	3178	wt wt	wt wt
+12	4.15	3178	wt wt	wt wt
+13	4.11	3178	wt wt	wt wt
+14	3.88	3178	wt wt	wt wt
+15	3.86	3178	wt wt	wt wt
+16	3.75	3178	wt wt	wt wt
+17	3.57	3178	wt wt	wt wt
+18	3.39	3178	wt wt	wt wt
+19	3.13	3178	wt wt	wt wt
+20	2.89	3178	wt wt	wt wt
+21	2.77	3178	wt wt	wt wt
+22	2.6	3178	wt wt	wt wt
+23	2.27	3178	wt wt	wt wt
+24	1.95	3178	wt wt	wt wt
+25	1.74	3178	wt wt	wt wt
+26	1.41	3178	wt wt	wt wt
+27	1.15	3178	wt wt	wt wt
+28	0.64	3178	wt wt	wt wt
+29	0.54	3178	wt wt	wt wt
+30	0	3178	wt wt	wt wt
+31	0	3178	wt wt	wt wt
+32	0	3178	wt wt	wt wt
+33	0	3178	wt wt	wt wt
+34	0	3178	wt wt	wt wt
+35	0	3178	wt wt	wt wt
+36	0	3178	wt wt	wt wt
+37	0	3178	wt wt	wt wt
+1	2.68	DD5	gof gof	gof gof
+2	2.53	DD5	gof gof	gof gof
+3	2.51	DD5	gof gof	gof gof
+4	2.67	DD5	gof gof	gof gof
+5	3.12	DD5	gof gof	gof gof
+6	3.68	DD5	gof gof	gof gof
+7	4.05	DD5	gof gof	gof gof
+8	4.03	DD5	gof gof	gof gof
+9	4.29	DD5	gof gof	gof gof
+10	4.3	DD5	gof gof	gof gof
+11	4.22	DD5	gof gof	gof gof
+12	4.27	DD5	gof gof	gof gof
+13	4.24	DD5	gof gof	gof gof
+14	4.09	DD5	gof gof	gof gof
+15	3.91	DD5	gof gof	gof gof
+16	3.71	DD5	gof gof	gof gof
+17	3.55	DD5	gof gof	gof gof
+18	3.44	DD5	gof gof	gof gof
+19	3.12	DD5	gof gof	gof gof
+20	2.48	DD5	gof gof	gof gof
+21	2.11	DD5	gof gof	gof gof
+22	2.48	DD5	gof gof	gof gof
+23	1.31	DD5	gof gof	gof gof
+24	1.02	DD5	gof gof	gof gof
+25	0.99	DD5	gof gof	gof gof
+26	0.5	DD5	gof gof	gof gof
+27	0	DD5	gof gof	gof gof
+28	0	DD5	gof gof	gof gof
+29	0	DD5	gof gof	gof gof
+30	0	DD5	gof gof	gof gof
+31	0	DD5	gof gof	gof gof
+32	0	DD5	gof gof	gof gof
+33	0	DD5	gof gof	gof gof
+34	0	DD5	gof gof	gof gof
+35	0	DD5	gof gof	gof gof
+36	0	DD5	gof gof	gof gof
+37	0	DD5	gof gof	gof gof
+1	2.76	3048	wt wt	wt wt
+2	2.49	3048	wt wt	wt wt
+3	2.64	3048	wt wt	wt wt
+4	3	3048	wt wt	wt wt
+5	3.72	3048	wt wt	wt wt
+6	4.11	3048	wt wt	wt wt
+7	4.25	3048	wt wt	wt wt
+8	4.09	3048	wt wt	wt wt
+9	4.33	3048	wt wt	wt wt
+10	4.27	3048	wt wt	wt wt
+11	4.29	3048	wt wt	wt wt
+12	4.29	3048	wt wt	wt wt
+13	4.29	3048	wt wt	wt wt
+14	4.3	3048	wt wt	wt wt
+15	4.22	3048	wt wt	wt wt
+16	4.05	3048	wt wt	wt wt
+17	3.97	3048	wt wt	wt wt
+18	3.89	3048	wt wt	wt wt
+19	3.79	3048	wt wt	wt wt
+20	3.64	3048	wt wt	wt wt
+21	3.39	3048	wt wt	wt wt
+22	3.08	3048	wt wt	wt wt
+23	2.86	3048	wt wt	wt wt
+24	2.6	3048	wt wt	wt wt
+25	2.29	3048	wt wt	wt wt
+26	2.07	3048	wt wt	wt wt
+27	1.72	3048	wt wt	wt wt
+28	1.49	3048	wt wt	wt wt
+29	0.88	3048	wt wt	wt wt
+30	0.67	3048	wt wt	wt wt
+31	0	3048	wt wt	wt wt
+32	0	3048	wt wt	wt wt
+33	0	3048	wt wt	wt wt
+34	0	3048	wt wt	wt wt
+35	0	3048	wt wt	wt wt
+36	0	3048	wt wt	wt wt
+37	0	3048	wt wt	wt wt
+1	2.53	3097	res res	res res
+2	2.46	3097	res res	res res
+3	2.69	3097	res res	res res
+4	3.4	3097	res res	res res
+5	3.86	3097	res res	res res
+6	4.1	3097	res res	res res
+7	4.35	3097	res res	res res
+8	4.42	3097	res res	res res
+9	4.37	3097	res res	res res
+10	4.36	3097	res res	res res
+11	4.23	3097	res res	res res
+12	4.16	3097	res res	res res
+13	4.14	3097	res res	res res
+14	4.03	3097	res res	res res
+15	3.99	3097	res res	res res
+16	3.84	3097	res res	res res
+17	3.74	3097	res res	res res
+18	3.88	3097	res res	res res
+19	3.81	3097	res res	res res
+20	3.75	3097	res res	res res
+21	3.72	3097	res res	res res
+22	3.6	3097	res res	res res
+23	3.52	3097	res res	res res
+24	3.36	3097	res res	res res
+25	3.2	3097	res res	res res
+26	2.98	3097	res res	res res
+27	2.75	3097	res res	res res
+28	2.63	3097	res res	res res
+29	2.35	3097	res res	res res
+30	2.18	3097	res res	res res
+31	1.76	3097	res res	res res
+32	1.46	3097	res res	res res
+33	0.95	3097	res res	res res
+34	0	3097	res res	res res
+35	0	3097	res res	res res
+36	0	3097	res res	res res
+37	0	3097	res res	res res
+1	2.56	3119	b13hd b13hd	b13hd b13hd
+2	2.76	3119	b13hd b13hd	b13hd b13hd
+3	2.45	3119	b13hd b13hd	b13hd b13hd
+4	2.85	3119	b13hd b13hd	b13hd b13hd
+5	3.45	3119	b13hd b13hd	b13hd b13hd
+6	3.8	3119	b13hd b13hd	b13hd b13hd
+7	4.04	3119	b13hd b13hd	b13hd b13hd
+8	4.09	3119	b13hd b13hd	b13hd b13hd
+9	4.06	3119	b13hd b13hd	b13hd b13hd
+10	4.05	3119	b13hd b13hd	b13hd b13hd
+11	3.99	3119	b13hd b13hd	b13hd b13hd
+12	3.82	3119	b13hd b13hd	b13hd b13hd
+13	3.85	3119	b13hd b13hd	b13hd b13hd
+14	3.77	3119	b13hd b13hd	b13hd b13hd
+15	3.8	3119	b13hd b13hd	b13hd b13hd
+16	3.72	3119	b13hd b13hd	b13hd b13hd
+17	3.59	3119	b13hd b13hd	b13hd b13hd
+18	3.71	3119	b13hd b13hd	b13hd b13hd
+19	3.54	3119	b13hd b13hd	b13hd b13hd
+20	3.51	3119	b13hd b13hd	b13hd b13hd
+21	3.31	3119	b13hd b13hd	b13hd b13hd
+22	3.24	3119	b13hd b13hd	b13hd b13hd
+23	3.27	3119	b13hd b13hd	b13hd b13hd
+24	3.2	3119	b13hd b13hd	b13hd b13hd
+25	3.14	3119	b13hd b13hd	b13hd b13hd
+26	2.82	3119	b13hd b13hd	b13hd b13hd
+27	2.63	3119	b13hd b13hd	b13hd b13hd
+28	2.61	3119	b13hd b13hd	b13hd b13hd
+29	2.36	3119	b13hd b13hd	b13hd b13hd
+30	1.93	3119	b13hd b13hd	b13hd b13hd
+31	1.5	3119	b13hd b13hd	b13hd b13hd
+32	1.04	3119	b13hd b13hd	b13hd b13hd
+33	0.49	3119	b13hd b13hd	b13hd b13hd
+34	0.45	3119	b13hd b13hd	b13hd b13hd
+35	0	3119	b13hd b13hd	b13hd b13hd
+36	0	3119	b13hd b13hd	b13hd b13hd
+37	0	3119	b13hd b13hd	b13hd b13hd

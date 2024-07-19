@@ -1,0 +1,134 @@
+id	C	T	L	S	Ca	vertebrae	Ta	geno	technique	ca.sum.2	full_geno	mCT	ls	tl	pretty.geno	pooled.geno	pretty.pooled.geno
+1569	7	12	5	4	26	54	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+1570	7	11	5	4	27	55	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	1	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+1571	7	12	5	4	27	55	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+1575	7	12	5	4	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+1760	7	13	5	4	27	56	T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+1776	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+1825	7	12	5	4	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+1827	7	11	4	3	28	55	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	1	1	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+1828	7	12	4	5	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+1830	7	12	5	4	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+1949	7	13	5	4	26	55	T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+1950	7	12	5	4	27	55	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+1952	7	12	5	4	28	56	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+1996	7	13	6	3	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2000	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2001	7	11	5	4	26	54	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	1	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2003	7	12	5	4	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2008	7	12	5	4	29	57	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2012	7	12	5	4	25	53	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2058	7	12	5	4	28	56	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2058c	7	13	5	4	28	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2060	7	12	5	4	28	56	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2060c	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2061	7	12	5	4	28	56	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2061c	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2062	7	12	5	4	27	55	T9 > T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2097	7	12	5	4	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2099	7	12	5	4	24	52	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2104	7	12	5	4	27	55	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2106	7	12	5	4	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2112	7	13	5	4	30	59	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2113	7	12	5	4	26	54	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2115	7	12	4	5	25	53	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2116	7	12	5	4	26	54	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2146	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2147	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2148	7	13	5	3	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	1	0	wt	wt wt	wt
+2167	7	12	5	4	26	54	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2169	7	12	5	4	24	52	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2170	7	13	5	4	29	58	T10	gof wt	alizarin	NA	go wt	FALSE	0	0	HoxBDel(I)9-13 +/-	gof wt	HoxBDel(I)9-13 +/-
+2176	7	12	5	4	26	54	T9 > T10	gof gof	alizarin	NA	gof gof	FALSE	0	0	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+2715	7	13	5	4	28	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2727	7	13	6	4	30	60	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2744	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2745	7	13	5	4	29	58	T10	res wt	alizarin	NA	r405 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2746	7	13	5	4	30	59	T10	res wt	alizarin	NA	r405 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2751	7	13	5	5	30	60	T10	res res	alizarin	NA	r434 r434	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2752	7	13	6	4	27	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2757	7	13	6	4	29	59	T10	b13hd wt	alizarin	NA	m438 w453	FALSE	0	0	Hoxb13hd +/-	b13hd wt	Hoxb13hd +/-
+2790	7	13	5	4	29	59	T10	wt wt	alizarin	NA	wt wt	FALSE	1	0	wt	wt wt	wt
+2802	7	13	5	4	29	58	T10	res wt	alizarin	NA	r434 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2803	7	13	5	4	30	59	T10	res res	alizarin	NA	r434 r434	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2804	7	13	5	4	31	60	T10	res res	alizarin	NA	r434 r434	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2806	7	13	5	4	32	61	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2836	7	13	5	4	32	61	T10	res res	alizarin	NA	r405 r405	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2838	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2841	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2842	7	13	6	4	29	59	T10	res res	alizarin	NA	r405 r405	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2843	7	13	5	4	31	60	T10	res wt	alizarin	NA	r405 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2845	7	13	5	4	31	60	T10	res wt	alizarin	NA	r405 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2846	7	13	5	4	32	61	T10	res res	alizarin	NA	r405 r405	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2847	7	13	5	4	28	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2848	7	13	5	4	30	59	T10	res wt	alizarin	NA	r434 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2849	7	13	5	4	28	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2850	7	13	5	4	31	60	T10	res res	alizarin	NA	r434 r434	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2852	7	13	5	4	28	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2854	7	13	5	4	32	61	T10	res res	alizarin	NA	r434 r434	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2856	7	13	5	4	25	54	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2859	7	13	5	4	31	60	T10	res res	alizarin	NA	r434 r434	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2860	7	13	6	4	29	59	T10	res wt	alizarin	NA	r434 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2865	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2893	7	13	6	4	29	59	T10	res wt	alizarin	NA	r434 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2894	7	13	5	4	28	57	T10	res wt	alizarin	NA	r434 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2897	7	13	5	4	29	59	T10	res wt	alizarin	NA	r434 w453	FALSE	1	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2913	7	13	5	4	28	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2914	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2915	7	13	5	4	31	60	T10	b13hd b13hd	alizarin	NA	m438 m438	FALSE	0	0	Hoxb13hd	b13hd b13hd	Hoxb13hd
+2916	7	13	5	4	29	58	T10	b13hd wt	alizarin	NA	m438 w453	FALSE	0	0	Hoxb13hd +/-	b13hd wt	Hoxb13hd +/-
+2930	7	13	5	4	31	60	T10	b13hd wt	alizarin	NA	m424 w453	FALSE	0	0	Hoxb13hd +/-	b13hd wt	Hoxb13hd +/-
+2933	7	13	5	4	32	61	T10	b13hd b13hd	alizarin	NA	m424 m424	FALSE	0	0	Hoxb13hd	b13hd b13hd	Hoxb13hd
+2934	7	13	5	4	29	58	T10	b13hd wt	alizarin	NA	m424 w453	FALSE	0	0	Hoxb13hd +/-	b13hd wt	Hoxb13hd +/-
+2935	7	13	5	4	29	58	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2938	7	13	5	4	31	60	T10	b13hd b13hd	alizarin	NA	m424 m424	FALSE	0	0	Hoxb13hd	b13hd b13hd	Hoxb13hd
+2942	7	13	5	4	30	59	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+2943	7	13	5	4	31	60	T10	res wt	alizarin	NA	r434 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2945	7	13	5	4	30	59	T10	res wt	alizarin	NA	r434 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2963	7	13	5	4	29	59	T10	res wt	alizarin	NA	r405 w453	FALSE	1	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2964	7	13	6	4	28	58	T10	res res	alizarin	NA	r405 r405	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2965	7	13	6	4	29	59	T10	res wt	alizarin	NA	r405 w453	FALSE	0	0	HoxBDel(I)9-13hd +/-	res wt	HoxBDel(I)9-13hd +/-
+2966	7	13	5	4	32	61	T10	res res	alizarin	NA	r405 r405	FALSE	0	0	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+2984	7	13	5	4	28	57	T10	wt wt	alizarin	NA	wt wt	FALSE	0	0	wt	wt wt	wt
+3037	7	13	6	4	32	62	T10	res res	mCT	107.89	NA	NA	NA	NA	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+3048	7	13	5	4	29	58	T10	wt wt	mCT	97.44	NA	NA	NA	NA	wt	wt wt	wt
+3051	7	13	5	4	34	63	T10	b13hd b13hd	mCT	113	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+3097	7	13	6	4	32	62	T10	res res	mCT	110.57	NA	NA	NA	NA	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+3119	7	13	5	4	33	62	T10	b13hd b13hd	mCT	103.4	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+3178	7	13	5	4	28	57	T10	wt wt	mCT	88.45	NA	NA	NA	NA	wt	wt wt	wt
+3354	7	12	5	4	25	53	T9 > T10	gof gof	mCT	70.35	NA	NA	NA	NA	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+3489	7	12	5	4	25	53	T9 > T10	gof gof D D	mCT	71.93	NA	NA	NA	NA	HoxDel(I)9-13_HoxDwt	gof gof	HoxBDel(I)9-13
+3491	7	13	5	4	28	57	T10	w453 w453 d13 d13	mCT	83.6	NA	NA	NA	NA	Hoxd13wt	wt wt	wt
+3492	7	13	5	4	28	57	T10	w453 w453 d13 d13	mCT	90.08	NA	NA	NA	NA	Hoxd13wt	wt wt	wt
+3498	7	12	5	4	26	54	T9 > T10	gof gof D D	mCT	74.86	NA	NA	NA	NA	HoxDel(I)9-13_HoxDwt	gof gof	HoxBDel(I)9-13
+3508	7	13	6	4	28	58	T10	w453 w453 d13 d13	mCT	95.03	NA	NA	NA	NA	Hoxd13wt	wt wt	wt
+3509	7	13	6	4	30	60	T10	r434 r434 d13 d13	mCT	101.71	NA	NA	NA	NA	HoxBDel(I)9-13hd_Hoxd13wt	res res	HoxBDel(I)9-13hd
+3522	7	13	5	4	33	62	T10	r434 r434 d13 d13	mCT	102.77	NA	NA	NA	NA	HoxBDel(I)9-13hd_Hoxd13wt	res res	HoxBDel(I)9-13hd
+3550	7	12	5	4	22	50	T9 > T10	gof gof D(I) D(I)	mCT	67.64	NA	NA	NA	NA	HoxBDel(I)9-13_HoxDDel(I)9-13	gof gof D(I) D(I)	HoxBDel(I)9-13_HoxDDel(I)9-13
+3551	7	12	5	4	23	51	T9 > T10	gof gof D(I) D(I)	mCT	68.11	NA	NA	NA	NA	HoxBDel(I)9-13_HoxDDel(I)9-13	gof gof D(I) D(I)	HoxBDel(I)9-13_HoxDDel(I)9-13
+3593	7	13	6	4	33	63	T10	r434 r434 d13hd d13hd	mCT	108.66	NA	NA	NA	NA	HoxBDel(I)9-13hd_Hoxd13hd	r434 r434 d13hd d13hd	HoxBDel(I)9-13hd_Hoxd13hd
+3597	7	13	6	4	34	64	T10	r434 r434 d13hd d13hd	mCT	108.56	NA	NA	NA	NA	HoxBDel(I)9-13hd_Hoxd13hd	r434 r434 d13hd d13hd	HoxBDel(I)9-13hd_Hoxd13hd
+3598	7	13	6	4	32	62	T10	r434 r434 d13hd d13hd	mCT	106.21	NA	NA	NA	NA	HoxBDel(I)9-13hd_Hoxd13hd	r434 r434 d13hd d13hd	HoxBDel(I)9-13hd_Hoxd13hd
+3599	7	13	6	4	28	58	T10	w453 w453 d13 d13	mCT	90.44	NA	NA	NA	NA	Hoxd13wt	wt wt	wt
+3600	7	13	6	4	28	58	T10	w453 w453 d13hd d13hd	mCT	84.73	NA	NA	NA	NA	Hoxd13hd	w453 w453 d13hd d13hd	Hoxd13hd
+3604	7	13	6	4	32	62	T10	r434 r434 d13 d13	mCT	98.85	NA	NA	NA	NA	HoxBDel(I)9-13hd_Hoxd13wt	res res	HoxBDel(I)9-13hd
+3605	7	13	5	4	29	58	T10	w453 w453 d13hd d13hd	mCT	91.88	NA	NA	NA	NA	Hoxd13hd	w453 w453 d13hd d13hd	Hoxd13hd
+3608	7	12	5	4	24	52	T9 > T10	gof gof D(I) D(I)	mCT	73.39	NA	NA	NA	NA	HoxBDel(I)9-13_HoxDDel(I)9-13	gof gof D(I) D(I)	HoxBDel(I)9-13_HoxDDel(I)9-13
+BEN_5	7	13	6	4	28	58	T10	w453 w453 d13hd d13hd	mCT	89.66	NA	NA	NA	NA	Hoxd13hd	w453 w453 d13hd d13hd	Hoxd13hd
+DD13	7	12	5	4	24	52	T9 > T10	gof gof	mCT	75.53	NA	NA	NA	NA	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13
+DD15	7	13	6	4	28	58	T10	wt wt	mCT	82.61	NA	NA	NA	NA	wt	wt wt	wt
+DD20	7	13	6	4	30	60	T10	r434 r434 d13hd d13hd	mCT	96.53	NA	NA	NA	NA	HoxBDel(I)9-13hd_Hoxd13hd	r434 r434 d13hd d13hd	HoxBDel(I)9-13hd_Hoxd13hd
+DD24	7	13	6	4	28	58	T10	wt wt	mCT	88.77	NA	NA	NA	NA	wt	wt wt	wt
+DD25	7	13	6	4	30	60	T10	res res	mCT	93.72	NA	NA	NA	NA	HoxBDel(I)9-13hd	res res	HoxBDel(I)9-13hd
+DD27	7	13	6	4	27	57	T10	wt wt	mCT	88.55	NA	NA	NA	NA	wt	wt wt	wt
+DD31	7	13	6	4	29	59	T10	w453 w453 d13hd d13hd	mCT	93.18	NA	NA	NA	NA	Hoxd13hd	w453 w453 d13hd d13hd	Hoxd13hd
+DD33	7	13	5	4	28	57	T10	wt wt	mCT	93.26	NA	NA	NA	NA	wt	wt wt	wt
+DD34	7	13	5	4	32	61	T10	b13hd b13hd	mCT	105.74	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+DD35	7	13	6	4	34	64	T10	b13hd b13hd	mCT	108.01	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+DD36	7	13	5	4	29	58	T10	wt wt	mCT	92.21	NA	NA	NA	NA	wt	wt wt	wt
+DD37	7	13	5	4	31	60	T10	b13hd b13hd	mCT	101.77	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+DD38	7	13	5	4	32	61	T10	b13hd b13hd	mCT	104.14	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+DD39	7	13	5	4	28	57	T10	wt wt	mCT	90.84	NA	NA	NA	NA	wt	wt wt	wt
+DD40	7	13	5	4	31	60	T10	b13hd b13hd	mCT	98	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+DD41	7	13	6	4	31	61	T10	b13hd b13hd	mCT	99.6	NA	NA	NA	NA	Hoxb13hd	b13hd b13hd	Hoxb13hd
+DD5	7	12	4	4	25	52	T9 > T10	gof gof	mCT	79.3	NA	NA	NA	NA	HoxBDel(I)9-13	gof gof	HoxBDel(I)9-13

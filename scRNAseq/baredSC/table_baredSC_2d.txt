@@ -1,0 +1,4 @@
+/home/ldelisle/softwares/scriptsForLopezDelisleZakanyBochatonEtAl2024//scRNAseq/plots/meta_data_mut_NMPs.txt	Hoxa9	Hoxb13	3	3
+/home/ldelisle/softwares/scriptsForLopezDelisleZakanyBochatonEtAl2024//scRNAseq/plots/meta_data_mut_NMPs.txt	Hoxb9	Hoxb13	3	3
+/home/ldelisle/softwares/scriptsForLopezDelisleZakanyBochatonEtAl2024//scRNAseq/plots/meta_data_mut_NMPs.txt	Hoxc9	Hoxb13	3	3
+/home/ldelisle/softwares/scriptsForLopezDelisleZakanyBochatonEtAl2024//scRNAseq/plots/meta_data_mut_NMPs.txt	Hoxd9	Hoxb13	3	3
