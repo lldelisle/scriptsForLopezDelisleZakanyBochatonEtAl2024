@@ -1,5 +1,7 @@
 # scriptsForLopezDelisleZakanyBochatonEtAl2024
 
+[![DOI](https://zenodo.org/badge/828882968.svg)](https://zenodo.org/doi/10.5281/zenodo.13693565)
+
 All scripts necessary to build figures from raw data in Lopez-Delisle, Zakany, Bochaton et al. 2024.
 
 The whole pipeline is described into [Run_all.md](./Run_all.md).

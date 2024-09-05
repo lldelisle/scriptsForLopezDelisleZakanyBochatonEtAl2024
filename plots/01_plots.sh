@@ -654,15 +654,6 @@ arrowhead_fraction = 0
 fontsize = 6
 height = 0.25
 
-[CTCF]
-file = ${pathWithAnnotations}/${genome}/${genome}_CTCF_colored.bed
-display = collapsed
-color = bed_rgb
-border_color = none
-labels = false
-arrowhead_fraction = 0.01
-height = 0.2
-
 [genes label]
 file = ${pathWithAnnotations}/${genome}/${genome}_selected_left_pc.bed
 color = none
@@ -671,16 +662,25 @@ fontstyle = oblique
 display = collapsed
 arrowhead_fraction = 0
 fontsize = 6
+overlay_previous = share-y
+
+[CTCF]
+file = ${pathWithAnnotations}/${genome}/${genome}_CTCF_colored.bed
+display = collapsed
+color = bed_rgb
+border_color = none
+labels = false
+arrowhead_fraction = 0.015
 height = 0.2
 
 [genes]
 file = ${pathWithAnnotations}/${genome}/${genome}_protein_coding_around_HoxBD.bed4
-height = 0.2
 color = black
 display = collapsed
 color_utr = black
 border_color = none
 labels = false
+overlay_previous = share-y
 " >> ${ini_file}
 
 pgt --region chr11:96192000-96210000 --tracks ${ini_file} -o ${ini_file/.ini/.pdf} --plotWidth 6.2 --fontSize 6 --trackLabelFraction 0.3

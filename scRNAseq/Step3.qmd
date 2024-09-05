@@ -319,7 +319,8 @@ ggsave(filename = paste0(output.directory, "featurePlot.Hoxb13.pdf"),
        g, width = 8, height = 3)
 
 my.df <- FetchData(combined.seurat, vars = c("UMAP_1", "UMAP_2", "Hoxb13", "pretty.geno"))
-
+pal <- c("#FEB24C",	"#FD8D3C",	"#FC4E2A",	"#E31A1C",	"#BD0026",	"#800026")
+col.featurePlot <- alpha(c("#D3D3D3", pal),0.9)
 g <- ggplot(my.df[order(my.df$Hoxb13), ], aes(x = UMAP_1, y = UMAP_2)) +
   geom_point(aes(color = Hoxb13), size = 0.1) +
   facet_wrap(pretty.geno ~ ., nrow = 1, label = label_parsed) + 
@@ -337,7 +338,7 @@ g <- ggplot(my.df[order(my.df$Hoxb13), ], aes(x = UMAP_1, y = UMAP_2)) +
   geom_text(data = fake.df,
             aes(x = umap.ranges[1, 1], y = umap.ranges[1, 2] + umap.total[2] * 0.05, label = "UMAP_2"),
             family = fontFamily, vjust = 1, hjust = 0.5, size = 2, nudge_x = - 2, angle = 90) +
-  scale_color_gradient(low = "lightgrey", high = "blue", breaks = c(0, 1, 2)) +
+  scale_color_gradientn(colours = col.featurePlot, breaks = c(0, 1, 2)) +
   cowplot::theme_cowplot() +
   theme(text = element_text(family = fontFamily),
         axis.title = element_blank(),
@@ -353,7 +354,6 @@ g <- ggplot(my.df[order(my.df$Hoxb13), ], aes(x = UMAP_1, y = UMAP_2)) +
 
 ggsave(filename = paste0(output.directory, "featurePlot.Hoxb13_custom.pdf"),
        rasterize(g, layers = "Point", dpi = 250), width = 5.2, height = 2.5)
-
 
 g <- FeaturePlot(combined.seurat,
                  label = F,

@@ -27,10 +27,12 @@ names(pretty.names) <- selected.ranks
 
 if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
   # Ensembl Release 111
-  ensembl <- useMart("ensembl")
+  ensembl <- useMart("ENSEMBL_MART_ENSEMBL", host = "https://jan2024.archive.ensembl.org")
+  # Get all datasets available
   all_datasets <- listDatasets(ensembl)
   if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff.txt")) {
     if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13.txt")) {
+      # Prepare the result table
       all.results <- as.data.frame(t(rep(NA, 8)))
       colnames(all.results) <- c(
         "ensembl_transcript_id", "chromosome_name", "exon_chrom_start",
@@ -153,19 +155,25 @@ if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
     } else {
       all.results <- read.delim("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13.txt")
     }
+    # Build a summary table with differences values
     summary_table <- NULL
     sink("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff.log")
     for (dataset in all_datasets$dataset) {
+      # For each dataset restrict to info for this dataset
       current.result <- all.results[all.results$dataset %in% dataset, ]
       for (genes.to.check in c("Hoxb1_Hoxb9", "Hoxb9_Hoxb13")) {
+        # For each pair of genes, get the info for these genes
         both.genes <- strsplit(genes.to.check, "_")[[1]]
         current.result.both.genes <- subset(current.result, mmusculus_homolog_associated_gene_name %in% both.genes)
         current.genes <- unique(current.result.both.genes[, c("chromosome_name", "external_gene_name")])
         if (nrow(current.genes) == 0) {
+          # If there are no genes write an entry with 'no_homologous_gene_found'
           results <- c(dataset, genes.to.check, NA, "no_homologous_gene_found")
           summary_table <- rbind(summary_table, results)
           next
         }
+        # Cases where we cannot compute diff:
+        # Either a single gene or on different chromosomes or a NA.
         if (nrow(current.genes) == 2 && length(unique(current.genes$chromosome_name)) != 1) {
           if (length(unique(current.genes$external_gene_name)) == 1) {
             results <- c(dataset, genes.to.check, NA, "only_one_gene_found")
@@ -183,6 +191,7 @@ if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
           summary_table <- rbind(summary_table, results)
           next
         }
+        # If there are more than 1 entry for a gene, if on different chromosomes, only common chromosome is kept
         if (nrow(current.genes) > 2) {
           chrom_nb <- table(current.genes$chromosome_name)
           probable_chrom <- names(chrom_nb[which.max(chrom_nb)])
@@ -190,34 +199,47 @@ if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
           cat("Ignoring genes in ", setdiff(names(chrom_nb), probable_chrom), " for ", dataset, "\n")
           print(current.genes)
           current.result.both.genes <- subset(current.result.both.genes, chromosome_name %in% probable_chrom)
+          if (length(unique(current.result.both.genes$external_gene_name)) == 1) {
+            results <- c(dataset, genes.to.check, NA, "two_genes_on_more_than_two_different_chr")
+            summary_table <- rbind(summary_table, results)
+            next
+          }
         } else {
           comment <- ""
         }
-        first_exons <- current.result.both.genes[current.result.both.genes$rank %in% c(1), ]
-        if (length(unique(first_exons$strand)) == 1) {
-          if (unique(first_exons$strand) == "-1") {
-            my.col <- "exon_chrom_start"
+        if (length(unique(current.result.both.genes$strand)) == 1) {
+          # All in the same strand
+          # Compute per transcript distance to the middle
+          transcripts_extr <- current.result.both.genes %>%
+            group_by(ensembl_transcript_id, external_gene_name) %>%
+            summarize(
+              start = min(exon_chrom_start),
+              end = max(exon_chrom_end)
+            )
+          middle <- mean(transcripts_extr$start)
+          transcripts_extr <- transcripts_extr %>%
+            mutate(dist_to_middle = min(abs(middle - end), abs(middle - start)))
+          # Check nb of extremities per gene:
+          transcripts_d_gene <- unique(transcripts_extr[, c("external_gene_name", "dist_to_middle")])
+          if (nrow(transcripts_d_gene) == 2) {
+            results <- c(dataset, genes.to.check, sum(transcripts_d_gene$dist_to_middle), comment)
           } else {
-            my.col <- "exon_chrom_end"
-          }
-          extremities <- unique(first_exons[, c("external_gene_name", my.col)])
-          if (nrow(extremities) == 2) {
-            results <- c(dataset, genes.to.check, abs(extremities[1, my.col] - extremities[2, my.col]), comment)
-          } else {
-            cat("Multiple ", my.col, " in ", dataset, " will be averaged.\n")
-            print(extremities)
-            extremities <- aggregate(first_exons[, my.col], by = list(gene = first_exons$external_gene_name), FUN = mean)
-            results <- c(dataset, genes.to.check, abs(extremities$x[1] - extremities$x[2]), paste0(comment, "multiple_first_exon_this_is_average"))
+            cat("Multiple extremities in", dataset, "for d", genes.to.check, ", will be averaged.\n")
+            print(transcripts_d_gene)
+            transcripts_d_gene_avg <- transcripts_d_gene %>%
+              group_by(external_gene_name) %>%
+              summarize(mean_d = mean(dist_to_middle))
+            results <- c(dataset, genes.to.check, sum(transcripts_d_gene_avg$mean_d), paste0(comment, "multiple_extremities_this_is_average"))
           }
         } else {
           cat("Multiple strand in ", dataset, "\n")
-          print(first_exons)
-          strand_table <- table(unique(first_exons[, c("external_gene_name", "strand")]))
+          print(current.result.both.genes)
+          strand_table <- table(unique(current.result.both.genes[, c("external_gene_name", "strand")]))
           if (all(strand_table < 2)) {
-            results <- c(dataset, genes.to.check, NA, "different_strand")
+            results <- c(dataset, genes.to.check, NA, "genes_on_different_strand")
           } else {
             print(strand_table)
-            results <- c(dataset, genes.to.check, NA, "different_strand_to_do")
+            results <- c(dataset, genes.to.check, NA, "transcripts_on_different_strand_to_do")
           }
         }
         summary_table <- rbind(summary_table, results)
@@ -225,7 +247,7 @@ if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
     }
     sink()
     summary_table <- as.data.frame(summary_table)
-    colnames(summary_table) <- c("dataset", "genes_considered", "diff_end_both_exons", "comment")
+    colnames(summary_table) <- c("dataset", "genes_considered", "intergenic_distance", "comment")
     summary_table <- merge(all_datasets, summary_table)
     write.table(
       summary_table,
@@ -237,7 +259,7 @@ if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
   }
 
   # Only keep species with both distances
-  summary_table_plot <- subset(summary_table, !is.na(diff_end_both_exons))
+  summary_table_plot <- subset(summary_table, !is.na(intergenic_distance))
   summary_table_plot <- subset(
     summary_table_plot,
     version %in% summary_table_plot$version[duplicated(summary_table_plot$version)]
@@ -255,8 +277,11 @@ if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
 
   all(my.species %in% species.df$species)
 
+  # print(my.species[! my.species %in% species.df$species])
+
   species.df <- subset(species.df, species %in% my.species)
 
+  # Asign species to classification
   classification1 <- classification(unique(species.df$Taxon.ID))
   classification1bis <- do.call(rbind, classification1)
   colnames(classification1bis) <- paste0("rank_", colnames(classification1bis))
@@ -275,16 +300,18 @@ if (!file.exists("b9b13_evolution/all_Hoxb1_Hoxb9_Hoxb13_diff_plot.txt")) {
 
   classification1bis.selected <- classification1bis.selected[!duplicated(classification1bis.selected$species), ]
 
+  # Check what is in Vertebrata
   classification1bis.selected$species[classification1bis.selected$rank_name == "Vertebrata"]
 
+  # Add classification to the summary_table
   summary_table_plot <- merge(summary_table_plot, classification1bis.selected[, c("species", "rank_name")], all.x = TRUE)
   table(summary_table_plot$rank_name, exclude = NULL)
 
-  summary_table_plot$diff_end_both_exons <- as.numeric(
-    summary_table_plot$diff_end_both_exons
+  summary_table_plot$intergenic_distance <- as.numeric(
+    summary_table_plot$intergenic_distance
   )
-
-  summary_table_plot$distance <- summary_table_plot$diff_end_both_exons / 1000
+  # Get distance in kb
+  summary_table_plot$distance <- summary_table_plot$intergenic_distance / 1000
 
   summary_table_plot$pretty.names <- pretty.names[summary_table_plot$rank_name]
 
@@ -347,15 +374,15 @@ ggsave("b9b13_evolution/Distance.pdf", g, width = 7, height = 3)
 
 # Which Muridae:
 unique(summary_table_plot$species[summary_table_plot$rank_name == "Muridae"])
+# [1] "Algerian mouse" "Mouse"          "Rat"            "Ryukyu mouse"
+# [5] "Shrew mouse"    "Steppe mouse"
 unique(summary_table_plot$dataset[summary_table_plot$rank_name == "Muridae"])
-unique(summary_table_plot$version[summary_table_plot$rank_name == "Muridae"])
-# [1] "Algerian mouse" "Mouse"          "Rat"            "Ryukyu mouse"  
-# [5] "Shrew mouse"    "Steppe mouse"  
-# [1] "mspretus_gene_ensembl"    "mmusculus_gene_ensembl"  
-# [3] "rnorvegicus_gene_ensembl" "mcaroli_gene_ensembl"    
+# [1] "mspretus_gene_ensembl"    "mmusculus_gene_ensembl"
+# [3] "rnorvegicus_gene_ensembl" "mcaroli_gene_ensembl"
 # [5] "mpahari_gene_ensembl"     "mspicilegus_gene_ensembl"
+unique(summary_table_plot$version[summary_table_plot$rank_name == "Muridae"])
 # [1] "SPRET_EiJ_v1"    "GRCm39"          "mRatBN7.2"       "CAROLI_EIJ_v1.1"
-# [5] "PAHARI_EIJ_v1.1" "MUSP714" 
+# [5] "PAHARI_EIJ_v1.1" "MUSP714"
 
 # Which species into each boxplot
 temp.df <- unique(summary_table_plot[, c("species", "pretty.names")])
@@ -388,9 +415,22 @@ sapply(names(temp.df.split), function(name) {
 # In Other Vertebrata :
 # Elephant shark, Platypus
 
+# Distance in mutant:
+print("Distance in mutant")
+print(deleted_d)
+# 6.64
+# Min distance in fishes:
+print("Min distance in fishes")
+print(min(summary_table_plot[summary_table_plot$pretty.names == "Actinopterygii" & summary_table_plot$genes_considered == "Hoxb9_Hoxb13", "distance"]))
+# 16.4
+# Min distance in Other Placentalia:
+print("Min distance in Other Placentalia")
+print(min(summary_table_plot[summary_table_plot$pretty.names == "Other Placentalia" & summary_table_plot$genes_considered == "Hoxb9_Hoxb13", "distance"]))
+# 53.9
+
 annot_df <- unique(summary_table_plot[
   ,
-  setdiff(colnames(summary_table_plot), c("genes_considered", "diff_end_both_exons", "comment", "distance"))
+  setdiff(colnames(summary_table_plot), c("genes_considered", "intergenic_distance", "comment", "distance"))
 ])
 ratio_plot_df <- summary_table_plot %>%
   group_by(species) %>%
